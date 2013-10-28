@@ -1,138 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!-- Basics ===================================================================== -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Elegance</title>
+	<title>Posh | Icons</title>
+
+
+	<!-- Mobile Specifics =========================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
 
-	<!-- Le styles -->
 
+
+	<!-- Info ======================================================================= -->
+	<meta name="description" content="Premium HTML Website Template">
+	<meta name="author" content="Codehound">
+
+
+	<!-- Styles ===================================================================== -->
+	
+	<!-- Bootstrap 3 -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
+
+
+	<!-- CSS to override Some Bootstrap styles -->
 	<link rel="stylesheet" href="css/bootstrap-overrides.css">
 
-	<!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
-	<link rel="stylesheet" href="css/bootstrap-responsive-overrides.css">
 
+	<!-- Main StyleSheet for Posh  -->
 	<link rel="stylesheet" href="css/style.css">
 
+
+	<!-- Styles specific to only the half-widh/boxed layout -->
 	<link rel="stylesheet" href="css/style-hw.css">
+
+
+	<!-- Some Overrides for responsiveness -->
 	<link rel="stylesheet" href="css/style-responsive.css">
 
 
-	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+	<!-- CSS for lightbox -->
+	<link href="css/lightbox.css" rel="stylesheet"/>
 
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-
-	
-
-	<!-- <link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+	<!-- FontAwesome Icons -->
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<![endif]-->
+	<!-- Modernizr is used by some jQuery plugins -->
+	<script src="js/modernizr.custom.js"></script>
 
+
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="ico/favicon.png">
+
+
+</head>
+
+<body>
+
+
+	<div class="whole-wrapper">
 		
-		<!--End Slider Css n Js-->
-
-		<!-- FontAwesome Icons CSS. Include it in pages where you want to use FontAwesome Icons. -->
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-
-		<script src="js/modernizr.custom.js"></script>
-
-		<!--BxSlider Begin-->
-		
-
-		<!--Accordion Script-->
-
-		<!-- Fav and touch icons -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">
-	</head>
-
-	<body>
-		<div class="whole-wrapper">
-			<div class="hw-wrapper">
-				<div id="elegantnav-half-width">
-					<div class="navbar navbar-inverse" >
+		<!-- half-width wrapper to limit the width of everything =======================================================-->
+		<div class="hw-wrapper">
 
 
+			<!-- Top Navigation Begin ==================================================================================-->
+			<div id="poshnav-half-width">
+				<div class="navbar navbar-inverse" >
+
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+						<a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
+
+					</div>	
+					<div class="collapse navbar-collapse">
+
+						<ul class="nav navbar-nav">
+
+							<li class="dropdown">
+								<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+								<ul class="dropdown-menu">
+
+									<li>
+										<a href="index.html">iView Slider</a>
+									</li>
+									<li>
+										<a href="index-nivo.html">Nivo Slider</a>
+									</li>
+
+									<li>
+										<a href="index-camera.html">Camera Slider</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="portfolio-4c.html">4 Column</a>
+									</li>
+									<li>
+										<a href="portfolio.html">3 Column</a>
+									</li>
+									<li>
+										<a href="portfolio-2c.html">2 Column</a>
+									</li>
+
+									<li>
+										<a href="portfolio-single.html">Single Portfolio</a>
+									</li>
+
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="blog-ls.html">Left Sidebar</a>
+									</li>
+									<li>
+										<a href="blog.html">Right Sidebar</a>
+									</li>
+									<li>
+										<a href="blog-single.html">Single Blog</a>
+									</li>
 
 
 
-						<div class="navbar-header">
+								</ul>
+							</li>
 
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-							<a class="navbar-brand" href="#"><img src="img/bh-logo-topnav.png" alt=""></a>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="contact.html">Contact</a>
+									</li>
+									<li>
+										<a href="about.html">About</a>
+									</li>
 
-						</div>	
-						<div class="collapse navbar-collapse">
+									<li>
+										<a href="services.html">Services</a>
+									</li>
 
-							<ul class="nav navbar-nav">
+									<li>
+										<a href="page404.html">404</a>
+									</li>
 
-								<li class="active" >
-									<a href="#">Home</a>
-								</li>
-								<li>
-									<a href="#">About</a>
-								</li>
-								<li>
-									<a href="#">Contact</a>
-								</li>
-								<li>
-									<a href="#">Features</a>
-								</li>
-								<li>
-									<a href="#">Contact</a>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown </a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
 
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
 
-							<form class="navbar-search pull-right" role="search">
-								<input type="text" class="search-query">
-							</form>
+								</ul>
+							</li>
 
-						</div><!-- /.navbar-collapse -->
-						
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="components.html">Components</a>
+									</li>
+									<li>
+										<a href="icons.html">Icons</a>
+									</li>
+									<li>
+										<a href="anims.html">Animations</a>
+									</li>
+
+								</ul>
+							</li>
+						</ul>
+
+						<form class="navbar-search pull-right" role="search">
+							<input type="text" class="search-query">
+						</form>
+
 					</div>
-				</div><!--Nav Contaner End-->
+
+				</div>
+			</div>
+
+			<!-- Top Navigation End ====================================================================================-->
+
+
 
 
 
 				<section class="sampleicons clearfix">
-
-
-				<header>
+				<header class="center-header-text">
 
 
 							<h2>POSH includes the popular <b class="emph">FontAwesome</b> icon set, with over 350 vector icons!</h2>
@@ -372,7 +438,7 @@
 
 				<section class="sampleicons clearfix">
 
-					<header>
+					<header class="center-header-text">
 
 							<h1>Text Editor <b class="emph">Icons</b></h1>
 							<span class="line"></span>
@@ -441,7 +507,7 @@
 
 				<section class="sampleicons clearfix">
 
-							<header>
+							<header class="center-header-text">
 
 							<h1>Directional <b class="emph">Icons</b></h1>
 							<span class="line"></span>
@@ -504,7 +570,7 @@
 
 				<section class="sampleicons clearfix">
 
-							<header>
+							<header class="center-header-text">
 
 							<h1>Video Player <b class="emph">Icons</b></h1>
 							<span class="line"></span>
@@ -551,7 +617,7 @@
 
 				<section class="sampleicons clearfix">
 
-							<header>
+							<header class="center-header-text">
 
 							<h1>Medical <b class="emph">Icons</b></h1>
 							<span class="line"></span>
@@ -587,235 +653,263 @@
 					</div>
 				</section>
 				
-				<footer>
+				
 
-					<div class="row footer-header-wrapper visible-lg visible-md">
-						<div class="row footer-header">
-							<div class="col-md-3">
-								Categories
-							</div>
 
-							<div class="col-md-3">
-								Flickr Stream
-							</div>
 
-							<div class="col-md-3">
-								Recent Tweets
-							</div>
 
-							<div class="col-md-3">
-								Contact us
-							</div>
 
-						</div>
+			<!-- Main Footer Begin =====================================================================================-->
+			<footer>
 
-					</div>
 
-					<div class="row" id='footer-body'>
-
-						<div class="col-md-3 col-sm-12">
-
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Categories
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body" id='footer-categories'>
-
-								<ul>
-									<li>
-										<a href="#">Learn HTML & CSS</a>
-									</li>
-									<li>
-										<a href="#">Teach Yourself Coding </a>
-									</li>
-									<li>
-										<a href="#">Knowled of PHP</a>
-									</li>
-									<li>
-										<a href="#">Custom Coding</a>
-									</li>
-									<li>
-										<a href="#">Full Size Documentation </a>
-									</li>
-								</ul>
-
-							</div>
+				<!-- Continuous Headers visible only in large screens -->
+				<div class="row footer-header-wrapper visible-lg visible-md">
+					<div class="row footer-header">
+						<div class="col-md-3">
+							Categories
 						</div>
 
 						<div class="col-md-3">
-
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Flickr Stream
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body">
-
-								
-								<!-- Flickr Images are loaded by the jQuery flickrush plugin -->
-								<div id="flickrImages"></div>  
-								
-
-							</div>
-						</div>
-
-						<div class="col-md-3" id='footer-tweeter-feed'>
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Recent tweets
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body">
-
-								<ul>
-									<li>
-
-										<div class="media">
-											<a class="pull-left" href="#"> <img class="media-object" src='img/twitter-footer.png'> </a>
-											<div class="media-body">
-												<h4 class="media-heading">@lorenIpsum</h4>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis.test
-												</p>
-											</div>
-										</div>
-
-									</li>
-
-									<li>
-
-										<div class="media">
-											<a class="pull-left" href="#"> <img class="media-object" src='img/twitter-footer.png'> </a>
-											<div class="media-body">
-												<h4 class="media-heading">@lorenIpsum</h4>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis.
-												</p>
-											</div>
-										</div>
-
-									</li>
-								</ul>
-
-							</div>
+							Flickr Stream
 						</div>
 
 						<div class="col-md-3">
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Contact Us
-									</div>
+							Recent Tweets
+						</div>
+
+						<div class="col-md-3">
+							Contact us
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row" id='footer-body'>
+
+					<div class="col-md-3 col-sm-12">
+
+						<!-- Footer Section header, only visible in small screens. -->
+						<div class="row footer-header-collapse">
+							<div class="row footer-header">
+								<div class="col-md-3">
+									Categories
 								</div>
 							</div>
-							<div class="row footer-section-body">
+						</div>
 
-								<form>
+						<!-- Categories -->
+						<div class="row footer-section-body" id='footer-categories'>
+							<ul>
+								<li>
+									<a href="#">Learn HTML & CSS</a>
+								</li>
+								<li>
+									<a href="#">Teach Yourself Coding </a>
+								</li>
+								<li>
+									<a href="#">Knowled of PHP</a>
+								</li>
+								<li>
+									<a href="#">Custom Coding</a>
+								</li>
+								<li>
+									<a href="#">Full Size Documentation </a>
+								</li>
+							</ul>
 
-									<input type='text' placeholder='Name'>
-									<input type='text' placeholder='Email'>
-									<textarea type='text' placeholder='Message'></textarea>
-									<button class='pull-right'>
-										Send
-									</button>
-								</form>
+						</div>
+					</div>
 
+					<div class="col-md-3">
+
+						<!-- Footer Section header, only visible in small screens. -->
+						<div class="row footer-header-collapse">
+							<div class="row footer-header">
+								<div class="col-md-3">
+									Flickr Stream
+								</div>
 							</div>
 						</div>
+						<div class="row footer-section-body">
+
+
+							<!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+							<div id="flickrImages"></div>  
+
+
+						</div>
+					</div>
+
+					<div class="col-md-3" id='footer-tweeter-feed'>
+
+						<!-- Footer Section header, only visible in small screens. -->
+						<div class="row footer-header-collapse">
+							<div class="row footer-header">
+								<div class="col-md-3">
+									Recent tweets
+								</div>
+							</div>
+						</div>
+						<div class="row footer-section-body">
+
+							<ul>
+								<li>
+
+									<div class="media">
+										<a class="pull-left" href="#"><i class="icon-twitter icon-2x"></i></a>
+										<div class="media-body">
+											<h4 class="media-heading">@LorenIpsum</h4>
+											<p>
+												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+											</p>
+										</div>
+									</div>
+
+								</li>
+
+								<li>
+
+									<div class="media">
+										<a class="pull-left" href="#"> <i class="icon-twitter icon-2x"></i></a>
+										<div class="media-body">
+											<h4 class="media-heading">@DolorAmet</h4>
+											<p>
+												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+											</p>
+										</div>
+									</div>
+
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+
+						<!-- Footer Section header, only visible in small screens. -->
+						<div class="row footer-header-collapse">
+							<div class="row footer-header">
+								<div class="col-md-3">
+									Contact Us
+								</div>
+							</div>
+						</div>
+						<div class="row footer-section-body">
+
+							<form>
+
+								<input type='text' placeholder='Name'>
+								<input type='text' placeholder='Email'>
+								<textarea type='text' placeholder='Message'></textarea>
+								<button class='pull-right'>
+									Send
+								</button>
+							</form>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row" id='footer-bottom'>
+
+					<div class="col-md-6" id='footer-bottom-left'>
+
+						<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
 
 					</div>
 
-					<div class="row" id='footer-bottom'>
+					<div class="col-md-6 hidden-xs hidden-sm">
+						<nav>
+							<ul class="breadcrumb">
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#">About </a>
+								</li>
+								<li>
+									<a href="#">Contact </a>
+								</li>
+								<li>
+									<a href="#">Services </a>
+								</li>
 
-						<div class="col-md-6" id='footer-bottom-left'>
+								<li>
+									<a href="#">Blog </a>
+								</li>
 
-							<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+							</ul>
 
-						</div>
-
-						<div class="col-md-6">
-							<nav>
-								<ul class="breadcrumb">
-									<li>
-										<a href="#">Home</a>
-									</li>
-									<li>
-										<a href="#">About </a>
-									</li>
-									<li>
-										<a href="#">Contact </a>
-									</li>
-									<li>
-										<a href="#">Services </a>
-									</li>
-									
-									<li>
-										<a href="#">Blog </a>
-									</li>
-									
-								</ul>
-
-							</nav>
-
-						</div>
+						</nav>
 
 					</div>
 
+				</div>
+
+			</footer>
+			<!-- Main Footer End =======================================================================================-->
+
+		</div> <!-- /.hw-wrapper -->
+
+	</div> <!-- /.whole-wrapper -->
 
 
 
 
-				</footer>
 
-			</div> <!-- /container -->
+	<!-- Scripts =======================================================================================================-->
 
-		<!-- Le javascript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
 
-	</div>
-
+	<!-- Basics -->
 	<script src="js/slider/jquery-1.7.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
+	<!-- used by some plugins -->
 	<script type="text/javascript" src="js/slider/raphael-min.js"></script>
 	<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-	<script src="js/slider/iview.js"></script>
 
-	<script src="js/portfolio-adjust.js"></script>
 
-	<script src="js/jquery.flickrush.js"></script>
+	<!-- Top Navigation transparency on scroll -->
+	<script src="js/transnav.js"></script>
+
+	<!-- jQuery plugin to load flickr images in footer flickr stream -->
+	<script src="js/jflickrfeed.min.js"></script>
+
+
 	<script type="text/javascript">  
 		$(function() {
-			$('div#flickrImages').flickrush({
-				limit:20,
-				id:'80307667@N04',
-				random:true,
-				ssl:true
+			$('#flickrImages').jflickrfeed({
+				limit: 9,
+				qstrings: {
+					id: '71865026@N00'
+				},
+				itemTemplate: 
+				'<div class="flickr-thumb">' +
+				'<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
+				'<img src="{{image_s}}" alt="{{title}}" />' +
+				'</a>' +
+				'</div>'
 			}); 
 		});
+
 	</script>
 
+	<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
+	<script src="js/lightbox.js"></script>
+
+
 	<script>
+
+
 		$(document).ready(function() {
 
-				//$('body').fadeIn('slow');
 
-				$('#iview').iView({
-					pauseTime : 7000,
-					pauseOnHover : true,
-					directionNavHoverOpacity : 0,
-					autoAdvance : false
-				});
 
+				// Menu Hover effect
 				$('.dropdown-menu').hover(function() {
 
 					$(this).closest('.dropdown').addClass('active');
@@ -825,69 +919,17 @@
 				});
 
 
-				$('.slider3').bxSlider({
-					controls : true,
-					slideWidth : 200,
-					minSlides : 4,
-					maxSlides : 4,
-					slideMargin : 10
-				});
+			
 
 
-				$('.testimonial-slider').bxSlider({
-					infiniteLoop : true,
-					mode : 'fade',
-					auto : true,
-					controls : false,
-					pager : false,
-					speed : 2000
-				});
-
-				adjustPortfolioHover(20);
+				// Top nav transparency on Scroll 
+				transNav('#poshnav-half-width');
 
 			});
-	</script>
 
-	
-	<script type="text/javascript">
-
-		$(window).resize(function() {
-
-			adjustPortfolioHover(20);
-
-		});
 
 	</script>
 
-</script>
-
-
-<script type="text/javascript">
-	$(function() {
-		$(window).scroll(function(){
-			var scrollTop = $(window).scrollTop();
-			if(scrollTop != 0)
-				$('#elegantnav-half-width').stop().animate({'opacity':'0.9'},400);
-			else	
-				$('#elegantnav-half-width').stop().animate({'opacity':'1'},400);
-		});
-
-		$('#elegantnav-half-width').hover(
-			function (e) {
-				var scrollTop = $(window).scrollTop();
-				if(scrollTop != 0){
-					$('#elegantnav-half-width').stop().animate({'opacity':'1'},400);
-				}
-			},
-			function (e) {
-				var scrollTop = $(window).scrollTop();
-				if(scrollTop != 0){
-					$('#elegantnav-half-width').stop().animate({'opacity':'0.9'},400);
-				}
-			}
-			);
-	});
-</script>
 
 
 </body>

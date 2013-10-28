@@ -19,16 +19,63 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	/*-webkit-backface-visibility: hidden;*/
 }
 .animated {
-	-webkit-animation-duration: 3s;
-	   -moz-animation-duration: 3s;
-	     -o-animation-duration: 3s;
-	        animation-duration: 3s;
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
 	        
 	-webkit-animation-fill-mode: both;
 	   -moz-animation-fill-mode: both;
 	     -o-animation-fill-mode: both;
 	        animation-fill-mode: both;
 }
+
+
+.animated-100ms {
+	-webkit-animation-duration: .1s;
+	   -moz-animation-duration: .1s;
+	     -o-animation-duration: .1s;
+	        animation-duration: .1s;
+	        
+
+}
+
+
+
+
+.animated-300ms {
+	-webkit-animation-duration: .3s;
+	   -moz-animation-duration: .3s;
+	     -o-animation-duration: .3s;
+	        animation-duration: .3s;
+	        
+
+}
+
+
+.animated-500ms {
+	-webkit-animation-duration: .5s;
+	   -moz-animation-duration: .5s;
+	     -o-animation-duration: .5s;
+	        animation-duration: .5s;
+	        
+
+}
+
+
+.animated-2s {
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+	        
+
+}
+
+
+
+
+
 
 .animated.hinge {
 	-webkit-animation-duration: 2s;
