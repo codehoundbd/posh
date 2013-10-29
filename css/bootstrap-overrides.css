@@ -189,48 +189,39 @@ a.menu:after, .dropdown-toggle:before {
 
 
 .navbar-inverse .navbar-search .search-query {
-	height: 40px;
+	height: 48px;
 	color: #333;
 	background-color: transparent;
 	border: none;
-	
 	margin-right: 0px;
-	margin-top: 10px;
-
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
-	box-shadow:none;
-
+	margin-top: 11px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 	-webkit-transition: none;
 	-moz-transition: none;
 	-o-transition: none;
 	transition: none;
-
-	padding: 4px 14px 0 40px;
+	padding: 0 14px 0 40px;
 	margin-bottom: 0;
-	
 	font-size: 13px;
 	font-weight: normal;
 	line-height: inherit;
-	
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-o-border-radius: 15px;
-	
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-o-border-radius: 24px;
 	background-color: #eee;
-	
 	width: 0px;
-
 	background-image: url(../img/search-white.png);
 	background-repeat: no-repeat;
-
-	background-position: 10px 5px;
-
+	background-position: 14px 10px;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+
+	font-family: "Noto Sans", sans-serif;
 
 
 }
@@ -239,13 +230,13 @@ a.menu:after, .dropdown-toggle:before {
 .navbar-inverse .navbar-search .search-query:focus,
 .navbar-inverse .navbar-search .search-query.focused {
 
-	height: 40px;
 	background-color: #eee;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 	width: 150px;
-	padding-left: 40px;
+	padding-left: 45px;
+	border: none;
 
 	
 }
