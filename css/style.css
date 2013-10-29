@@ -8,13 +8,14 @@
       #2097d4   lightest
       */
 
-
+      
 
       @import url("http://fonts.googleapis.com/css?family=PT+Sans");
       @import url("http://fonts.googleapis.com/css?family=Exo");
       @import url("http://fonts.googleapis.com/css?family=Coda");
       @import url("http://fonts.googleapis.com/css?family=Noto+Sans");
       @import url("http://fonts.googleapis.com/css?family=Merriweather+Sans:300");
+      @import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700");
 
       *,
       *:after,
@@ -67,9 +68,24 @@
     }
 
     section{
-
-      clear: both;
+      position: relative;
       padding-top: 50px;
+    }
+
+    section .container{
+      position: relative;
+
+      z-index: 0;
+    }
+
+    /* clearfix all sections */
+    section:before, section:after {   
+      display: table;
+      content: " ";
+    }
+
+    section:after {   
+      clear: both;
     }
 
     h1,
@@ -268,38 +284,17 @@
     section#features{
       background-color: #2a92e5;
       margin: 0;
-      padding: 0;
-
-
-      position:relative;       
-      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      padding: 0; 
 
 
     }
 
 
-    section#features:before, section#features:after
-    {
-      content:"";
-      position:absolute; 
-      z-index:-1;
-      -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-      -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-      box-shadow:0 0 20px rgba(0,0,0,0.8);
-      top:50%;
-      bottom:0;
-      left:10px;
-      right:10px;
-      -moz-border-radius:100px / 10px;
-      border-radius:100px / 10px;
-    }
 
 
     #features .feature {
 
-      position: relative;
+      //position: relative;
       float: left;
       background-color: #2a92e5;
       margin: 0px;
@@ -312,7 +307,8 @@
     }
     #features .feature:hover {
 
-      z-index: 10;display: block;
+      //z-index: 10;
+      //display: block;
       -webkit-transform: scale(1.1, 1.05);
       -moz-transform: scale(1.1, 1.05);
       -o-transform: scale(1.1, 1.05);
@@ -2371,6 +2367,24 @@ section.team .imgcaption {
     -webkit-transform: scale(1.5);
 
   }
+
+
+
+  .arc-shadow{
+
+    position: absolute;
+    z-index: -1;
+    margin-left: -25%;
+    height: 31%;
+    bottom: 0;
+    width: 150%;
+    box-shadow: 0 0 41px 4px gray;
+    border-radius: 50%/50%;
+  }
+
+
+
+
 
 
   @keyframes footerFlow {

@@ -675,20 +675,20 @@
 				transNav('#poshnav-half-width');
 
 
-				$('.anim-buttons button').hover(function(e){
+				$('.anim-buttons button').mouseenter(function(e){
 					anim = $(this).data('anim');
 					$(this).addClass('animated ' + anim);
 					var element = $(this);
+
+					var timeout = anim=="hinge"?2100:1100;
+
 					var wait = setTimeout( 
 						function(){
 							element.removeClass('animated');
 						},
-						2000
+						timeout
 						);
 
-
-				},
-				function(e){
 
 				});
 

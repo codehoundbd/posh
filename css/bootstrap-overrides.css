@@ -20,7 +20,7 @@ ul.nav{
 
 .navbar-brand{
 
-	margin-right: 2px;
+	margin-right: 90px;
 
 	padding: 0;
 }
@@ -81,7 +81,9 @@ a.menu:after, .dropdown-toggle:before {
 	background-color: white;
 	background-image: none;
 	border:none;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 300;
+	
 	text-transform: uppercase;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -114,7 +116,7 @@ a.menu:after, .dropdown-toggle:before {
 }
 
 .navbar .nav > li > a {
-	font-size: 13pt;
+	font-size: 16pt;
 	float: none;
 	padding: 10px 20px 10px;
 	color: black;
@@ -134,7 +136,7 @@ a.menu:after, .dropdown-toggle:before {
 .navbar .nav > li > a:hover {
 	color: white;
 	text-decoration: none;
-	//background-color: #5d5e60;
+	
 	background-image: url(../img/navigation-bg.png);
 	background-repeat: 	repeat-x;
 	background-position: 0px -15px;
@@ -157,6 +159,8 @@ a.menu:after, .dropdown-toggle:before {
 }
 
 .dropdown-menu > li > a {
+
+	font-family: 'PT Sans', sans-serif;
 	display: block;
 	padding: 9px 20px;
 	clear: both;
@@ -237,7 +241,6 @@ a.menu:after, .dropdown-toggle:before {
 
 	height: 40px;
 	background-color: #eee;
-
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
