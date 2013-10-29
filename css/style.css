@@ -1,14 +1,27 @@
 /*
 
-      4 accent colors
-
+      Accent blues
+      ======================
       #16517f   darkest
       #1a65a5
       #2086c7
       #2097d4   lightest
-      */
 
-      
+
+      Grays
+      ======================
+      #636363   darkest
+      #7d7d7d
+      #a1a1a1
+      #d7d7d7   lightest
+
+
+
+*/
+
+
+
+
 
       @import url("http://fonts.googleapis.com/css?family=PT+Sans");
       @import url("http://fonts.googleapis.com/css?family=Exo");
@@ -68,6 +81,8 @@
     }
 
     section{
+
+      overflow: hidden;
       position: relative;
       padding-top: 50px;
     }
@@ -951,6 +966,136 @@ section#clients header h1
 {
   background-color: #eeeced; 
 }
+
+section.features-alt{
+  margin-bottom: 50px;
+}
+
+.horizontalaccordion h2{
+    margin: 0;
+    color: #222;
+    font-family: "Exo"
+} 
+
+.horizontalaccordion p{
+    color: #222;
+    font-size: 14px;
+    margin: 0;
+    font-family: "Noto Sans"  
+}
+
+ .horizontalaccordion>ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style:none;
+    max-width: 700px;
+    height: 170px;
+
+    box-shadow: 0px 5px 9px -1px gray;
+    -webkit-box-shadow: 0px 5px 9px -1px gray;
+    -moz-box-shadow: 0px 5px 9px -1px gray;
+    -o-box-shadow: 0px 5px 9px -1px gray;
+    -ms-box-shadow: 0px 5px 9px -1px gray;
+}
+
+
+.horizontalaccordion>ul>li {
+    display:block;
+    overflow: hidden;
+    float:left;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    width:25%;
+    height: 170px;
+
+
+
+    transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+}
+
+
+.horizontalaccordion>ul>li:nth-child(1) {border-bottom: 12px solid #16517f; background-color: #636363}
+.horizontalaccordion>ul>li:nth-child(2) {border-bottom: 12px solid #1a65a5; background-color: #7d7d7d}
+.horizontalaccordion>ul>li:nth-child(3) {border-bottom: 12px solid #2086c7; background-color: #a1a1a1}
+.horizontalaccordion>ul>li:nth-child(4) {border-bottom: 12px solid #2097d4; background-color: #d7d7d7} 
+
+
+
+.horizontalaccordion>ul:hover>li {
+
+  width:15%;
+  
+}
+
+
+
+.horizontalaccordion>ul>li>header {
+    color: #222;
+    text-align: center;
+    font-size: 111px;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 27px 0;
+    height: 170px;
+    width: 100%;
+
+
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+}
+
+.horizontalaccordion>ul:hover header {
+
+    padding: 43px 0;
+    font-size: 80px;
+    
+}
+
+.horizontalaccordion>ul>li>div {
+    display:none;
+    float:left;
+    overflow: auto;
+
+    margin:0;
+    width:60%;
+
+    padding:28px 10px;
+
+     transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.horizontalaccordion>ul>li:hover {
+    overflow: hidden;
+    width: 55%;
+}
+
+.horizontalaccordion>ul>li:hover header {
+    width: 30%;
+}
+
+.horizontalaccordion>ul>li:hover div {
+    display: block;
+}
+
+
+
+.horizontalaccordion>ul>li>h3:hover {
+    cursor:pointer;
+}
+
+
 
 section.newsletter{
   background-color: #2992e5;

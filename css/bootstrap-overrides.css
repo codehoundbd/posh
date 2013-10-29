@@ -20,8 +20,6 @@ ul.nav{
 
 .navbar-brand{
 
-	margin-right: 90px;
-
 	padding: 0;
 }
 
@@ -116,7 +114,7 @@ a.menu:after, .dropdown-toggle:before {
 }
 
 .navbar .nav > li > a {
-	font-size: 16pt;
+	font-size: 20pt;
 	float: none;
 	padding: 10px 20px 10px;
 	color: black;
@@ -204,7 +202,7 @@ a.menu:after, .dropdown-toggle:before {
 	transition: none;
 	padding: 0 14px 0 40px;
 	margin-bottom: 0;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: normal;
 	line-height: inherit;
 	border-radius: 24px;
@@ -215,7 +213,7 @@ a.menu:after, .dropdown-toggle:before {
 	width: 0px;
 	background-image: url(../img/search-white.png);
 	background-repeat: no-repeat;
-	background-position: 14px 10px;
+	background-position: 12px 9px;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
