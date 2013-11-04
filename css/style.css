@@ -82,7 +82,6 @@
 
     section{
 
-      overflow: hidden;
       position: relative;
       padding-top: 50px;
     }
@@ -90,7 +89,13 @@
     section .container{
       position: relative;
 
-      z-index: 0;
+      z-index: 2;
+    }
+
+    section>div{
+      position: relative;
+
+      z-index: 2;
     }
 
     /* clearfix all sections */
@@ -111,7 +116,7 @@
     h6 {
 
       font-family: "Coda", sans-serif;
-      color: #5c5b5b;
+      
 
     }
 
@@ -968,17 +973,18 @@ section#clients header h1
 }
 
 section.features-alt{
-  margin-bottom: 50px;
+  margin: 50px 0;
+  padding-top: 0;
 }
 
 .horizontalaccordion h2{
     margin: 0;
-    color: #222;
+    //color: #222;
     font-family: "Exo"
 } 
 
 .horizontalaccordion p{
-    color: #222;
+    //color: #222;
     font-size: 14px;
     margin: 0;
     font-family: "Noto Sans"  
@@ -988,14 +994,10 @@ section.features-alt{
     margin: 0 auto;
     padding: 0;
     list-style:none;
-    max-width: 700px;
+    //width: 700px;
     height: 170px;
 
-    box-shadow: 0px 5px 9px -1px gray;
-    -webkit-box-shadow: 0px 5px 9px -1px gray;
-    -moz-box-shadow: 0px 5px 9px -1px gray;
-    -o-box-shadow: 0px 5px 9px -1px gray;
-    -ms-box-shadow: 0px 5px 9px -1px gray;
+  
 }
 
 
@@ -1018,10 +1020,10 @@ section.features-alt{
 }
 
 
-.horizontalaccordion>ul>li:nth-child(1) {border-bottom: 12px solid #16517f; background-color: #636363}
-.horizontalaccordion>ul>li:nth-child(2) {border-bottom: 12px solid #1a65a5; background-color: #7d7d7d}
-.horizontalaccordion>ul>li:nth-child(3) {border-bottom: 12px solid #2086c7; background-color: #a1a1a1}
-.horizontalaccordion>ul>li:nth-child(4) {border-bottom: 12px solid #2097d4; background-color: #d7d7d7} 
+.horizontalaccordion>ul>li:nth-child(1) {border-bottom: 12px solid #16517f; background-color: #636363; color: #d7d7d7;}
+.horizontalaccordion>ul>li:nth-child(2) {border-bottom: 12px solid #1a65a5; background-color: #7d7d7d; color: #d7d7d7;}
+.horizontalaccordion>ul>li:nth-child(3) {border-bottom: 12px solid #2086c7; background-color: #a1a1a1; color: #636363;}
+.horizontalaccordion>ul>li:nth-child(4) {border-bottom: 12px solid #2097d4; background-color: #d7d7d7; color: #636363;} 
 
 
 
@@ -1064,7 +1066,7 @@ section.features-alt{
     display:none;
     float:left;
     overflow: auto;
-
+    //color:#2097d4;
     margin:0;
     width:60%;
 
@@ -2515,22 +2517,29 @@ section.team .imgcaption {
 
 
 
-  .arc-shadow{
+  .arc-shadow-top{
 
     position: absolute;
-    z-index: -1;
-    margin-left: -25%;
+    z-index: 1;
+    margin-left: 0;
     height: 31%;
-    bottom: 0;
-    width: 150%;
+    top: 0;
+    width: 100%;
     box-shadow: 0 0 41px 4px gray;
     border-radius: 50%/50%;
   }
 
+  .arc-shadow-bottom{
 
-
-
-
+    position: absolute;
+    z-index: 1;
+    margin-left: 0;
+    height: 31%;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 41px 4px gray;
+    border-radius: 50%/50%;
+  }
 
   @keyframes footerFlow {
     from {
