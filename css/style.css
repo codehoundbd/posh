@@ -973,7 +973,8 @@ section#clients header h1
 }
 
 section.features-alt{
-  margin: 50px 0;
+  max-width: 700px;
+  margin: 50px auto;
   padding-top: 0;
 }
 
@@ -2509,9 +2510,14 @@ section.team .imgcaption {
   }
 
 
-  section.sampleicons li:hover i:before{
+  section.sampleicons li:hover i{
 
     -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+
 
   }
 
@@ -2521,10 +2527,10 @@ section.team .imgcaption {
 
     position: absolute;
     z-index: 1;
-    margin-left: 0;
+    margin-left: 10%;
     height: 31%;
     top: 0;
-    width: 100%;
+    width: 80%;
     box-shadow: 0 0 41px 4px gray;
     border-radius: 50%/50%;
   }
@@ -2533,10 +2539,10 @@ section.team .imgcaption {
 
     position: absolute;
     z-index: 1;
-    margin-left: 0;
+    margin-left: 10%;
     height: 31%;
     bottom: 0;
-    width: 100%;
+    width: 80%;
     box-shadow: 0 0 41px 4px gray;
     border-radius: 50%/50%;
   }
