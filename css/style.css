@@ -50,7 +50,8 @@
     }
 
     .fw-wrapper{
-      padding-top: 74px;  
+      padding-top: 74px; 
+
     }
     .hw-wrapper {
 
@@ -58,6 +59,7 @@
       background-color: white;
       margin: 0 auto;
       max-width: 1020px;
+      overflow: hidden;
       box-shadow: 0px 4px 13px 1px black;
       -moz-box-shadow: 0px 4px 13px 1px black;
       -webkit-box-shadow: 0px 4px 13px 1px black;
@@ -372,6 +374,35 @@
       margin-bottom: 80px;
       padding: 0px 27px;
     }
+    /*Feature Box Begin*/
+
+    section.feature-box{
+    text-align: center;
+    padding: 0 20px;
+
+
+
+    }
+    .feature-box .feature-box-wrapper{
+      box-shadow: 0 1px 1px 1px #E7E7E7 ;
+      background-color: #F5F5F5;  
+    }
+    .feature-box i{
+    font-size: 46pt;
+    color: #2086C7;
+    padding-top: 22px;
+     }
+     .feature-box p{
+    padding-top: 18px;
+    line-height: 1.0em;
+    font-size: 14pt;
+    color: #909398;
+
+     }
+    .feature-box div:nth-child(1){ border-right: 3px solid #E7E7E7;   }
+    .feature-box div:nth-child(2){ border-right: 3px solid #E7E7E7;   }
+
+
     .portfolio-grid {
       padding: 20px 0;
       list-style: none;
