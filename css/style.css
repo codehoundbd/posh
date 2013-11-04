@@ -378,7 +378,7 @@
 
     section.feature-box{
     text-align: center;
-    padding: 0 20px;
+    padding: 40px 20px 0 20px;
 
 
 
@@ -399,8 +399,8 @@
     color: #909398;
 
      }
-    .feature-box div:nth-child(1){ border-right: 3px solid #E7E7E7;   }
-    .feature-box div:nth-child(2){ border-right: 3px solid #E7E7E7;   }
+    .feature-box-wrapper>div:nth-child(1){ border-right: 3px solid #E7E7E7;   }
+    .feature-box-wrapper>div:nth-child(2){ border-right: 3px solid #E7E7E7;   }
 
 
     .portfolio-grid {
