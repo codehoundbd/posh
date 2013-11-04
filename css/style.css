@@ -327,8 +327,8 @@
     }
     #features .feature:hover {
 
-      //z-index: 10;
-      //display: block;
+      z-index: 10;
+      display: block;
       -webkit-transform: scale(1.1, 1.05);
       -moz-transform: scale(1.1, 1.05);
       -o-transform: scale(1.1, 1.05);
@@ -992,6 +992,8 @@ section.features-alt{
 }
 
  .horizontalaccordion>ul {
+
+    background-color: #d7d7d7;
     margin: 0 auto;
     padding: 0;
     list-style:none;
@@ -2035,6 +2037,111 @@ section.portfolio-footer-wrapper {
   height: 230px;
 }
 
+section#skills{
+  background-color: #e2e2e2;
+  padding-bottom: 40px;
+}
+
+.accordion-fancy{
+  width: 100%;
+  margin: 0;
+  
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  text-align: left;
+  overflow: hidden;
+
+}
+.accordion-fancy label{
+
+
+  font-family: "Coda", sans-serif;
+  padding: 5px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  cursor: pointer;
+  color: #777;
+  text-shadow: none;
+  font-weight: normal;
+  line-height: 33px;
+  font-size: 19px;
+  background: #eeeced;
+  margin: 0;
+  border-bottom: 2px solid white;
+  
+}
+
+.accordion-fancy>div:last-child label{
+  border-bottom: none;
+}
+
+.accordion-fancy label i.fa{
+  padding: 0 8px;
+  font-size: 1.2em;
+}
+
+.accordion-fancy label:hover{
+  background: #dddbdc;
+}
+.accordion-fancy input:checked + label{
+ // background: #eeeced;
+  color: #3d7489;
+  text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+  
+}
+
+
+.accordion-fancy input{
+  display: none;
+}
+.accordion-fancy article{
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.accordion-fancy article p{
+  font-style: italic;
+  color: #777;
+  line-height: 23px;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.accordion-fancy article p img{
+ height: 55px;
+}
+.accordion-fancy input:checked ~ article{
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  
+}
+.accordion-fancy input:checked ~ article.ac-small{
+  height: 140px;
+}
+.accordion-fancy input:checked ~ article.ac-medium{
+  height: 180px;
+}
+.accordion-fancy input:checked ~ article.ac-large{
+  height: 230px;
+}
+
+
+
+
 
 
 /* About Page */
@@ -2397,31 +2504,7 @@ section.team .imgcaption {
     margin: 10px;
   }
 
-  .big-announcement {
-    padding: 45px 20px;
-    background: #F2F2F2;
-  }
-  .big-announcement h1 {
-    font-size: 40pt;
-    text-shadow: 0px 0px 1px;
-  }
-  .big-announcement h3 {
-    font-size: 20pt;
-    text-shadow: 0px 0px 1px;
-  }
-  .big-announcement button {
-    margin: 0;
-  }
-  ul.gallery {
-    list-style: none;
-    display: inline-block;
-    width: 100%;
-  }
-  ul.gallery li {
-    width: 25%;
-    float: left;
-    display: block;
-  }
+ 
 
 
   /*Component Page*/
