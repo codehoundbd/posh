@@ -307,7 +307,6 @@
 
       //position: relative;
       float: left;
-      background-color: #2a92e5;
       margin: 0px;
       width: 25%;
       -webkit-transition: all 0.3s;
@@ -316,6 +315,12 @@
       -ms-transition: all 0.3s;
       transition: all 0.3s;
     }
+
+    section#features .feature:nth-child(1) {background-color: #16517f;}
+    section#features .feature:nth-child(2) {background-color: #1a65a5;}
+    section#features .feature:nth-child(3) {background-color: #2086c7;}
+    section#features .feature:nth-child(4) {background-color: #2097d4;}
+
     section#features .feature:hover {
 
       z-index: 10;
@@ -765,7 +770,7 @@ footer .flickr-thumb img:hover{
 /*    About Page    */
 section header {
   margin: 10px 10px;
-  padding: 10px 0;
+  
 }
 
 
@@ -837,12 +842,59 @@ section header hr{
   -moz-animation-delay: .5s;
   -o-animation-delay: .5s;
   animation-delay: .5s;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -o-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   
 }
+
+
+#delay-timer-1{
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  -o-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+  -webkit-animation-duration: 0.6s;
+  -moz-animation-duration: 0.6s;
+  -o-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  
+}
+
+#delay-timer-2{
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 0.9s;
+  -moz-animation-duration: 0.9s;
+  -o-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+}
+#delay-timer-3{
+  -webkit-animation-delay: 2.0s;
+  -moz-animation-delay: 2.0s;
+  -0-animation-delay: 2.0s;
+  animation-delay: 2.0s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+}
+#delay-timer-4{
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+
+}
+
 #delay-timer-img{
 
   -webkit-animation-duration: 1s;
@@ -882,60 +934,6 @@ section header hr{
   -o-animation-duration: 2.5s;
   animation-duration: 2.5s;
   
-}
-
-#delay-timer-1{
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  -o-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -o-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  
-}
-#delay-timer-11{
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  -o-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -o-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  
-}
-#delay-timer-2{
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  -o-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-#delay-timer-3{
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  -0-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-#delay-timer-4{
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-
 }
 
 section.main-slider{
@@ -995,8 +993,8 @@ section#clients header h1
 }
 
 section.features-alt{
-  max-width: 700px;
-  margin: 50px auto;
+  max-width: 850px;
+  margin: 0 auto 50px auto;
   padding-top: 0;
 }
 
@@ -1734,6 +1732,20 @@ section.testimonial {
 
 /* Portfolio Page  */
 
+section.portfolio{
+  z-index: 10;
+  box-shadow: 0px 1px 6px gray;
+}
+
+
+section.portfolio .section-body{
+
+  padding: 30px 0;
+  background-color: #eeeced;
+
+}
+
+
 section.portfolio .imgcaption h1 {
   font-size: 23pt;
   color: #474948;
@@ -1885,11 +1897,11 @@ section.portfolio .imgcaption a img {
   height: auto;
 }
 section.portfolio .portfolio-item:hover .imgback {
-  box-shadow: 0 0 0 13px #474948;
-  -webkit-box-shadow: 0 0 0 13px #474948;
-  -moz-box-shadow: 0 0 0 13px #474948;
-  -o-box-shadow: 0 0 0 13px #474948;
-  -ms-box-shadow: 0 0 0 13px #474948;
+  box-shadow: 0 0 2px 13px #474948;
+  -webkit-box-shadow: 0 0 2px 13px #474948;
+  -moz-box-shadow: 0 0 2px 13px #474948;
+  -o-box-shadow: 0 0 2px 13px #474948;
+  -ms-box-shadow: 0 0 2px 13px #474948;
 }
 section.portfolio .portfolio-item:hover h1 {
   color: white;
@@ -2648,7 +2660,7 @@ section.team .imgcaption {
     height: 31%;
     bottom: 0;
     width: 80%;
-    box-shadow: 0 0 41px 4px gray;
+    box-shadow: 0 0 46px 14px gray;
     border-radius: 50%/50%;
   }
 
