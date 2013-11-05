@@ -29,6 +29,7 @@
       @import url("http://fonts.googleapis.com/css?family=Noto+Sans");
       @import url("http://fonts.googleapis.com/css?family=Merriweather+Sans:300");
       @import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700");
+      @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 
       *,
       *:after,
@@ -59,7 +60,6 @@
       background-color: white;
       margin: 0 auto;
       max-width: 1020px;
-      overflow: hidden;
       box-shadow: 0px 4px 13px 1px black;
       -moz-box-shadow: 0px 4px 13px 1px black;
       -webkit-box-shadow: 0px 4px 13px 1px black;
@@ -117,7 +117,8 @@
     h5,
     h6 {
 
-      font-family: "Coda", sans-serif;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
       
 
     }
@@ -154,6 +155,7 @@
     input[type=text]:focus,
     textarea:focus {
       box-shadow: none;
+      outline: 0;
     }
 
 
@@ -209,12 +211,8 @@
 
 
     }
-    b.emph {
-      color: #508ddd;
-      font-weight: normal;
-    }
+   
     /*<<<<<<<<<<<top-nav css="">>>>>>>>*/
-    /** Google Webfonts  **/
     #nav-container {
       position: relative;
       z-index: 900;
@@ -243,16 +241,7 @@
     .portfolio_wrapper {
       height: 950px;
     }
-    .section_header {
-      margin-left: 5.41%;
-      margin-top: 9.89%;
-      color: #6a6a6a;
-      width: 62.00%;
-      text-align: justify;
-    }
-    .section_header b {
-      color: #2a92e5;
-    }
+  
     .da-thumbs {
       list-style: none;
       width: 98.5%;
@@ -314,7 +303,7 @@
 
 
 
-    #features .feature {
+    section#features .feature {
 
       //position: relative;
       float: left;
@@ -327,7 +316,7 @@
       -ms-transition: all 0.3s;
       transition: all 0.3s;
     }
-    #features .feature:hover {
+    section#features .feature:hover {
 
       z-index: 10;
       display: block;
@@ -811,7 +800,9 @@ section header h2{
 
 }
 
-section header span.line{
+
+/* The iconic 4-color band of Posh */
+section header span.color-band{
 
   display: block;
   width: 100%;
