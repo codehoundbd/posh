@@ -129,7 +129,7 @@
       list-style: none;
     }
     a {
-      color: white;
+      
       -webkit-transition: color 0.3s;
       -moz-transition: color 0.3s;
       -o-transition: color 0.3s;
@@ -150,6 +150,7 @@
     ol {
       list-style: none;
       margin: 0px;
+      padding: 0px;
     }
 
     input[type=text]:focus,
@@ -1118,6 +1119,71 @@ section.features-alt{
 
 .horizontalaccordion>ul>li>h3:hover {
     cursor:pointer;
+}
+
+
+.blogslider{
+  padding-right: 20px;
+}
+
+.blogslider h2{
+  display: inline-block;
+  float: left;
+}
+
+.blogslider .blogslider-controls{
+  margin-top: 20px; 
+  display: inline-block;
+  float: right;
+}
+
+.blogslider li{
+  
+  display: block;
+  width: 50%;
+  margin: 0;
+  float: left;
+  padding: 2px;
+ 
+  
+}
+
+.blogslider .blog-card{
+  
+  margin: 2px;
+  
+}
+
+.blogslider .blog-card-content{
+  border-radius: 5px;
+  height: 250px;
+  padding: 8px 15px;
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px #aaa;
+  -webkit-box-shadow: 0px 0px 4px 0px #aaa;
+  -moz-box-shadow: 0px 0px 4px 0px #aaa;
+  -o-box-shadow: 0px 0px 4px 0px #aaa;
+  -ms-box-shadow: 0px 0px 4px 0px #aaa;
+}
+
+.blogslider .blog-card-content h3{
+  margin: 5px 0;
+}
+
+
+.blogslider .blog-card-meta span.date{
+  margin-left: 7px;
+  font-size: 1.3em;
+  padding: 2px 8px;
+  background-color: #16517f;
+  color: white;
+}
+
+.blogslider .blog-card-meta span.index{
+  font-size: 1.3em;
+  padding: 2px 8px;
+  background-color: #2097d4;
+  color: white;
 }
 
 
