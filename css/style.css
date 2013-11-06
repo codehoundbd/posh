@@ -807,22 +807,8 @@ section header h2{
   margin-top: 0;
 
 }
-span.line{
-  display: block;
-  width: 100%;
-  height:10px;
-  
 
-  background: rgb(22,81,127); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(22,81,127,1) 0%, rgba(22,81,127,1) 24%, rgba(26,101,165,1) 24%, rgba(26,101,165,1) 49%, rgba(32,134,199,1) 49%, rgba(32,134,199,1) 74%, rgba(32,151,212,1) 74%, rgba(32,151,212,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(22,81,127,1)), color-stop(24%,rgba(22,81,127,1)), color-stop(24%,rgba(26,101,165,1)), color-stop(49%,rgba(26,101,165,1)), color-stop(49%,rgba(32,134,199,1)), color-stop(74%,rgba(32,134,199,1)), color-stop(74%,rgba(32,151,212,1)), color-stop(100%,rgba(32,151,212,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* IE10+ */
-  background: linear-gradient(to right, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16517f', endColorstr='#2097d4',GradientType=1 ); /* IE6-9 */
-}
-span.line-thin{
+span.color-band-thin{
   display: block;
   width: 100%;
   height:3px;
@@ -840,12 +826,12 @@ span.line-thin{
 
 
 /* The iconic 4-color band of Posh */
-section header span.color-band{
+ span.color-band{
 
   display: block;
   width: 100%;
   height:10px;
-  margin-top: 5px;
+ 
 
   background: rgb(22,81,127); /* Old browsers */
   background: -moz-linear-gradient(left, rgba(22,81,127,1) 0%, rgba(22,81,127,1) 24%, rgba(26,101,165,1) 24%, rgba(26,101,165,1) 49%, rgba(32,134,199,1) 49%, rgba(32,134,199,1) 74%, rgba(32,151,212,1) 74%, rgba(32,151,212,1) 100%); /* FF3.6+ */
@@ -1381,7 +1367,13 @@ section#blogs, section#blog-single{
   background-color: #F5F5F5;
 padding: 13px;
 margin-bottom: 20px;
-box-shadow: 1px 1px 3px 1px grey;
+border-radius: 6px;
+-webkit-box-shadow: 1px 1px 10px -4px grey;
+-moz-box-shadow: 1px 1px 10px -4px grey;
+-o-box-shadow: 1px 1px 10px -4px grey;
+-ms-box-shadow: 1px 1px 10px -4px grey;
+box-shadow: 1px 1px 10px -4px grey;
+
 margin-top: 63px;
 }
 .tags{
@@ -1408,7 +1400,11 @@ margin-top: 63px;
  border-bottom: 2px solid #2f94e5;
  color: black;
  border-radius: 0;
- box-shadow: 1px 1px 5px 1px grey;
+ -webkit-box-shadow: 0px 1px 6px -2px grey;
+ -moz-box-shadow: 0px 1px 6px -2px grey;
+ -ms-box-shadow: 0px 1px 6px -2px grey;
+ -o-box-shadow: 0px 1px 6px -2px grey;
+ box-shadow: 0px 1px 6px -2px grey;
 }
 
 
@@ -1518,6 +1514,11 @@ margin-top: 63px;
   border-radius: 0;
   float: left;
 }
+
+.blog-sidebar{
+  padding-left: 10px;
+}
+
 .blog-sidebar .search{
   margin-top: 38px; 
 }
@@ -1560,7 +1561,7 @@ margin-top: 63px;
 .blog-sidebar .blog-categories {
 
  padding: 0;
- margin-left: 30px;
+ 
  margin-top: 7px;
 
 }
@@ -1591,7 +1592,11 @@ line-height: 1.5em;
 padding: 8px;
 margin: 4px;
 border-radius: 5px;
-box-shadow: 1px 0 3px 1px grey;
+box-shadow: 1px 0 5px -1px gray;
+-webkit-box-shadow: 1px 0 5px -1px gray;
+-moz-box-shadow: 1px 0 5px -1px gray;
+-o-box-shadow: 1px 0 5px -1px gray;
+-ms-box-shadow: 1px 0 5px -1px gray;
 }
 .blog-sidebar .tags li:hover{
   background-color: #2a92e5;
