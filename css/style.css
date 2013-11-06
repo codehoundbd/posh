@@ -94,6 +94,11 @@
       z-index: 2;
     }
 
+    section .section-body{
+      background-color: #eeeced;  
+    }
+    
+
     section>div{
       position: relative;
 
@@ -296,6 +301,13 @@
 
 
     section#features{
+
+      -webkit-box-shadow: 0px 0px 23px -1px gray;
+      -moz-box-shadow: 0px 0px 23px -1px gray;
+      -o-box-shadow: 0px 0px 23px -1px gray;
+      -ms-box-shadow: 0px 0px 23px -1px gray;
+      box-shadow: 0px 0px 23px -1px gray;
+
       background-color: #2a92e5;
       margin: 0;
       padding: 0; 
@@ -514,6 +526,14 @@
   padding: 10px;
   
 }
+
+.logoslide{
+ 
+  box-shadow: 0px 6px 20px -10px gray;
+
+  background-color: white;
+}
+
 .logo {
   margin: 30px 15px;
   border-radius: 10px;
@@ -1005,16 +1025,12 @@ section.main-slider h3{
   background-color: #e3bd3e !important ;
 }
 
-section#clients,
-section#clients header h1
-{
-  background-color: #eeeced; 
-}
 
 section.features-alt{
   max-width: 850px;
   margin: 0 auto 50px auto;
   padding-top: 0;
+  box-shadow: 0px 0px 9px -2px gray;
 }
 
 .horizontalaccordion h2{
@@ -1145,6 +1161,7 @@ section.features-alt{
 }
 
 .blogslider h2{
+  margin-bottom: 20px; 
   display: inline-block;
   float: left;
 }
@@ -1163,6 +1180,7 @@ section.features-alt{
   float: left;
   padding: 2px;
  
+  transition: opacity 0.2s;
   
 }
 
@@ -1805,24 +1823,23 @@ section#contact-main .bar-header {
 }
 /*  Testimonial */
 section.testimonial {
-
-  margin-top: 20px;
+  padding-top: 0;
+  margin-top: 122px;
   background-color: #e2e2e2;
 
 }
 #testimonial {
-  margin: 20px 5% 0px 5%;
+  margin: 0;
 }
 #testimonial .quote-sign {
   text-align: center;
-  float: left;
-  width: 15%;
-  margin-top: 70px;
+  margin-top: -75px;
+  
 }
 #testimonial .content {
   text-align: center;
-  float: left;
-  width: 70%;
+  
+  
   margin-top: 50px;
   border-top: 2px solid #044386;
   padding: 40px;
@@ -1861,7 +1878,7 @@ section.portfolio{
 section.portfolio .section-body{
 
   padding: 30px 0;
-  background-color: #eeeced;
+  
 
 }
 
@@ -2089,6 +2106,7 @@ section.portfolio-footer-wrapper {
 
 .accordion{
 
+  padding: 20px;
   margin-top: 20px;
 
 }
@@ -2192,15 +2210,15 @@ section.portfolio-footer-wrapper {
 }
 
 section#skills{
-  background-color: #e2e2e2;
-  padding-bottom: 40px;
+  box-shadow: 0px 0px 16px -2px gray;
+  margin-bottom: 60px;
 }
 
 .accordion-fancy{
   width: 100%;
   margin: 0;
   
-  border: 2px solid #aaa;
+  border: 1px solid #CFCFCF;
   border-radius: 4px;
   text-align: left;
   overflow: hidden;
