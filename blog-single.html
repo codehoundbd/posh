@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>bl
+<head>
 
   <!-- Basics ===================================================================== -->
   <meta charset="utf-8">
@@ -203,24 +203,26 @@
 
             <!-- The Post (content without sidebar) ================================================================-->
             <div class="col-md-8">
+            <div class="post-wrapper">
               <div class="blog-header">
 
                 <!-- Post Title -->
                 <h1>Lorem Ipsum Dolor Simun agor notarm Lipus</h1>
-
-                <ul class="breadcrumb">
-                  <li><a href="#">19 Jan 2013</a> </li>
-                  <li><a href="#">Under<b class="emph"> Inspiration, Capture and Web Design</b> </a> </li>
-                  <li><a href="#">Posted by <b class="emph">Admin</b> </a> </li>
-                  <li><a href="#"><b class="emph">5 Comments </b></a> </li>
-
-                </ul>
+                <a data-lightbox="post" title="Loren Ipsum" href="img/blog1.png"><img src="img/blog1.png" alt="Big Blog Image"></a>
+                   <span class="color-band"></span>
+              <ul class="breadcrumb">
+                <li>19 Jan 2013 </li>
+                <li>Under<a href="#"><b class="emph"> Inspiration, Capture and Web Design</b> </a> </li>
+                <li>Posted by <a href="#"> <b class="emph">Admin</b> </a> </li>
+                <li><a href="#"><b class="emph">5 Comments </b></a> </li>
+              </ul>
 
               </div>
 
               <div class="blog-body">
 
-                <a data-lightbox="post" title="Loren Ipsum" href="img/blog1.png"><img src="img/blog1.png" alt="Big Blog Image"></a>
+
+                
 
                 <p>Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.</p>
                 <p>
@@ -256,6 +258,7 @@
                         Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.</p>
 
                       </div>
+                      </div>
 
 
                       <!-- Comments -->
@@ -279,7 +282,9 @@
                               <a href="#">Reply</a>
                             </div>
                           </div>
+ 								<span class="color-band-thin"></span>
                         </div>
+
                       </div> 
 
 
@@ -332,21 +337,33 @@
                 <!-- Comment Form -->
                 <div class="comment-form clearfix">
                   <hr>
-                  <form role="form">
-                   <div class="form-group">
+                  
+                    <form role="form">
+                    
+                    <div class="col-md-12">
+                   <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                   </div>
 
-                    <input type="Name" class="form-control" id="exampleInputname" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-
-                    <input type="Email" class="form-control" id="exampleInputEmail" placeholder="Email">
-                  </div>
-                  <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
-
+					
+                  
+                   
+					<div class="col-md-6 col-sm-4 col-xs-12">
+                    <input type="Name" class="form-control"  placeholder="Name" >
+                 </div>
+                  
+                  
+              
+                  
+					<div class="col-md-6 col-sm-4">
+                    <input type="Email" class="form-control"  placeholder="Email">
+                 </div>
+                                    
+                  
 
                   <button type="submit" class="btn btn-primary btn-lg">Add Comment</button>
                 </form>
               </div>
+              
             </div>
 
 
@@ -354,7 +371,7 @@
            
         <!-- Sidebar =================================================================================================-->
         <div class="col-md-4">
-          <div class="blog-sidebar">
+           <div class="blog-sidebar">
 
             <div class="search">
               <form class="form-search clearfix">
@@ -369,22 +386,23 @@
             <div class="blog-header">
               Categories
             </div>
+            <span class="color-band-thin"></span>
 
             <ul  class="blog-categories">
-              <li><a href="#">> Music</a> </li>
-              <li><a href="#">> Entertainment</a></li>
-              <li><a href="#">> Photography</a></li>
-              <li><a href="#">> Testimonial</a></li>
-              <li><a href="#">> Movies</a></li>
-              <li><a href="#">> Sciences</a></li>
-              <li><a href="#">> FAQ</a></li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> Music</a> </li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> Entertainment</a></li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> Photography</a></li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> Testimonial</a></li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> Movies</a></li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> Sciences</a></li>
+              <li><a href="#"><i class="fa fa-plus-circle"></i> FAQ</a></li>
             </ul>
 
 
             <div class="blog-header ">
               TAG
             </div>
-
+             <span class="color-band-thin"></span>
             <div class="blog-tags">
               <ul class="tags">
                 <li>Nature </li>
@@ -403,7 +421,7 @@
             <div class="blog-header ">
               TOP POSTS
             </div>
-
+             <span class="color-band-thin"></span>
             
             <div class="top-post clearfix">
 
@@ -450,7 +468,7 @@
             <div class="blog-header ">
               RECENT POSTS
             </div>
-
+             <span class="color-band-thin"></span>
             <div class="top-post">
 
 
@@ -496,11 +514,12 @@
             <div class="blog-header">
               Archives
             </div>
+             <span class="color-band-thin"></span>
             <ul  class="blog-categories">
-              <li><a href="#">> January,2013</a> </li>
-              <li><a href="#">> February,2013</a></li>
-              <li><a href="#">> March,2013</a></li>
-              <li><a href="#">> April,2013</a></li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> January,2013</a> </li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> February,2013</a></li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> March,2013</a></li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> April,2013</a></li>
 
             </ul>
 

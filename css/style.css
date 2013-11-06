@@ -1499,6 +1499,7 @@ margin-top: 63px;
 
   padding: 20px 12px;
   border-radius: 0;
+  background-color: #F5F5F5;
 }
 .comment-form hr{
   background-color: #515050;
@@ -1513,6 +1514,8 @@ margin-top: 63px;
   padding: 20px 12px;
   border-radius: 0;
   float: left;
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
 }
 
 .blog-sidebar{
