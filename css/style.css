@@ -1334,7 +1334,7 @@ section#banner{
   margin: 0;
 }
 
-section#about-main {
+ section#about-main {
   background-color: #f5f5f5;
   padding: 0;
 }
@@ -1386,11 +1386,11 @@ section#blogs, section#blog-single{
 padding: 13px;
 margin-bottom: 20px;
 border-radius: 6px;
--webkit-box-shadow: 1px 1px 10px -4px grey;
--moz-box-shadow: 1px 1px 10px -4px grey;
--o-box-shadow: 1px 1px 10px -4px grey;
--ms-box-shadow: 1px 1px 10px -4px grey;
-box-shadow: 1px 1px 10px -4px grey;
+-webkit-box-shadow: 1px 1px 10px -4px gray;
+-moz-box-shadow: 1px 1px 10px -4px gray;
+-o-box-shadow: 1px 1px 10px -4px gray;
+-ms-box-shadow: 1px 1px 10px -4px gray;
+box-shadow: 1px 1px 10px -4px gray;
 
 margin-top: 63px;
 }
@@ -1418,11 +1418,11 @@ margin-top: 63px;
  border-bottom: 2px solid #2f94e5;
  color: black;
  border-radius: 0;
- -webkit-box-shadow: 0px 1px 6px -2px grey;
- -moz-box-shadow: 0px 1px 6px -2px grey;
- -ms-box-shadow: 0px 1px 6px -2px grey;
- -o-box-shadow: 0px 1px 6px -2px grey;
- box-shadow: 0px 1px 6px -2px grey;
+ -webkit-box-shadow: 0px 1px 6px -2px gray;
+ -moz-box-shadow: 0px 1px 6px -2px gray;
+ -ms-box-shadow: 0px 1px 6px -2px gray;
+ -o-box-shadow: 0px 1px 6px -2px gray;
+ box-shadow: 0px 1px 6px -2px gray;
 }
 
 
@@ -1477,6 +1477,7 @@ margin-top: 63px;
 
   height: 60px;
   width: 60px;
+  box-shadow: 1px 2px 5px -3px gray;
 }
 
 
@@ -1494,6 +1495,7 @@ margin-top: 63px;
   background-color: #e6e6e6;
   border-bottom: 1px solid #2a92e5;
   margin-left: 20px;
+  box-shadow:1px 2px 5px -2px gray;
 }
 .comment-content a{
   color: #2a92e5;
@@ -1512,12 +1514,15 @@ margin-top: 63px;
 }
 .comment-form{
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .comment-form input{
 
   padding: 20px 12px;
   border-radius: 0;
+  border:0px;
   background-color: #F5F5F5;
+  box-shadow: 1px 1px 5px -3px gray;
 }
 .comment-form hr{
   background-color: #515050;
@@ -1531,9 +1536,11 @@ margin-top: 63px;
 .comment-form textarea{
   padding: 20px 12px;
   border-radius: 0;
-  float: left;
+  /*float: left;*/
   background-color: #F5F5F5;
   margin-bottom: 20px;
+  border:0px;
+  box-shadow: 1px 1px 5px -3px gray;
 }
 
 .blog-sidebar{
@@ -1544,7 +1551,7 @@ margin-top: 63px;
   margin-top: 38px; 
 }
 .blog-sidebar img{
-  box-shadow: 1px 1px 3px 1px grey;
+  box-shadow: 1px 1px 3px 1px gray;
 }
 
 .blog-sidebar .search-query{
@@ -1552,12 +1559,13 @@ margin-top: 63px;
   font-size: 14pt;
   padding: 5px;
   float: left;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   height: 38px;
   width: 240px;
   border-radius: 0;
   margin-top: 30px;
-  box-shadow: 0px 0px 1px 1px grey;
+  border: 0px;
+  box-shadow: 1px 1px 4px -2px gray;
 }
 .blog-sidebar .btn{
 
@@ -1613,11 +1621,11 @@ line-height: 1.5em;
 padding: 8px;
 margin: 4px;
 border-radius: 5px;
-box-shadow: 1px 0 5px -1px gray;
--webkit-box-shadow: 1px 0 5px -1px gray;
--moz-box-shadow: 1px 0 5px -1px gray;
--o-box-shadow: 1px 0 5px -1px gray;
--ms-box-shadow: 1px 0 5px -1px gray;
+box-shadow: 1px 2px 3px -1px gray;
+-webkit-box-shadow: 1px 2px 3px -1px gray;
+-moz-box-shadow: 1px 2px 3px -1px gray;
+-o-box-shadow: 1px 2px 3px -1px gray;
+-ms-box-shadow: 1px 2px 3px -1px gray;
 }
 .blog-sidebar .tags li:hover{
   background-color: #2a92e5;
@@ -1628,15 +1636,17 @@ box-shadow: 1px 0 5px -1px gray;
   
 }
 .blog-sidebar .top-post .media-heading{
-  line-height: 1.2em;
+  line-height: 1.0em;
   color: black;
 }
 .blog-sidebar .top-post{
   margin-top: 5%;
 }
 .blog-sidebar .top-post p{
-  margin-top: 7%;
-  font-size: 1.2em
+  margin-top: 3%;
+font-size: 1.02em;
+color: #2a92e5;
+
 }
 
 /*<<<<contact us="" page="">>>>*/
