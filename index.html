@@ -28,7 +28,7 @@
 
 
 	<!-- Main StyleSheet for Posh  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" class="main-style" href="css/style.css">
 
 
 	<!-- Styles specific to only the half-widh/boxed layout -->
@@ -455,8 +455,20 @@
 				</ul>
 
 			</div>
+			
 
 		</section>
+		<!-- Style Switcher Begin -->
+		<a href="#" id="trigger2" class="trigger left">Colors</a>
+		<div id="panel2" class="panel left">
+			<div id="colorchanger">
+			
+			<a class="colorbox colorblue" href="#" rel="css/blue.css"></a>
+			<a class="colorbox colorgreen" href="#" rel="/path/to/style2.css"></a>
+			<a class="colorbox colororange" href="#" rel="/path/to/style3.css"></a>
+		</div>
+		</div>
+		<!-- Style Switcher End -->
 		<!-- Porfolio End ========================================================================================-->
 
 		<section class="features-alt">
@@ -994,6 +1006,27 @@
 
 <!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
 <script src="js/lightbox.js"></script>
+<!-- COLOR CHANGER SCRIPT BEGIN-->
+<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() { 
+			$("#colorchanger a").click(function() { 
+				$("link.main-style").attr("href",$(this).attr('rel'));
+				return false;
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#panel2').slidePanel({
+				triggerName: '#trigger2',
+				triggerTopPos: '550px',
+				panelTopPos: '550px'
+			});
+
+		});
+		</script>
+<!-- COLOR CHANGER SCRIPT END -->
 
 
 <script>
