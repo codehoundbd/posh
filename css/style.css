@@ -86,6 +86,7 @@
 
       position: relative;
       padding-top: 50px;
+      box-shadow: 0px 4px 15px -8px black;
     }
 
     section .container{
@@ -534,9 +535,13 @@
   background-color: white;
 }
 
+.logoslide .bx-wrapper{
+  margin: 0 auto;
+}
+
 .logo {
   padding: 30px 15px;
-  border-radius: 10px;
+  
   /*-webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;*/
@@ -681,7 +686,7 @@ footer #footer-body ul {
 footer #footer-body li {
   padding: 10px 0;
   clear: both;
-  border-bottom: 1px solid gray;
+  
 }
 
 .footer-section-body {
@@ -1320,14 +1325,13 @@ section#banner header h1{
   color: #16517F;
 }
 
- section#about-main {
+section#about-main {
   background-color: #f5f5f5;
   padding: 0;
 }
 
 section#about-main img{
 
-  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -1344,7 +1348,7 @@ section#about-main h1 {
 }
 section#about-main p {
   font-size: 12pt;
-  padding: 10px 50px;
+  padding: 0 50px;
   line-height: 20px;
 }
 
@@ -1370,14 +1374,14 @@ section#blogs, section#blog-single{
 .post-wrapper{
   background-color: #F5F5F5;
 
-padding: 13px;
-margin-bottom: 20px;
-border-radius: 6px;
--webkit-box-shadow: 1px 1px 10px -4px gray;
--moz-box-shadow: 1px 1px 10px -4px gray;
--o-box-shadow: 1px 1px 10px -4px gray;
--ms-box-shadow: 1px 1px 10px -4px gray;
-box-shadow: 1px 1px 10px -4px gray;
+  padding: 13px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 10px -4px gray;
+  -moz-box-shadow: 1px 1px 10px -4px gray;
+  -o-box-shadow: 1px 1px 10px -4px gray;
+  -ms-box-shadow: 1px 1px 10px -4px gray;
+  box-shadow: 1px 1px 10px -4px gray;
 
 
   margin-top: 63px;
@@ -1633,8 +1637,8 @@ box-shadow: 1px 1px 10px -4px gray;
 }
 .blog-sidebar .top-post p{
   margin-top: 3%;
-font-size: 1.02em;
-color: #2a92e5;
+  font-size: 1.02em;
+  color: #2a92e5;
 
 }
 
@@ -1655,11 +1659,11 @@ section#contact-main header h1{
 
 section#contact-main .contact-form-wrapper {
   background-color: #F5F5F5;
-margin: 20px 0px 20px 5%;
-padding-top: 5px;
-border-radius: 5px;
-box-shadow: 1px 1px 9px -2px gray;
-padding-bottom: 10px;
+  margin: 20px 0px 20px 5%;
+  padding-top: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 9px -2px gray;
+  padding-bottom: 10px;
 }
 section#contact-main input[type="text"] {
   padding: 25px;
@@ -1855,17 +1859,19 @@ section.testimonial {
   margin: 0;
 }
 #testimonial .quote-sign {
-  text-align: center;
-  margin-top: -75px;
-  
+ float: left;
+ width: 15%;
+ text-align: center;
+ margin-top: 41px;
+
 }
 #testimonial .content {
-  text-align: center;
-  
-  
-  margin-top: 50px;
-  border-top: 2px solid #044386;
-  padding: 40px;
+ width: 70%;
+ float: left;
+ text-align: center;
+ margin-top: 50px;
+ border-top: 2px solid #044386;
+ padding: 40px;
 }
 #testimonial .content p {
   font-size: 17pt;
@@ -1894,7 +1900,7 @@ section.testimonial {
 
 section.portfolio{
   z-index: 10;
-  box-shadow: 0px 4px 3px gray;
+  box-shadow: 0px 4px 15px -8px black;
 }
 
 
@@ -2240,7 +2246,7 @@ section.portfolio-footer-wrapper {
   height: 230px;
 }
 
-section#skills{
+section.home-posts{
   box-shadow: 0px 0px 16px -2px gray;
   margin-bottom: 60px;
 }
@@ -2464,10 +2470,7 @@ section.team .team-member .imgwrapper .imgback {
   box-shadow: 0 0 0 0 #508ddd;
 }
 section.team .team-member:hover .imgback {
-  -webkit-box-shadow: 0 0 0 13px #508ddd;
-  -moz-box-shadow: 0 0 0 13px #508ddd;
-  -o-box-shadow: 0 0 0 13px #508ddd;
-  box-shadow: 0 0 0 13px #508ddd;
+  box-shadow: 0 0 2px 13px #508ddd;
 }
 section.team .team-member:hover h1 {
   color: white;

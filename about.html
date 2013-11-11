@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 
 	<!-- Basics ===================================================================== -->
 	<meta charset="utf-8">
@@ -67,9 +67,9 @@
 
 </head>
 
-	<body>
+<body>
 
-		<div class="whole-wrapper">
+	<div class="whole-wrapper">
 		
 		<!-- half-width wrapper to limit the width of everything =======================================================-->
 		<div class="hw-wrapper">
@@ -203,26 +203,29 @@
 
 			<!-- Top Image and Text -->
 			<section id='about-main'>
-
+				
+				
 				<img src="img/pic_about.png" alt='About us'>
 
 				<header class="center-header-text">
-				<h1>A Few Words <b class="emph">About Us</b></h1>
-				<span class="line"></span>
-
-				<p>
-					As you can see, without affecting how blurry the shadow is, the spread of the shadow essentially grows and shrinks the surface area occupied by the shadow. If you thought of it as the size of the shadow, you wouldn’t be too far off.
-
-					If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng
-				</p>
-
+					<h1>A Few Words About Us</h1>
 				</header>
+				<div class="about-banner">
+					<p>
+						As you can see, without affecting how blurry the shadow is, the spread of the shadow essentially grows and shrinks the surface area occupied by the shadow. If you thought of it as the size of the shadow, you wouldn’t be too far off.
+
+						If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng
+					</p>
+
+					
+				</div>
+				<div class="arc-shadow-bottom"></div>
 
 			</section>
 
 
 			<!-- Purchase Advertisement -->
-			<section class="purchase-bar">
+			<!-- <section class="purchase-bar">
 
 				<div class="purchase-bar-inner">
 					<span class="ad">Buy our theme and discover elegant solutions for your business</span>
@@ -232,31 +235,20 @@
 					</button>
 				</div>
 
-			</section>
-
-
-			<!-- Our Team Header-->
-			<section class="about-team">
-
-			<header>
-						<h1>Our <b class="emph">Team</b></h1>
-						<span class="line"></span>
-
-						
-						<h2>A perfect team is a well balanced team</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum
-							id tincidunt nunc faucibus. Ut neque eros,
-						</p>						
-
-					</header>
-
-			</section>
-
+			</section> -->
 
 
 			<!-- Our Team -->
 			<section class="team">
+
+				<header>
+					<h1>Meet Our Team</h1>
+					
+					<span class="color-band"></span>						
+
+				</header>
+
+			
 
 				<div class="row">
 
@@ -388,7 +380,14 @@
 
 				</div>
 
+				<div class="arc-shadow-bottom"></div>
+
 			</section>
+
+
+			section
+
+
 
 			<!-- Testimonial -->
 			<section class="testimonial">
@@ -429,11 +428,11 @@
 				</div>
 			</section>
 			<section class="skill-bar">
-			<div class="row">
-				<div class="wrapper" data-anim="base wrapper">
-				  <div class="circle" data-anim="base left"></div>
-				  <div class="circle" data-anim="base right"></div>
-				</div>
+				<div class="row">
+					<div class="wrapper" data-anim="base wrapper">
+						<div class="circle" data-anim="base left"></div>
+						<div class="circle" data-anim="base right"></div>
+					</div>
 				</div>
 			</section>
 
@@ -695,7 +694,7 @@
 
 		$(document).ready(function() {
 
-				
+
 
 
 				// Menu Hover effect
@@ -729,7 +728,7 @@
 			});
 
 
-			$(window).resize(function() {
+		$(window).resize(function() {
 
 				// dynamically adjust the height of the Team Members hover effect
 				adjustTeamHover(20);
@@ -746,5 +745,5 @@
 	</script>
 
 
-	</body>
+</body>
 </html>
