@@ -1352,7 +1352,33 @@ section#about-main p {
   line-height: 20px;
 }
 
+section.skill-bar{
 
+  padding-bottom: 50px;
+}
+
+
+.knobs{
+
+  overflow: auto;
+  width: 100%;
+  background-color: #eeeced;
+  padding: 60px 0;
+}
+
+.knob{
+  text-align: center;
+}
+
+.knobs .knob h3{
+  font-weight: normal;
+}
+
+
+.knobs .knob:nth-child(1) h3{ color: #16517f;}
+.knobs .knob:nth-child(2) h3{ color: #1a65a5;}
+.knobs .knob:nth-child(3) h3{ color: #2086c7;}
+.knobs .knob:nth-child(4) h3{ color: #2097d4;}
 
 
 

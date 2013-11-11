@@ -39,8 +39,10 @@
 	<link rel="stylesheet" href="css/style-responsive.css">
 
 	
-	<!-- CSS for BxSlider (used in logoslide and testimonal) -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+
+	<!-- Used by jQuery Shadow plugin  -->
+	<link href="css/jquery.shadow.css" rel="stylesheet"/>
+
 
 
 
@@ -248,7 +250,7 @@
 
 				</header>
 
-			
+
 
 				<div class="row">
 
@@ -385,54 +387,49 @@
 			</section>
 
 
-			section
+			
 
 
 
-			<!-- Testimonial -->
-			<section class="testimonial">
-				<div class="row" id="testimonial">
 
-					<div class="quote-sign">
-						<img src="img/quote-left.png">
-					</div>
-					<div class="content">
 
-						<ul class='testimonial-slider'>
-							<li>
-								<p>
-									Lorem ipsum dolor sit amet, vis te sale  vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est, quod consetetur his at.
-								</p>
-								<img src="img/testimonial1.png" alt="Testimonial Thumb">
-								<h2>- Katrina Kaif</h2>
 
-							</li>
 
-							<li>
-								<p>
 
-									Dolor sit amet, vis te sale comprehensam, Commodo platonem vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est his at.
 
-								</p>
-								<img src="img/testimonial2.png" alt="Testimonial Thumb">
-								<h2>- Chris Nolan</h2>
 
-							</li>
-						</ul>
-					</div>
-
-					<div class="quote-sign">
-						<img src="img/quote-right.png">
-					</div>
-
-				</div>
-			</section>
 			<section class="skill-bar">
-				<div class="row">
-					<div class="wrapper" data-anim="base wrapper">
-						<div class="circle" data-anim="base left"></div>
-						<div class="circle" data-anim="base right"></div>
+
+
+				<header>
+					<h1>Our Skills</h1>
+					<span class="color-band"></span>
+				</header>
+
+
+
+				<div class="knobs">
+
+					<div class="knob col-md-3">
+						<input type="text" class="dial" value="90" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#16517f" data-bgColor="#ffffff">
+						<h3>Design</h3>
 					</div>
+
+
+					<div class="knob col-md-3">
+						<input type="text" class="dial" value="70" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#1a65a5" data-bgColor="#ffffff">
+						<h3>HTML</h3>
+					</div>
+
+					<div class="knob col-md-3">
+						<input type="text" class="dial" data-min="0" value="50" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2086c7" data-bgColor="#ffffff">
+						<h3>CSS</h3>
+					</div>
+
+					<div class="knob col-md-3">
+						<input type="text" class="dial" data-min="0" value="30" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2097d4" data-bgColor="#ffffff">
+						<h3>Javascript</h3>
+					</div>				
 				</div>
 			</section>
 
@@ -656,6 +653,11 @@
 	<!-- BxSlider -->
 	<script src="js/jquery.bxslider.min.js"></script>
 
+	<!-- jQuery knob plugin to show rounded skill bars -->
+	<script src="js/jquery.knob.js"></script>
+
+	<!-- jQuery Shadow plugin for fancy shadows -->
+	<script src="js/jquery.shadow.js"></script>
 	
 	<!-- Handles Team Members hover effect -->
 	<script src="js/portfolio-adjust.js"></script>
@@ -724,6 +726,10 @@
 
 				// Top nav transparency on Scroll 
 				transNav('#poshnav-half-width');
+
+				$(".dial").knob();
+
+				//$(".knobs").shadow({type:'sides', sides:'hz-1'});
 
 			});
 
