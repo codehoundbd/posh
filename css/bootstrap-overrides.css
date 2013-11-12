@@ -86,7 +86,7 @@ a.menu:after, .dropdown-toggle:before {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	filter: none;
 	*zoom: 1;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -126,12 +126,16 @@ a.menu:after, .dropdown-toggle:before {
 	
 }
 
+.navbar .nav > li:hover > a {
+	color: white;
+}
+
 .navbar .nav .dropdown-toggle .caret {
 	margin-top: 16px;
 }
 
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+.navbar .nav > li:focus,
+.navbar .nav > li:hover {
 	color: white;
 	text-decoration: none;
 	
@@ -170,8 +174,8 @@ a.menu:after, .dropdown-toggle:before {
 }
 
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
+.dropdown-menu > li:hover,
+.dropdown-menu > li:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
 	color: #ffffff;

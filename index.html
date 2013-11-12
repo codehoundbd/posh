@@ -108,7 +108,7 @@
 
 							<li class="dropdown">
 								<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-								<ul class="dropdown-menu animated fadeInDown animated-100ms">
+								<ul class="dropdown-menu animated fadeInDown animated-300ms">
 
 									<li>
 										<a href="index.html">iView Slider</a>
@@ -124,7 +124,7 @@
 							</li>
 							<li class="dropdown">
 								<a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-								<ul class="dropdown-menu  animated fadeInDown animated-100ms">
+								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
 									<li>
 										<a href="portfolio-4c.html">4 Column</a>
 									</li>
@@ -144,7 +144,7 @@
 
 							<li class="dropdown">
 								<a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-								<ul class="dropdown-menu  animated fadeInDown animated-100ms">
+								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
 									<li>
 										<a href="blog-ls.html">Left Sidebar</a>
 									</li>
@@ -163,7 +163,7 @@
 
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-								<ul class="dropdown-menu  animated fadeInDown animated-100ms">
+								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
 									<li>
 										<a href="contact.html">Contact</a>
 									</li>
@@ -187,7 +187,7 @@
 
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
-								<ul class="dropdown-menu  animated fadeInDown animated-100ms">
+								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
 									<li>
 										<a href="components.html">Components</a>
 									</li>
@@ -570,7 +570,7 @@
 
 
 		<!--Our Skills Begin =======================================================================================-->
-		<section class="row" id="skills">
+		<section class="home-posts">
 
 			<header>
 				<h1>Our Skills</h1>
@@ -703,40 +703,43 @@
 
 
 		<!-- Testimonial Begin =====================================================================================-->
-		<section class="testimonial">
-			<div class="row" id="testimonial">
+			<section class="testimonial">
+				<div class="row" id="testimonial">
 
-				<div class="quote-sign">
-					<img class="img-circle" src="img/quote.png">
+					<div class="quote-sign">
+						<img src="img/quote-left.png">
+					</div>
+					<div class="content">
+
+						<ul class='testimonial-slider'>
+							<li>
+								<p>
+									Lorem ipsum dolor sit amet, vis te sale  vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est, quod consetetur his at.
+								</p>
+								<img src="img/testimonial1.png" alt="Testimonial Thumb">
+								<h2>- Natalie Port</h2>
+
+							</li>
+
+							<li>
+								<p>
+
+									Dolor sit amet, vis te sale comprehensam, Commodo platonem vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est his at.
+
+								</p>
+								<img src="img/testimonial2.png" alt="Testimonial Thumb">
+								<h2>- Christina Eve</h2>
+
+							</li>
+						</ul>
+					</div>
+
+					<div class="quote-sign">
+						<img src="img/quote-right.png">
+					</div>
+
 				</div>
-				<div class="content">
-
-					<ul class='testimonial-slider'>
-						<li>
-							<p>
-								Lorem ipsum dolor sit amet, vis te sale  vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est, quod consetetur his at.
-							</p>
-							<img src="img/testimonial1.png" alt="Testimonial Thumb">
-							<h2>- Katrina Kaif</h2>
-
-						</li>
-
-						<li>
-							<p>
-
-								Dolor sit amet, vis te sale comprehensam, Commodo platonem vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est his at.
-
-							</p>
-							<img src="img/testimonial2.png" alt="Testimonial Thumb">
-							<h2>- Chris Nolan</h2>
-
-						</li>
-					</ul>
-				</div>
-
-				
-			</div>
-		</section>
+			</section>
 		<!-- Testimonial End =======================================================================================-->
 
 
@@ -955,6 +958,8 @@
 			</div>
 
 		</footer>
+
+		<span class="color-band"></span>
 		<!-- Main Footer End =======================================================================================-->
 
 	</div> <!-- /.hw-wrapper -->
@@ -1050,18 +1055,24 @@
 					autoAdvance : true
 				});
 
-				// Menu Hover effect
-				$('.dropdown-menu').hover(function() {
+				// // Menu Hover effect
+				// $('.dropdown-menu').hover(function() {
 
-					$(this).closest('.dropdown').addClass('active');
-				}, function() {
-					$(this).closest('.dropdown').removeClass('active');
+				// 	$(this).closest('.dropdown').addClass('active');
+				// }, function() {
+				// 	$(this).closest('.dropdown').removeClass('active');
 
-				});
+				// });
 
 
 				// logo carousel
 				$('.logos').bxSlider({
+					//auto: true,
+					//easing: 'linear',
+					//pause: 0,
+					tickerHover: true,
+					ticker: true,
+					speed: 48000,
 					controls : true,
 					slideWidth : 200,
 					minSlides : 2,
@@ -1075,7 +1086,7 @@
 					pager:false,
 					slideWidth : 300,
 					onSlideBefore: function(a,b,c){
-						$('.blogslider li').css({'opacity':'0.7'});
+						$('.blogslider li').css({'opacity':'0.4'});
 
 					},
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 
 	<!-- Basics ===================================================================== -->
 	<meta charset="utf-8">
@@ -39,8 +39,10 @@
 	<link rel="stylesheet" href="css/style-responsive.css">
 
 	
-	<!-- CSS for BxSlider (used in logoslide and testimonal) -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+
+	<!-- Used by jQuery Shadow plugin  -->
+	<link href="css/jquery.shadow.css" rel="stylesheet"/>
+
 
 
 
@@ -67,9 +69,9 @@
 
 </head>
 
-	<body>
+<body>
 
-		<div class="whole-wrapper">
+	<div class="whole-wrapper">
 		
 		<!-- half-width wrapper to limit the width of everything =======================================================-->
 		<div class="hw-wrapper">
@@ -203,26 +205,29 @@
 
 			<!-- Top Image and Text -->
 			<section id='about-main'>
-
+				
+				
 				<img src="img/pic_about.png" alt='About us'>
 
 				<header class="center-header-text">
-				<h1>A Few Words <b class="emph">About Us</b></h1>
-				<span class="line"></span>
-
-				<p>
-					As you can see, without affecting how blurry the shadow is, the spread of the shadow essentially grows and shrinks the surface area occupied by the shadow. If you thought of it as the size of the shadow, you wouldn’t be too far off.
-
-					If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng
-				</p>
-
+					<h1>A Few Words About Us</h1>
 				</header>
+				<div class="about-banner">
+					<p>
+						As you can see, without affecting how blurry the shadow is, the spread of the shadow essentially grows and shrinks the surface area occupied by the shadow. If you thought of it as the size of the shadow, you wouldn’t be too far off.
+
+						If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng
+					</p>
+
+					
+				</div>
+				<!-- <div class="arc-shadow-bottom"></div> -->
 
 			</section>
 
 
 			<!-- Purchase Advertisement -->
-			<section class="purchase-bar">
+			<!-- <section class="purchase-bar">
 
 				<div class="purchase-bar-inner">
 					<span class="ad">Buy our theme and discover elegant solutions for your business</span>
@@ -232,33 +237,22 @@
 					</button>
 				</div>
 
-			</section>
-
-
-			<!-- Our Team Header-->
-			<section class="about-team">
-
-			<header>
-						<h1>Our <b class="emph">Team</b></h1>
-						<span class="line"></span>
-
-						
-						<h2>A perfect team is a well balanced team</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum
-							id tincidunt nunc faucibus. Ut neque eros,
-						</p>						
-
-					</header>
-
-			</section>
-
+			</section> -->
 
 
 			<!-- Our Team -->
 			<section class="team">
 
-				<div class="row">
+				<header>
+					<h1>Meet Our Team</h1>
+					
+					<span class="color-band"></span>						
+
+				</header>
+
+
+
+				<div class="row box-shadow">
 
 					<ul id="container">
 
@@ -388,52 +382,55 @@
 
 				</div>
 
+				
+
 			</section>
 
-			<!-- Testimonial -->
-			<section class="testimonial">
-				<div class="row" id="testimonial">
 
-					<div class="quote-sign">
-						<img src="img/quote-left.png">
-					</div>
-					<div class="content">
+			
 
-						<ul class='testimonial-slider'>
-							<li>
-								<p>
-									Lorem ipsum dolor sit amet, vis te sale  vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est, quod consetetur his at.
-								</p>
-								<img src="img/testimonial1.png" alt="Testimonial Thumb">
-								<h2>- Katrina Kaif</h2>
 
-							</li>
 
-							<li>
-								<p>
 
-									Dolor sit amet, vis te sale comprehensam, Commodo platonem vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est his at.
 
-								</p>
-								<img src="img/testimonial2.png" alt="Testimonial Thumb">
-								<h2>- Chris Nolan</h2>
 
-							</li>
-						</ul>
-					</div>
 
-					<div class="quote-sign">
-						<img src="img/quote-right.png">
-					</div>
 
-				</div>
-			</section>
+
+
 			<section class="skill-bar">
-			<div class="row">
-				<div class="wrapper" data-anim="base wrapper">
-				  <div class="circle" data-anim="base left"></div>
-				  <div class="circle" data-anim="base right"></div>
-				</div>
+
+
+				<header>
+					<h1>Our Skills</h1>
+					<span class="color-band"></span>
+				</header>
+
+
+				<div class="posh-shadow sides-hz-1">
+					<div class="knobs">
+
+						<div class="knob col-md-3">
+							<input type="text" class="dial" value="90" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#16517f" data-bgColor="#ffffff">
+							<h3>Design</h3>
+						</div>
+
+
+						<div class="knob col-md-3">
+							<input type="text" class="dial" value="70" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#1a65a5" data-bgColor="#ffffff">
+							<h3>HTML</h3>
+						</div>
+
+						<div class="knob col-md-3">
+							<input type="text" class="dial" data-min="0" value="50" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2086c7" data-bgColor="#ffffff">
+							<h3>CSS</h3>
+						</div>
+
+						<div class="knob col-md-3">
+							<input type="text" class="dial" data-min="0" value="30" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2097d4" data-bgColor="#ffffff">
+							<h3>Javascript</h3>
+						</div>				
+					</div>
 				</div>
 			</section>
 
@@ -657,6 +654,11 @@
 	<!-- BxSlider -->
 	<script src="js/jquery.bxslider.min.js"></script>
 
+	<!-- jQuery knob plugin to show rounded skill bars -->
+	<script src="js/jquery.knob.js"></script>
+
+	<!-- jQuery Shadow plugin for fancy shadows -->
+	<script src="js/jquery.shadow.js"></script>
 	
 	<!-- Handles Team Members hover effect -->
 	<script src="js/portfolio-adjust.js"></script>
@@ -689,13 +691,14 @@
 	<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
 	<script src="js/lightbox.js"></script>
 
+	<script src="js/posh.shadows.js"></script>
 
 	<script>
 
 
 		$(document).ready(function() {
 
-				
+
 
 
 				// Menu Hover effect
@@ -726,10 +729,14 @@
 				// Top nav transparency on Scroll 
 				transNav('#poshnav-half-width');
 
+				$(".dial").knob();
+
+				//$(".posh-shadow.sides-hz-1").shadow({type:'sides', sides:'hz-1'});
+
 			});
 
 
-			$(window).resize(function() {
+		$(window).resize(function() {
 
 				// dynamically adjust the height of the Team Members hover effect
 				adjustTeamHover(20);
@@ -746,5 +753,5 @@
 	</script>
 
 
-	</body>
+</body>
 </html>
