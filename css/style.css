@@ -92,6 +92,8 @@
 
 
     section .section-body{
+
+      padding: 50px 0;
       background-color: #F5F5F5;  
     }
     
@@ -295,15 +297,22 @@
 
     section#features{
 
+     
+      margin: 50px 0;
+      padding: 0; 
+
+
+    }
+
+    section#features.homepage{
+
+      margin: 0;
       -webkit-box-shadow: 0px 0px 23px -1px gray;
       -moz-box-shadow: 0px 0px 23px -1px gray;
       -o-box-shadow: 0px 0px 23px -1px gray;
       -ms-box-shadow: 0px 0px 23px -1px gray;
       box-shadow: 0px 0px 23px -1px gray;
 
-      background-color: #2a92e5;
-      margin: 0;
-      padding: 0; 
 
 
     }
@@ -344,6 +353,8 @@
       -o-box-shadow: 0px 0px 20px #333;
       box-shadow: 0px 0px 20px #333;
     }
+
+
     #features img {
       width: 60%;
       margin-right: 20%;
@@ -528,9 +539,9 @@
   box-shadow: none;
   margin-top: 0px;
  }
+
 .port-features ul{
-   padding-top: 10px;
-   padding-bottom: 10px;
+  padding: 10px 20px;
 }
  .port-features li{
 
@@ -1365,7 +1376,7 @@ section#about-main p {
 
 section.skill-bar{
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -1374,7 +1385,7 @@ section.skill-bar{
   overflow: auto;
   width: 100%;
   background-color: #eeeced;
-  padding: 60px 0;
+ 
 }
 
 .knob{
@@ -1936,6 +1947,7 @@ section.testimonial {
 /* Portfolio Page  */
 
 section.portfolio{
+  margin-bottom: 50px;
   z-index: 10;
   box-shadow: 0px 4px 15px -8px black;
 }
@@ -2178,7 +2190,7 @@ section.portfolio-footer-wrapper {
 /* Homepage progressbars */
 
 .skillbars{
-  margin-top: 20px;
+  margin: 20px 0;
   background-color: #eeeced;
   padding: 15px;
 }
@@ -2189,7 +2201,7 @@ section.portfolio-footer-wrapper {
 .accordion{
 
   padding: 20px;
-  margin-top: 20px;
+ 
 
 }
 
@@ -2791,20 +2803,71 @@ section.team .imgcaption {
 
 
 
+
+
   /*Component Page*/
 
 
-  ul.checklist li:before {
+  .lists{
+    font-size: 14px;
+  }
 
+  ul.list-style-1 li,
+  ul.list-style-2 li,
+  ul.list-style-3 li,
+  ul.list-style-4 li
+  {
+
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+
+ 
+
+  ul.list-style-1 li:before {
 
     font-family: 'FontAwesome';
     content: "\f00c";
     margin:0 5px 0 -15px;
-    font-size: 1.5em;
-    color: #2086c7
+
+    color: #2086c7;
+  }
+
+  ul.list-style-2 li:before {
+
+
+    font-family: 'FontAwesome';
+    content: "\f058";
+    margin:0 5px 0 -15px;
+
+    color: #2086c7;
+  }
+
+  ul.list-style-3 li:before {
+
+
+    font-family: 'FontAwesome';
+    content: "\f054";
+    margin:0 5px 0 -15px;
+
+    color: #2086c7;
+  }
+
+   ul.list-style-4 li:before {
+
+
+    font-family: 'FontAwesome';
+    content:   "\f164";
+    margin:0 5px 0 -15px;
+   
+    color: #2086c7;
   }
 
 
+  .compbuttons{
+    background-color: #eeeced;
+    padding: 50px 0;
+  }  
 
   .compbuttons p{
     text-align: center;
@@ -2827,12 +2890,7 @@ section.team .imgcaption {
   .progress-bar4{
     background-color: #F1BE60; 
   }
-  .center-header-text{
-    text-align: center;
-  }
-  .center-header-text h1{
-    padding-left: 15px;
-  }
+  
   .accordion-div{
     margin-right: 5px;
   }
@@ -2851,6 +2909,10 @@ section.team .imgcaption {
 
   .thumbnails ul{
     padding: 0;
+  }
+
+  .thumbnails li{
+    text-align: center;
   }
 
 
