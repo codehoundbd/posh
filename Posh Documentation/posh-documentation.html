@@ -51,11 +51,29 @@
 				<li><a href="#necessary-files">Necessary Files</a></li>
 
 				<li><a href="#custom-scripts">Custom Scripts</a></li>
-				<li><a href="#html-structure">HTML-Structure</a> </li>
-				<li><a href="#navbar">Navbar</a></li>
-				<li><a href="#body">Body</a></li>
-				<li><a href="#single-menu">Single Menu</a></li>
-				<li><a href="#">Services</a></li>
+				<li><a href="#html-structure">HTML-Structure</a> 
+				<ul class="list-unstyled">
+					<li><a href="#navbar">Navbar</a></li>
+					<li><a href="#body">Body</a></li>
+					<li><a href="#single-menu">Single Menu</a></li>
+				</ul>
+				</li>
+				
+				<li><a href="#main-content">Main Content</a>
+				<ul class="list-unstyled">
+					<li><a href="#main-content-title">Main Content With Title</a></li>
+					<li><a href="#main-content-body">Main Content Body</a></li>
+					
+				</ul>
+
+
+
+				</li>
+				<li><a href="#footer">Footer</a></li>
+				<li><a href="#">Contact</a></li>
+				
+				<li><a href="#">Contact</a></li>
+				
 				<li><a href="#">Contact</a></li>
 				
 				<li><a href="#css">CSS Structure</a></li>
@@ -316,10 +334,45 @@
 	<section id="single-menu">
 		<div class="row">
 		<div class="col-md-12">
-		<h3>Navbar </h3>
+		<h3>Navbar Single</h3>
 
 		<div class="code-wrap-border">
 		<pre class='brush: php; html-script: true '>
+		<!-- With Active Class -->
+
+		<li class="active">
+		<a href="index.html">iView Slider</a>
+		</li>
+
+		<!-- Without active class  -->
+
+		<li >
+		<a href="index.html">iView Slider</a>
+		</li>
+
+		<!-- With Dropdown -->
+		<li class="dropdown">
+								<a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+									<li>
+										<a href="portfolio-4c.html">4 Column</a>
+									</li>
+									<li>
+										<a href="portfolio.html">3 Column</a>
+									</li>
+									<li>
+										<a href="portfolio-2c.html">2 Column</a>
+									</li>
+
+									<li>
+										<a href="portfolio-single.html">Single Portfolio</a>
+									</li>
+
+								</ul>
+							</li>
+		
+		
+
 
 
 		</pre>
@@ -329,7 +382,123 @@
 		</div>
 		
 	</section>
-	<section id="navbar2">
+	<section id="main-content">
+		<div class="row">
+		<div class="col-md-12">
+		<h3>Main Content </h3>
+
+		<div class="code-wrap-border">
+		<pre class='brush: php; html-script: true '>
+		<!-- Every Element in Body is in Sections -->
+		<section class="class-name">
+
+		</section>
+
+
+		</pre>
+		</div>
+
+		</div>
+		</div>
+		
+	</section>
+	<section id="main-content-title">
+		<div class="row">
+		<div class="col-md-12">
+		<h3>Main Content with Title </h3>
+
+		<div class="code-wrap-border">
+		<pre class='brush: php; html-script: true '>
+		<!-- Main content Title in header -->
+		<section class="class-name">
+		<!-- Title Text -->
+
+		<header>
+				<h1>title</h1>
+				<!-- Colored Band Underline for section header -->
+				<span class="color-band"></span>
+
+
+
+			</header>
+
+		</section>
+
+
+		</pre>
+		</div>
+
+		</div>
+		</div>
+		
+	</section>
+	<section id="main-content-body">
+		<div class="row">
+		<div class="col-md-12">
+		<h3>Body of Sections </h3>
+
+		<div class="code-wrap-border">
+		<pre class='brush: php; html-script: true '>
+
+		<section class="class-name">
+		<!-- Title Text -->
+
+		<header>
+				<h1>title</h1>
+				<!-- Colored Band Underline for section header -->
+				<span class="color-band"></span>
+
+
+
+			</header>
+			<!-- Body of the sections and background color is added here -->
+			<div class="section-body row">
+				<!-- Content -->
+
+			</div>
+
+		</section>
+
+
+		</pre>
+		</div>
+
+		</div>
+		</div>
+		
+	</section>
+
+	<section id="footer">
+		<div class="row">
+		<div class="col-md-12">
+		<h3>Footer Code </h3>
+
+		<div class="code-wrap-border">
+		<pre class='brush: php; html-script: true '>
+		
+		<footer>
+					<!-- Continuous Headers visible only in large screens -->
+			<div class="row footer-header-wrapper visible-lg visible-md">
+				<div class="row footer-header">
+					<div class="col-md-3">
+						Categories
+							</div>
+						</div>
+					</div>
+			
+
+		</footer>
+
+
+		</pre>
+		</div>
+
+		</div>
+		</div>
+		
+	</section>
+
+	<section id="main-content-body">
 		<div class="row">
 		<div class="col-md-12">
 		<h3>Navbar </h3>
@@ -345,23 +514,7 @@
 		</div>
 		
 	</section>
-	<section id="navba3">
-		<div class="row">
-		<div class="col-md-12">
-		<h3>Navbar </h3>
-
-		<div class="code-wrap-border">
-		<pre class='brush: php; html-script: true '>
-
-
-		</pre>
-		</div>
-
-		</div>
-		</div>
-		
-	</section>
-	<section id="navbar4">
+	<section id="main-content-body">
 		<div class="row">
 		<div class="col-md-12">
 		<h3>Navbar </h3>
