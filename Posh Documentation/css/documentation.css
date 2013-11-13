@@ -21,6 +21,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   z-index: 1000;
   transition: all 0.4s ease 0s;
 }
+.list-unstyled{
+
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: .95em;
+
+}
 
 #page-content-wrapper {
   width: 100%;
@@ -39,7 +46,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 40px;
   text-indent: 20px;
 }
-.sidebar-nav li:hover{
+.sidebar-nav> li:hover{
   background-color: #2097D4;
 }
 
