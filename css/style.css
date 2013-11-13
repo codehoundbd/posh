@@ -123,6 +123,21 @@
 
     }
 
+    .page-header{
+      padding: 0;
+    }
+
+    .page-header h1,
+    .page-header h2,
+    .page-header h3,
+    .page-header h4,
+    .page-header h5,
+    .page-header h6
+    {
+      text-align: center;
+      padding: 0 30px;
+    }
+
     ul,
     ol {
       margin: 0px;
@@ -667,7 +682,7 @@ footer {
 
 footer a, footer p{
 
-  font-family: "Coda", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #BEBCBC;
 
 }
@@ -834,6 +849,29 @@ section header h2{
 
 }
 
+
+
+
+/* The iconic 4-color band of Posh */
+span.color-band{
+
+  display: block;
+  width: 100%;
+  height:5px;
+
+
+  background: rgb(22,81,127); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(22,81,127,1) 0%, rgba(22,81,127,1) 24%, rgba(26,101,165,1) 24%, rgba(26,101,165,1) 49%, rgba(32,134,199,1) 49%, rgba(32,134,199,1) 74%, rgba(32,151,212,1) 74%, rgba(32,151,212,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(22,81,127,1)), color-stop(24%,rgba(22,81,127,1)), color-stop(24%,rgba(26,101,165,1)), color-stop(49%,rgba(26,101,165,1)), color-stop(49%,rgba(32,134,199,1)), color-stop(74%,rgba(32,134,199,1)), color-stop(74%,rgba(32,151,212,1)), color-stop(100%,rgba(32,151,212,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* IE10+ */
+  background: linear-gradient(to right, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16517f', endColorstr='#2097d4',GradientType=1 ); /* IE6-9 */
+
+
+}
+
 span.color-band-thin{
   display: block;
   width: 100%;
@@ -851,25 +889,6 @@ span.color-band-thin{
 }
 
 
-/* The iconic 4-color band of Posh */
-span.color-band{
-
-  display: block;
-  width: 100%;
-  height:10px;
-
-
-  background: rgb(22,81,127); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(22,81,127,1) 0%, rgba(22,81,127,1) 24%, rgba(26,101,165,1) 24%, rgba(26,101,165,1) 49%, rgba(32,134,199,1) 49%, rgba(32,134,199,1) 74%, rgba(32,151,212,1) 74%, rgba(32,151,212,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(22,81,127,1)), color-stop(24%,rgba(22,81,127,1)), color-stop(24%,rgba(26,101,165,1)), color-stop(49%,rgba(26,101,165,1)), color-stop(49%,rgba(32,134,199,1)), color-stop(74%,rgba(32,134,199,1)), color-stop(74%,rgba(32,151,212,1)), color-stop(100%,rgba(32,151,212,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* IE10+ */
-  background: linear-gradient(to right, rgba(22,81,127,1) 0%,rgba(22,81,127,1) 24%,rgba(26,101,165,1) 24%,rgba(26,101,165,1) 49%,rgba(32,134,199,1) 49%,rgba(32,134,199,1) 74%,rgba(32,151,212,1) 74%,rgba(32,151,212,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16517f', endColorstr='#2097d4',GradientType=1 ); /* IE6-9 */
-
-
-}
 section header p {
 
   line-height: 22px;
@@ -2786,12 +2805,12 @@ section.team .imgcaption {
 
 
   section.animations{
-    margin: 10px;
+  
   }
 
   section.animations .anim-buttons{
     text-align: center;
-    margin: 0 20px;
+   
   }
 
   section.animations .anim-buttons button{
@@ -2946,7 +2965,7 @@ section.team .imgcaption {
   section.sampleicons li i{
 
 
-    margin-right: 6px;
+    margin-right: 10px;
     color: #222;
     font-size: 12pt;
   }
@@ -2954,11 +2973,11 @@ section.team .imgcaption {
 
   section.sampleicons li:hover i{
 
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
 
 
   }
