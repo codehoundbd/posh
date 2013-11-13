@@ -82,6 +82,17 @@
 
 <body>
 
+	<!-- Style Switcher Begin -->
+		<a href="#" id="trigger2" class="trigger left">Colors</a>
+		<div id="panel2" class="panel left">
+			<div id="colorchanger">
+			
+			<a class="colorbox colorblue" href="#" rel="css/blue.css"></a>
+			<a class="colorbox colorgreen" href="#" rel="/path/to/style2.css"></a>
+			<a class="colorbox colororange" href="#" rel="/path/to/style3.css"></a>
+		</div>
+		</div>
+		<!-- Style Switcher End -->
 
 	<div class="whole-wrapper">
 		
@@ -296,7 +307,7 @@
 
 			
 			<!-- Features Begin =======================================================================================-->
-			<section class="row" id='features'>
+			<section class="homepage" id='features'>
 				
 				<div class="feature">
 					<div class="row">
@@ -464,17 +475,7 @@
 			
 
 		</section>
-		<!-- Style Switcher Begin -->
-		<a href="#" id="trigger2" class="trigger left">Colors</a>
-		<div id="panel2" class="panel left">
-			<div id="colorchanger">
-			
-			<a class="colorbox colorblue" href="#" rel="css/blue.css"></a>
-			<a class="colorbox colorgreen" href="#" rel="/path/to/style2.css"></a>
-			<a class="colorbox colororange" href="#" rel="/path/to/style3.css"></a>
-		</div>
-		</div>
-		<!-- Style Switcher End -->
+		
 		<!-- Porfolio End ========================================================================================-->
 
 		<section class="features-alt">
@@ -580,7 +581,7 @@
 
 			<div class="section-body row">
 
-				<!-- Accordion -->
+				<!-- Fancy Accordion -->
 				<div class="col-md-6 col-sm-6 col-xs-12 accordion">
 
 					<div class="accordion-fancy">
@@ -977,7 +978,7 @@
 <script src="js/slider/jquery-1.7.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<!-- used by some plugins -->
+<!-- Used by some plugins -->
 <script type="text/javascript" src="js/slider/raphael-min.js"></script>
 <script type="text/javascript" src="js/slider/jquery.easing.js"></script>
 
@@ -992,6 +993,10 @@
 
 <!-- Top Navigation transparency on scroll -->
 <script src="js/transnav.js"></script>
+
+<!-- Style Switcher -->
+<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+<script type="text/javascript" src="js/style-switcher.js"></script>
 
 <!-- jQuery plugin to load flickr images in footer flickr stream -->
 <script src="js/jflickrfeed.min.js"></script>
@@ -1017,27 +1022,8 @@
 
 <!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
 <script src="js/lightbox.js"></script>
-<!-- COLOR CHANGER SCRIPT BEGIN-->
-<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
-<script type="text/javascript">
-		$(document).ready(function() { 
-			$("#colorchanger a").click(function() { 
-				$("link.main-style").attr("href",$(this).attr('rel'));
-				return false;
-			});
-		});
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('#panel2').slidePanel({
-				triggerName: '#trigger2',
-				triggerTopPos: '550px',
-				panelTopPos: '550px'
-			});
 
-		});
-		</script>
-<!-- COLOR CHANGER SCRIPT END -->
+
 
 
 <script>
@@ -1055,21 +1041,11 @@
 					autoAdvance : true
 				});
 
-				// // Menu Hover effect
-				// $('.dropdown-menu').hover(function() {
-
-				// 	$(this).closest('.dropdown').addClass('active');
-				// }, function() {
-				// 	$(this).closest('.dropdown').removeClass('active');
-
-				// });
+				
 
 
 				// logo carousel
 				$('.logos').bxSlider({
-					//auto: true,
-					//easing: 'linear',
-					//pause: 0,
 					tickerHover: true,
 					ticker: true,
 					speed: 48000,
@@ -1127,6 +1103,8 @@
 
 				// Top nav transparency on Scroll 
 				transNav('#poshnav-half-width');
+
+				colorSwitcherInit();
 
 			});
 

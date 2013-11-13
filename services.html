@@ -1,570 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!-- Basics ===================================================================== -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Elegance</title>
+	<title>Posh | Services</title>
+
+
+	<!-- Mobile Specifics =========================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
 
-	<!-- Le styles -->
 
+
+	<!-- Info ======================================================================= -->
+	<meta name="description" content="Premium HTML Website Template">
+	<meta name="author" content="Codehound">
+
+
+	<!-- Styles ===================================================================== -->
+	
+	<!-- Bootstrap 3 -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
+
+
+	<!-- CSS to override Some Bootstrap styles -->
 	<link rel="stylesheet" href="css/bootstrap-overrides.css">
 
-	<!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
-	<link rel="stylesheet" href="css/bootstrap-responsive-overrides.css">
 
-	<link rel="stylesheet" href="css/style.css">
+	<!-- Main StyleSheet for Posh  -->
+	<link rel="stylesheet" class="main-style" href="css/style.css">
 
+
+	<!-- Styles specific to only the half-widh/boxed layout -->
 	<link rel="stylesheet" href="css/style-hw.css">
+
+
+	<!-- Some Overrides for responsiveness -->
 	<link rel="stylesheet" href="css/style-responsive.css">
 
 
-	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+	<!-- FontAwesome Icons -->
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 
+	<!-- support of IE8 -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js" type="text/javascript"></script>
+      <script src="js/respond.min.js" type="text/javascript"></script>
+      <![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
 
-	
+      <!-- Modernizr is used by some jQuery plugins -->
+      <script src="js/modernizr.custom.js"></script>
 
-	<!-- <link rel="stylesheet" type="text/css" href="css/component.css" /> -->
 
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<![endif]-->
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="ico/favicon.png">
 
-		<!--Slider Css n Js-->
-		<link rel="stylesheet" href="css/slider/iview.css" />
-		<link rel="stylesheet" href="css/slider/skin1/style.css" />
 
-		<!--End Slider Css n Js-->
+  </head>
 
-		<script src="js/modernizr.custom.js"></script>
+  <body>
 
-		<!--BxSlider Begin-->
-		
+  	<!-- Style Switcher Begin -->
+  	<a href="#" id="trigger2" class="trigger left">Colors</a>
+  	<div id="panel2" class="panel left">
+  		<div id="colorchanger">
 
-		<!--Accordion Script-->
+  			<a class="colorbox colorblue" href="#" rel="css/blue.css"></a>
+  			<a class="colorbox colorgreen" href="#" rel="/path/to/style2.css"></a>
+  			<a class="colorbox colororange" href="#" rel="/path/to/style3.css"></a>
+  		</div>
+  	</div>
+  	<!-- Style Switcher End -->
 
-		<!-- Fav and touch icons -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">
-	</head>
 
-	<body>
-		<div class="whole-wrapper">
-			<div class="hw-wrapper">
-				<div id="elegantnav-half-width">
-					<div class="navbar navbar-inverse" >
 
+  	<div class="whole-wrapper">
 
+  		<!-- half-width wrapper to limit the width of everything =======================================================-->
+  		<div class="hw-wrapper">
 
 
+  			<!-- Top Navigation Begin ==================================================================================-->
+  			<div id="poshnav-half-width">
+  				<div class="navbar navbar-inverse" >
 
-						<div class="navbar-header">
+  					<div class="navbar-header">
 
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+  						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-							<a class="navbar-brand" href="#"><img src="img/bh-logo-topnav.png" alt=""></a>
+  						<a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
 
-						</div>	
-						<div class="collapse navbar-collapse">
+  					</div>	
+  					<div class="collapse navbar-collapse">
 
-							<ul class="nav navbar-nav">
 
-								<li class="active" >
-									<a href="#">Home</a>
-								</li>
-								<li>
-									<a href="#">About</a>
-								</li>
-								<li>
-									<a href="#">Contact</a>
-								</li>
-								<li>
-									<a href="#">Features</a>
-								</li>
-								<li>
-									<a href="#">Contact</a>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown </a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
 
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-										<li>
-											<a href="#">Menu Item</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
+  						<ul class="nav navbar-nav">
 
-							<form class="navbar-search pull-right" role="search">
-								<input type="text" class="search-query">
-							</form>
+  							<li class="dropdown">
+  								<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+  								<ul class="dropdown-menu animated fadeInDown animated-300ms">
 
-						</div><!-- /.navbar-collapse -->
-						
-					</div>
-				</div><!--Nav Contaner End-->
+  									<li>
+  										<a href="index.html">iView Slider</a>
+  									</li>
+  									<li>
+  										<a href="index-nivo.html">Nivo Slider</a>
+  									</li>
 
+  									<li>
+  										<a href="index-camera.html">Camera Slider</a>
+  									</li>
+  								</ul>
+  							</li>
+  							<li class="dropdown">
+  								<a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="portfolio-4c.html">4 Column</a>
+  									</li>
+  									<li>
+  										<a href="portfolio.html">3 Column</a>
+  									</li>
+  									<li>
+  										<a href="portfolio-2c.html">2 Column</a>
+  									</li>
 
+  									<li>
+  										<a href="portfolio-single.html">Single Portfolio</a>
+  									</li>
 
-				<section id="services">
-					
-					<header>
-						<h1>Our <b class="emph">Services</b></h1>
-						<span class="line"></span>
-					</header>
-					<div class="row">
-						<div class="col-md-9 col-sm-9 col-xs-12">
-							<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-						</div>
+  								</ul>
+  							</li>
 
+  							<li class="dropdown">
+  								<a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="blog-ls.html">Left Sidebar</a>
+  									</li>
+  									<li>
+  										<a href="blog.html">Right Sidebar</a>
+  									</li>
+  									<li>
+  										<a href="blog-single.html">Single Blog</a>
+  									</li>
 
-						<div class="col-md-3 col-sm-3 hidden-xs">
-							<img src="img/girl-service.png" alt="girl">
-							<span class="sayhello">Say Hello</span>
-						</div>
 
-					</div>
 
-					
-				</section>
+  								</ul>
+  							</li>
 
 
-				<section class="packages">
+  							<li class="dropdown">
+  								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="contact.html">Contact</a>
+  									</li>
+  									<li>
+  										<a href="about.html">About</a>
+  									</li>
 
-				<header>
-						<h1>Our <b class="emph">Packages</b></h1>
-						<span class="line"></span>
+  									<li>
+  										<a href="services.html">Services</a>
+  									</li>
 
-						
-						<h2>People are different, so are our packages</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum
-							id tincidunt nunc faucibus. Ut neque eros,
-						</p>						
+  									<li>
+  										<a href="page404.html">404</a>
+  									</li>
 
-					</header>
 
-					<div class="row">
 
-						<div class="package-wrapper">
-							<div class="package">
-								
+  								</ul>
+  							</li>
 
-									<img src="img/lab.png" class="img-circle">
 
-								
-								<h2>FREE</h2>
-								<p>
-									Loren Ipsum dolor sit amet ihdiufbh sdfisdf sifn sgfb Ipsum dolor sit amet ihdiufbh sdfis Ipsum dolor sit amet ihdiufbh sdfis
-								</p>
+  							<li class="dropdown">
+  								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="components.html">Components</a>
+  									</li>
+  									<li>
+  										<a href="icons.html">Icons</a>
+  									</li>
+  									<li>
+  										<a href="anims.html">Animations</a>
+  									</li>
 
+  								</ul>
+  							</li>
+  						</ul>
 
-								<a href="#">Read More...</a>
+  						<form class="navbar-search pull-right" role="search">
+  							<input type="text" class="search-query">
+  						</form>
 
-								<button class="btn btn-lg">Get It Now</button>
+  					</div>
 
+  				</div>
+  			</div>
 
-							</div>
+  			<!-- Top Navigation End ====================================================================================-->
 
 
-						</div>
 
-						<div class="package-wrapper">
-							<div class="package">
-							
 
-									<img src="img/star.png" class="img-circle">
 
-								
-								<h2>STANDARD</h2>
-								<p>
-									Loren Ipsum dolor sit amet ihdiufbh sdfisdf sifn sgfb Ipsum dolor sit amet ihdiufbh sdfis Ipsum dolor sit amet ihdiufbh sdfis
-								</p>
+  			<section id="services">
 
+  				<header>
+  					<h1>Our Services</h1>
+  					<span class="color-band"></span>
+  				</header>
+  				<div class="services-body row">
+  					<div class="col-md-9 col-sm-9 col-xs-12">
+  						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+  					</div>
 
-								<a href="#">Read More...</a>
 
-								<button class="btn btn-lg">Get It Now</button>
+  					<div class="col-md-3 col-sm-3 hidden-xs">
+  						<img src="img/girl-service.png" alt="girl">
+  						
+  					</div>
 
+  				</div>
 
-							</div>
-						</div>
 
-						<div class="package-wrapper">
-							<div class="package">
-								
+  			</section>
 
-									<img src="img/rocket.png" class="img-circle">
 
-						
-								<h2>PREMIUM</h2>
-								<p>
-									Loren Ipsum dolor sit amet ihdiufbh sdfisdf sifn sgfb Ipsum dolor sit amet ihdiufbh sdfis Ipsum dolor sit amet ihdiufbh sdfis
-								</p>
+  			<section class="packages">
 
+  				<header>
+  					<h1>Our Packages</h1>
+  					<h2>People are different, so are our packages</h2>
+  					<span class="color-band"></span>					
+  				</header>
 
-								<a href="#">Read More...</a>
+  				<div class="packages-body row">
 
-								<button class="btn btn-lg">Get It Now</button>
+  					<div class="package-wrapper">
+  						<div class="package">
 
 
-							</div>
-						</div>
+  							<img src="img/lab.png" class="img-circle">
 
-						<div class="package-wrapper">
-							<div class="package">
-							
 
-									<img src="img/wand.png" class="img-circle">
+  							<h2>BASIC</h2>
+  							
+  							<ul class='checklist'>
+  								<li>5GB Disk space</li>
+  								<li>10GB Monthly Bandwidth</li>
+  								<li>10 Email accounts</li>
+  								<li>2 Subdomains</li>
+  							</ul>
 
-								
-								<h2>GOLD</h2>
-								<p>
-									Loren Ipsum dolor sit amet ihdiufbh sdfisdf sifn sgfb Ipsum dolor sit amet ihdiufbh sdfis Ipsum dolor sit amet ihdiufbh sdfis
-								</p>
 
+  							
 
-								<a href="#">Read More...</a>
+  							<button class="btn btn-lg"><i class="fa fa-gift"></i> FREE</button>
 
-								<button class="btn btn-lg">Get It Now</button>
 
+  						</div>
 
-							</div>
-						</div>
-					</div>
-				</section>
 
+  					</div>
 
+  					<div class="package-wrapper">
+  						<div class="package">
 
 
+  							<img src="img/star.png" class="img-circle">
 
-				
 
-				<footer>
+  							<h2>STANDARD</h2>
+  							<ul class='checklist'>
 
-					<div class="row footer-header-wrapper visible-lg visible-md">
-						<div class="row footer-header">
-							<div class="col-md-3">
-								Categories
-							</div>
+  								<li>10GB Disk space</li>
+  								<li>15GB Monthly Bandwidth</li>
+  								<li>20 Email accounts</li>
+  								<li>4 Subdomains</li>
+  								
+  							</ul>
 
-							<div class="col-md-3">
-								Flickr Stream
-							</div>
+  							<button class="btn btn-lg"><i class="fa fa-shopping-cart"></i> $39</button>
 
-							<div class="col-md-3">
-								Recent Tweets
-							</div>
 
-							<div class="col-md-3">
-								Contact us
-							</div>
+  						</div>
+  					</div>
 
-						</div>
+  					<div class="package-wrapper">
+  						<div class="package">
 
-					</div>
 
-					<div class="row" id='footer-body'>
+  							<img src="img/rocket.png" class="img-circle">
 
-						<div class="col-md-3 col-sm-12">
 
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Categories
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body" id='footer-categories'>
+  							<h2>PREMIUM</h2>
+  							<ul class='checklist'>							
+  								<li>20GB Disk space</li>
+  								<li>20GB Monthly Bandwidth</li>
+  								<li>Unlimited Email accounts</li>
+  								<li>10 Subdomains</li>
+  							</ul>
+  							<button class="btn btn-lg"><i class="fa fa-shopping-cart"></i> $59</button>
 
-								<ul>
-									<li>
-										<a href="#">Learn HTML & CSS</a>
-									</li>
-									<li>
-										<a href="#">Teach Yourself Coding </a>
-									</li>
-									<li>
-										<a href="#">Knowled of PHP</a>
-									</li>
-									<li>
-										<a href="#">Custom Coding</a>
-									</li>
-									<li>
-										<a href="#">Full Size Documentation </a>
-									</li>
-								</ul>
 
-							</div>
-						</div>
+  						</div>
+  					</div>
 
-						<div class="col-md-3">
+  					<div class="package-wrapper">
+  						<div class="package">
 
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Flickr Stream
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body">
 
-								
-								<!-- Flickr Images are loaded by the jQuery flickrush plugin -->
-								<div id="flickrImages"></div>  
-								
+  							<img src="img/wand.png" class="img-circle">
 
-							</div>
-						</div>
+  							<h2>GOLD</h2>
+  							<ul class='checklist'>							
+  								<li>20GB Disk space</li>
+  								<li>20GB Monthly Bandwidth</li>
+  								<li>Unlimited Email accounts</li>
+  								<li>20 Subdomains</li>
+  							</ul>
 
-						<div class="col-md-3" id='footer-tweeter-feed'>
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Recent tweets
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body">
+  							<button class="btn btn-lg"><i class="fa fa-shopping-cart"></i> $99</button>
 
-								<ul>
-									<li>
 
-										<div class="media">
-											<a class="pull-left" href="#"> <img class="media-object" src='img/twitter-footer.png'> </a>
-											<div class="media-body">
-												<h4 class="media-heading">@lorenIpsum</h4>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis.test
-												</p>
-											</div>
-										</div>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
 
-									</li>
 
-									<li>
 
-										<div class="media">
-											<a class="pull-left" href="#"> <img class="media-object" src='img/twitter-footer.png'> </a>
-											<div class="media-body">
-												<h4 class="media-heading">@lorenIpsum</h4>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis.
-												</p>
-											</div>
-										</div>
+  			<!-- Newsletter Subscribe Banner Begin =====================================================================-->
+  			<section class="newsletter row">
 
-									</li>
-								</ul>
+  				<div class="halfnewsletter col-md-5 col-sm-5 col-xs-12">
+  					<img src="img/mail.png" alt="mail-icon">
+  					<span>Hear From Us</span>
+  				</div>
 
-							</div>
-						</div>
+  				<div class="halfnewsletter col-md-7 col-sm-7 col-xs-12">
+  					<div class="col-xs-8">
+  						<input type="text" placeholder="Email">
+  					</div>
 
-						<div class="col-md-3">
-							<div class="row footer-header-collapse">
-								<div class="row footer-header">
-									<div class="col-md-3">
-										Contact Us
-									</div>
-								</div>
-							</div>
-							<div class="row footer-section-body">
+  					<div class="col-xs-4">
+  						<button>Subscribe</button>
+  					</div>
+  				</div>
+  			</section>
+  			<!-- Newsletter Subscribe Banner End =======================================================================-->
 
-								<form>
 
-									<input type='text' placeholder='Name'>
-									<input type='text' placeholder='Email'>
-									<textarea type='text' placeholder='Message'></textarea>
-									<button class='pull-right'>
-										Send
-									</button>
-								</form>
 
-							</div>
-						</div>
 
-					</div>
 
-					<div class="row" id='footer-bottom'>
+  			<footer>
 
-						<div class="col-md-6" id='footer-bottom-left'>
 
-							<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+  				<!-- Continuous Headers visible only in large screens -->
+  				<div class="row footer-header-wrapper visible-lg visible-md">
+  					<div class="row footer-header">
+  						<div class="col-md-3">
+  							Categories
+  						</div>
 
-						</div>
+  						<div class="col-md-3">
+  							Flickr Stream
+  						</div>
 
-						<div class="col-md-6">
-							<nav>
-								<ul class="breadcrumb">
-									<li>
-										<a href="#">Home</a>
-									</li>
-									<li>
-										<a href="#">About </a>
-									</li>
-									<li>
-										<a href="#">Contact </a>
-									</li>
-									<li>
-										<a href="#">Services </a>
-									</li>
-									
-									<li>
-										<a href="#">Blog </a>
-									</li>
-									
-								</ul>
+  						<div class="col-md-3">
+  							Recent Tweets
+  						</div>
 
-							</nav>
+  						<div class="col-md-3">
+  							Contact us
+  						</div>
 
-						</div>
+  					</div>
 
-					</div>
+  				</div>
 
+  				<div class="row" id='footer-body'>
 
+  					<div class="col-md-3 col-sm-12">
 
+  						<!-- Footer Section header, only visible in small screens. -->
+  						<div class="row footer-header-collapse">
+  							<div class="row footer-header">
+  								<div class="col-md-3">
+  									Categories
+  								</div>
+  							</div>
+  						</div>
 
+  						<!-- Categories -->
+  						<div class="row footer-section-body" id='footer-categories'>
+  							<ul>
+  								<li>
+  									<a href="#">Learn HTML & CSS</a>
+  								</li>
+  								<li>
+  									<a href="#">Teach Yourself Coding </a>
+  								</li>
+  								<li>
+  									<a href="#">Knowled of PHP</a>
+  								</li>
+  								<li>
+  									<a href="#">Custom Coding</a>
+  								</li>
+  								<li>
+  									<a href="#">Full Size Documentation </a>
+  								</li>
+  							</ul>
 
-				</footer>
+  						</div>
+  					</div>
 
-			</div> <!-- /container -->
+  					<div class="col-md-3">
 
-		<!-- Le javascript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
+  						<!-- Footer Section header, only visible in small screens. -->
+  						<div class="row footer-header-collapse">
+  							<div class="row footer-header">
+  								<div class="col-md-3">
+  									Flickr Stream
+  								</div>
+  							</div>
+  						</div>
+  						<div class="row footer-section-body">
 
-	</div>
 
-	<script src="js/slider/jquery-1.7.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+  							<!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+  							<div id="flickrImages"></div>  
 
-	<script type="text/javascript" src="js/slider/raphael-min.js"></script>
-	<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-	<script src="js/slider/iview.js"></script>
 
-	<script src="js/portfolio-adjust.js"></script>
+  						</div>
+  					</div>
 
-	<script src="js/jquery.flickrush.js"></script>
-	<script type="text/javascript">  
-		$(function() {
-			$('div#flickrImages').flickrush({
-				limit:20,
-				id:'80307667@N04',
-				random:true,
-				ssl:true
-			}); 
-		});
-	</script>
+  					<div class="col-md-3" id='footer-tweeter-feed'>
 
-	<script>
-		$(document).ready(function() {
+  						<!-- Footer Section header, only visible in small screens. -->
+  						<div class="row footer-header-collapse">
+  							<div class="row footer-header">
+  								<div class="col-md-3">
+  									Recent tweets
+  								</div>
+  							</div>
+  						</div>
+  						<div class="row footer-section-body">
 
-				//$('body').fadeIn('slow');
+  							<ul>
+  								<li>
 
-				$('#iview').iView({
-					pauseTime : 7000,
-					pauseOnHover : true,
-					directionNavHoverOpacity : 0,
-					autoAdvance : false
-				});
+  									<div class="media">
+  										<a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+  										<div class="media-body">
+  											<h4 class="media-heading">@LorenIpsum</h4>
+  											<p>
+  												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+  											</p>
+  										</div>
+  									</div>
 
-				$('.dropdown-menu').hover(function() {
+  								</li>
 
-					$(this).closest('.dropdown').addClass('active');
-				}, function() {
-					$(this).closest('.dropdown').removeClass('active');
+  								<li>
 
-				});
+  									<div class="media">
+  										<a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+  										<div class="media-body">
+  											<h4 class="media-heading">@DolorAmet</h4>
+  											<p>
+  												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+  											</p>
+  										</div>
+  									</div>
 
+  								</li>
+  							</ul>
 
-				$('.slider3').bxSlider({
-					controls : true,
-					slideWidth : 200,
-					minSlides : 4,
-					maxSlides : 4,
-					slideMargin : 10
-				});
+  						</div>
+  					</div>
 
+  					<div class="col-md-3">
 
-				$('.testimonial-slider').bxSlider({
-					infiniteLoop : true,
-					mode : 'fade',
-					auto : true,
-					controls : false,
-					pager : false,
-					speed : 2000
-				});
+  						<!-- Footer Section header, only visible in small screens. -->
+  						<div class="row footer-header-collapse">
+  							<div class="row footer-header">
+  								<div class="col-md-3">
+  									Contact Us
+  								</div>
+  							</div>
+  						</div>
+  						<div class="row footer-section-body">
 
-				adjustPortfolioHover(20);
+  							<form>
+
+  								<input type='text' placeholder='Name'>
+  								<input type='text' placeholder='Email'>
+  								<textarea type='text' placeholder='Message'></textarea>
+  								<button class='pull-right'>
+  									Send
+  								</button>
+  							</form>
+
+  						</div>
+  					</div>
+
+  				</div>
+
+  				<div class="row" id='footer-bottom'>
+
+  					<div class="col-md-6" id='footer-bottom-left'>
+
+  						<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+
+  					</div>
+
+  					<div class="col-md-6 hidden-xs hidden-sm">
+  						<nav>
+  							<ul class="breadcrumb">
+  								<li>
+  									<a href="#">Home</a>
+  								</li>
+  								<li>
+  									<a href="#">About </a>
+  								</li>
+  								<li>
+  									<a href="#">Contact </a>
+  								</li>
+  								<li>
+  									<a href="#">Services </a>
+  								</li>
+
+  								<li>
+  									<a href="#">Blog </a>
+  								</li>
+
+  							</ul>
+
+  						</nav>
+
+  					</div>
+
+  				</div>
+
+  			</footer>
+
+  			<span class="color-band"></span>
+  			<!-- Main Footer End =======================================================================================-->
+
+  		</div> <!-- /.hw-wrapper -->
+
+  	</div> <!-- /.whole-wrapper -->
+
+
+
+
+
+  	<!-- Scripts =======================================================================================================-->
+
+
+  	<!-- Basics -->
+  	<script src="js/slider/jquery-1.7.1.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+
+  	<!-- Used by some plugins -->
+  	<script type="text/javascript" src="js/slider/raphael-min.js"></script>
+  	<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
+
+
+  	<!-- Top Navigation transparency on scroll -->
+  	<script src="js/transnav.js"></script>
+
+  	<!-- Style Switcher -->
+  	<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+  	<script type="text/javascript" src="js/style-switcher.js"></script>
+
+  	<!-- jQuery plugin to load flickr images in footer flickr stream -->
+  	<script src="js/jflickrfeed.min.js"></script>
+
+
+  	<script type="text/javascript">  
+  		$(function() {
+  			$('#flickrImages').jflickrfeed({
+  				limit: 9,
+  				qstrings: {
+  					id: '71865026@N00'
+  				},
+  				itemTemplate: 
+  				'<div class="flickr-thumb">' +
+  				'<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
+  				'<img src="{{image_s}}" alt="{{title}}" />' +
+  				'</a>' +
+  				'</div>'
+  			}); 
+  		});
+
+  	</script>
+
+  	<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
+  	<script src="js/lightbox.js"></script>
+
+
+
+
+  	<script>
+
+
+  		$(document).ready(function() {
+
+
+
+
+				// Top nav transparency on Scroll 
+				transNav('#poshnav-half-width');
+
+				colorSwitcherInit();
 
 			});
-	</script>
-
-	
-	<script type="text/javascript">
-
-		$(window).resize(function() {
-
-			adjustPortfolioHover(20);
-
-		});
-
-	</script>
-
-</script>
 
 
-<script type="text/javascript">
-	$(function() {
-		$(window).scroll(function(){
-			var scrollTop = $(window).scrollTop();
-			if(scrollTop != 0)
-				$('#elegantnav-half-width').stop().animate({'opacity':'0.9'},400);
-			else	
-				$('#elegantnav-half-width').stop().animate({'opacity':'1'},400);
-		});
 
-		$('#elegantnav-half-width').hover(
-			function (e) {
-				var scrollTop = $(window).scrollTop();
-				if(scrollTop != 0){
-					$('#elegantnav-half-width').stop().animate({'opacity':'1'},400);
-				}
-			},
-			function (e) {
-				var scrollTop = $(window).scrollTop();
-				if(scrollTop != 0){
-					$('#elegantnav-half-width').stop().animate({'opacity':'0.9'},400);
-				}
-			}
-			);
-	});
-</script>
+  	</script>
 
 
-</body>
-</html>
+
+  </body>
+  </html>

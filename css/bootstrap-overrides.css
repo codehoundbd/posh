@@ -373,6 +373,7 @@ hr{
 
 .nav-tabs > li > a {
 
+	color: white;
 	border: none;
 	margin: 0;
 	background-color: #2a92e5;
@@ -380,6 +381,19 @@ hr{
 	font-size: 12pt;
 
 }
+
+.nav-tabs > li > a:hover {
+
+	color: #686968;
+	border: none;
+	margin: 0;
+	background-color: #ededed;
+	border-radius: 0;
+	font-size: 12pt;
+
+}
+
+
 .tab-content > .tab-pane, .pill-content > .pill-pane {
 	background-color: #eaeaea;
 	line-height: 22px;
@@ -396,6 +410,8 @@ hr{
 
 }
 .well{
+
+	background-color: white; 
 	font-size: 11pt;
 }
 
