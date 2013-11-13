@@ -31,12 +31,15 @@
 	<link rel="stylesheet" href="css/style.css">
 
 
+
 	<!-- Some Overrides for responsiveness -->
 	<link rel="stylesheet" href="css/style-responsive.css">
 
 	
-	<!-- CSS for BxSlider (used in logoslide and testimonal) -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+
+	<!-- Used by jQuery Shadow plugin  -->
+	<link href="css/jquery.shadow.css" rel="stylesheet"/>
+
 
 
 
@@ -66,6 +69,8 @@
 <body>
 
 	<div class="fw-wrapper">
+		
+
 
 
 		<!-- Navigation Bar  Begin ====================================================================================-->
@@ -193,43 +198,33 @@
 
 
 
+
 		<!-- Top Image and Text -->
-		<section id='about-banner'>
-
-			<div class="container">
-
-				<img src="img/pic_about.png" alt='About us'>
-
-
-			</div>
-
-		</section>
-
 		<section id='about-main'>
 
 			<div class="container">
-
+				
+				<img src="img/pic_about.png" alt='About us'>
 
 				<header class="center-header-text">
-				<h1>A Few Words <b class="emph">About Us</b></h1>
-				<span class="line"></span>
-				
-				<p>
-					As you can see, without affecting how blurry the shadow is, the spread of the shadow essentially grows and shrinks the surface area occupied by the shadow. If you thought of it as the size of the shadow, you wouldn’t be too far off.
-
-					If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng
-				</p>
-
+					<h1>A Few Words About Us</h1>
 				</header>
+				<div class="about-banner">
+					<p>
+						As you can see, without affecting how blurry the shadow is, the spread of the shadow essentially grows and shrinks the surface area occupied by the shadow. If you thought of it as the size of the shadow, you wouldn’t be too far off.
 
+						If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng
+					</p>
+
+					
 				</div>
+				
+			</div>
 		</section>
 
 
 		<!-- Purchase Advertisement -->
-		<section class="purchase-bar">
-
-			<div class="container">
+			<!-- <section class="purchase-bar">
 
 				<div class="purchase-bar-inner">
 					<span class="ad">Buy our theme and discover elegant solutions for your business</span>
@@ -239,472 +234,487 @@
 					</button>
 				</div>
 
-			</div>
-
-		</section>
+			</section> -->
 
 
-		<!-- Our Team Header-->
-		<section class="about-team">
-			<div class="container">
-				<header>
-					<h1>Our <b class="emph">Team</b></h1>
-					<span class="line"></span>
+			<!-- Our Team -->
+			<section class="team">
 
+				<div class="container">
+					<header>
+						<h1>Meet Our Team</h1>
 
-					<h2>A perfect team is a well balanced team</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum
-						id tincidunt nunc faucibus. Ut neque eros,
-					</p>						
+						<span class="color-band"></span>						
 
-				</header>
-			</div>
-		</section>
-
-
-		<!-- Our Team -->
-		<section class="team">
-			<div class="container">
-				<div class="row">
-					<ul>
-
-						<li>
-							<div class="team-member">
-
-								<div class="imgwrapper">
-									<img src="img/manager.png" alt="Manager">
-									<div class="imgback"></div>
-
-								</div>
-
-								<div class="imgcaption">
-									<h1>Mursa Smith</h1>
-									<h2>Manager </h2>
-									<p>
-										Nice guy. The Office Owner. Loren Ipsum. I make websites for BNP.
-									</p>
-
-								</div>
-
-								<div class="row socialboxes-wrapper">
-
-									<div class="socialbox-holder">
-										<a href="#" class="fb"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="tweet"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="gplus"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="lin"></a>
-									</div>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="team-member">
-
-								<div class="imgwrapper">
-									<img src="img/designer.png" alt="Designer">
-									<div class="imgback"></div>
-
-								</div>
-
-								<div class="imgcaption">
-									<h1>Rokib Miah</h1>
-									<h2>Designer</h2>
-									<p>
-										I love vespa and lungi. I'm learning HTML so I'm ditching codehound the moment i get the chance.
-									</p>
-
-								</div>
-
-								<div class="row socialboxes-wrapper">
-
-									<div class="socialbox-holder">
-										<a href="#" class="fb"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="tweet"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="gplus"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="lin"></a>
-									</div>
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="team-member">
-
-								<div class="imgwrapper">
-									<img src="img/developer.png" alt="Developer">
-									<div class="imgback"></div>
-
-								</div>
-
-								<div class="imgcaption">
-									<h1>Dev Mehedee</h1>
-									<h2>Developer</h2>
-									<p>
-										Nice person. A superly dedicated guy to codehound XD
-									</p>
-
-								</div>
-
-								<div class="row socialboxes-wrapper">
-
-									<div class="socialbox-holder">
-										<a href="#" class="fb"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="tweet"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="gplus"></a>
-									</div>
-
-									<div class="socialbox-holder">
-										<a href="#" class="lin"></a>
-									</div>
-								</div>
-
-							</div>
-						</li>
-
-					</ul>
+					</header>
 
 				</div>
-			</div>
-		</section>
+
+				<div class="section-body row">
+
+					<div class="container">
 
 
 
-		<!-- Testimonial -->
-		<section class="testimonial">
-
-			<div class="container">
-
-				<div class="row" id="testimonial">
-
-					<div class="quote-sign">
-						<img src="img/quote-left.png">
-					</div>
-					<div class="content">
-
-						<ul class='testimonial-slider'>
-							<li>
-								<p>
-									Lorem ipsum dolor sit amet, vis te sale  vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est, quod consetetur his at.
-								</p>
-								<img src="img/testimonial1.png" alt="Testimonial Thumb">
-								<h2>- Katrina Kaif</h2>
-
-							</li>
+						<ul>
 
 							<li>
-								<p>
+								<div class="team-member">
 
-									Dolor sit amet, vis te sale comprehensam, Commodo platonem vix ei. Eum eu malis aeterno. Sit eu nostro audire invenire. Soleat scripta ex est his at.
+									<div class="imgwrapper">
+										<img src="img/manager.png" alt="manager">
+										<div class="imgback"></div>
 
-								</p>
-								<img src="img/testimonial2.png" alt="Testimonial Thumb">
-								<h2>- Chris Nolan</h2>
+									</div>
 
+									<div class="imgcaption">
+										<h1>Mursa Smith</h1>
+										<h2>CEO</h2>
+										<p>
+											An MIT graduate. Passionate about design and perfection.
+										</p>
+
+									</div>
+
+									<div class="row socialboxes-wrapper">
+
+										<div class="socialbox-holder">
+											<a href="#" class="fb"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="tweet"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="gplus"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="lin"></a>
+										</div>
+									</div>
+
+								</div>
 							</li>
+							<li>
+								<div class="team-member">
+
+									<div class="imgwrapper">
+										<img src="img/designer.png" alt="designer">
+										<div class="imgback"></div>
+
+									</div>
+
+									<div class="imgcaption">
+										<h1>Rokib Miah</h1>
+										<h2>Design Lead</h2>
+										<p>
+											An MIT graduate. Passionate about design and perfection.
+										</p>
+
+									</div>
+
+									<div class="row socialboxes-wrapper">
+
+										<div class="socialbox-holder">
+											<a href="#" class="fb"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="tweet"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="gplus"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="lin"></a>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="team-member">
+
+									<div class="imgwrapper">
+										<img src="img/developer.png" alt="developer">
+										<div class="imgback"></div>
+
+									</div>
+
+									<div class="imgcaption">
+										<h1>Devv Mehdee</h1>
+										<h2>Development Lead</h2>
+										<p>
+											An MIT graduate. Passionate about design and perfection.
+										</p>
+
+									</div>
+
+									<div class="row socialboxes-wrapper">
+
+										<div class="socialbox-holder">
+											<a href="#" class="fb"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="tweet"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="gplus"></a>
+										</div>
+
+										<div class="socialbox-holder">
+											<a href="#" class="lin"></a>
+										</div>
+									</div>
+
+								</div>
+							</li>
+
 						</ul>
-					</div>
 
-					<div class="quote-sign">
-						<img src="img/quote-right.png">
 					</div>
 
 				</div>
 
-			</div>
-		</section>
+				
+
+			</section>
+
+
+			
 
 
 
 
 
-		<!-- Main Footer Begin =====================================================================================-->
-		<footer>
 
 
-			<!-- Continuous Headers visible only in large screens -->
-			<div class="row footer-header-wrapper visible-lg visible-md">
+
+
+
+			<section class="skill-bar">
 
 				<div class="container">
-					<div class="row footer-header" >
-						<div class="col-md-3">
-							Categories
+					<header>
+						<h1>Our Skills</h1>
+						<span class="color-band"></span>
+					</header>
+				</div>
+
+
+				<div class="knobs section-body row">
+
+					<div class="container">
+
+						<div class="knob col-md-3">
+							<input type="text" class="dial" value="90" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#16517f" data-bgColor="#ffffff">
+							<h3>Design</h3>
 						</div>
 
-						<div class="col-md-3">
-							Flickr Stream
+
+						<div class="knob col-md-3">
+							<input type="text" class="dial" value="70" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#1a65a5" data-bgColor="#ffffff">
+							<h3>HTML</h3>
 						</div>
 
-						<div class="col-md-3">
-							Recent Tweets
+						<div class="knob col-md-3">
+							<input type="text" class="dial" data-min="0" value="50" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2086c7" data-bgColor="#ffffff">
+							<h3>CSS</h3>
 						</div>
 
-						<div class="col-md-3">
-							Contact us
+						<div class="knob col-md-3">
+							<input type="text" class="dial" data-min="0" value="30" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2097d4" data-bgColor="#ffffff">
+							<h3>Javascript</h3>
+						</div>	
+
+					</div>			
+				</div>
+			</section>
+
+
+
+
+
+			
+			<!-- Main Footer Begin =====================================================================================-->
+			<footer>
+
+
+				<!-- Continuous Headers visible only in large screens -->
+				<div class="row footer-header-wrapper visible-lg visible-md">
+
+					<div class="container">
+						<div class="row footer-header" >
+							<div class="col-md-3">
+								Categories
+							</div>
+
+							<div class="col-md-3">
+								Flickr Stream
+							</div>
+
+							<div class="col-md-3">
+								Recent Tweets
+							</div>
+
+							<div class="col-md-3">
+								Contact us
+							</div>
+
 						</div>
 
 					</div>
 
 				</div>
 
-			</div>
 
-
-			<div class="container">
-
-				<div class="row" id='footer-body'>
-
-					<div class="col-md-3">
-
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header" >
-								<div class="col-md-3">
-									Categories
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body" id='footer-categories'>
-
-							<ul>
-								<li>
-									<a href="#">Learn HTML & CSS</a>
-								</li>
-								<li>
-									<a href="#">Teach Yourself Coding </a>
-								</li>
-								<li>
-									<a href="#">Knowled of PHP</a>
-								</li>
-								<li>
-									<a href="#">Custom Coding</a>
-								</li>
-								<li>
-									<a href="#">Full Size Documentation </a>
-								</li>
-							</ul>
-
-						</div>
-					</div>
-
-					<div class="col-md-3">
-
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header">
-								<div class="col-md-3">
-									Flickr Stream
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body">
-
-							<!-- Flickr Images are loaded by the jFlickrFeed plugin -->
-							<div id="flickrImages"></div>  
-
-						</div>
-
-					</div>
-
-					<div class="col-md-3" id='footer-tweeter-feed'>
-
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header" >
-								<div class="col-md-3">
-									Recent tweets
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body">
-
-							<ul>
-								<li>
-
-									<div class="media">
-										<a class="pull-left" href="#"><i class="icon-twitter icon-2x"></i></a>
-										<div class="media-body">
-											<h4 class="media-heading">@LorenIpsum</h4>
-											<p>
-												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-											</p>
-										</div>
-									</div>
-
-								</li>
-
-								<li>
-
-									<div class="media">
-										<a class="pull-left" href="#"> <i class="icon-twitter icon-2x"></i></a>
-										<div class="media-body">
-											<h4 class="media-heading">@DolorAmet</h4>
-											<p>
-												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-											</p>
-										</div>
-									</div>
-
-								</li>
-							</ul>
-
-						</div>
-					</div>
-
-					<div class="col-md-3">
-
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header" >
-								<div class="col-md-3">
-									Contact Us
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body">
-
-							<form>
-
-								<input type='text' placeholder='Name'>
-								<input type='text' placeholder='Email'>
-								<textarea  placeholder='Message' ></textarea>
-								<button class='pull-right'>
-									Send
-								</button>
-							</form>
-
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-
-			<div class="row" id='footer-bottom'>
 				<div class="container">
-					<div class="col-md-6" id='footer-bottom-left'>
 
-						<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+					<div class="row" id='footer-body'>
 
-					</div>
+						<div class="col-md-3">
 
-					<div class="col-md-6 hidden-xs hidden-sm">
-						<nav>
-							<ul class="breadcrumb">
-								<li>
-									<a href="index-fw.html">Home</a>
-								</li>
-								<li>
-									<a href="portfolio-fw.html">Portfolio</a>
-								</li>
-								<li>
-									<a href="blog-fw.html">Blog</a>
-								</li>
-								<li>
-									<a href="#">Pages</a>
-								</li>
+							<!-- Footer Section header, only visible in small screens. -->
+							<div class="row footer-header-collapse">
+								<div class="row footer-header" >
+									<div class="col-md-3">
+										Categories
+									</div>
+								</div>
+							</div>
+							<div class="row footer-section-body" id='footer-categories'>
 
-								<li>
-									<a href="#">Elements</a>
-								</li>
+								<ul>
+									<li>
+										<a href="#">Learn HTML & CSS</a>
+									</li>
+									<li>
+										<a href="#">Teach Yourself Coding </a>
+									</li>
+									<li>
+										<a href="#">Knowled of PHP</a>
+									</li>
+									<li>
+										<a href="#">Custom Coding</a>
+									</li>
+									<li>
+										<a href="#">Full Size Documentation </a>
+									</li>
+								</ul>
 
-							</ul>
+							</div>
+						</div>
 
-						</nav>
+						<div class="col-md-3">
+
+							<!-- Footer Section header, only visible in small screens. -->
+							<div class="row footer-header-collapse">
+								<div class="row footer-header">
+									<div class="col-md-3">
+										Flickr Stream
+									</div>
+								</div>
+							</div>
+							<div class="row footer-section-body">
+
+								<!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+								<div id="flickrImages"></div>  
+
+							</div>
+
+						</div>
+
+						<div class="col-md-3" id='footer-tweeter-feed'>
+
+							<!-- Footer Section header, only visible in small screens. -->
+							<div class="row footer-header-collapse">
+								<div class="row footer-header" >
+									<div class="col-md-3">
+										Recent tweets
+									</div>
+								</div>
+							</div>
+							<div class="row footer-section-body">
+
+								<ul>
+									<li>
+
+										<div class="media">
+											<a class="pull-left" href="#"><i class="icon-twitter icon-2x"></i></a>
+											<div class="media-body">
+												<h4 class="media-heading">@LorenIpsum</h4>
+												<p>
+													<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+												</p>
+											</div>
+										</div>
+
+									</li>
+
+									<li>
+
+										<div class="media">
+											<a class="pull-left" href="#"> <i class="icon-twitter icon-2x"></i></a>
+											<div class="media-body">
+												<h4 class="media-heading">@DolorAmet</h4>
+												<p>
+													<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+												</p>
+											</div>
+										</div>
+
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+						<div class="col-md-3">
+
+							<!-- Footer Section header, only visible in small screens. -->
+							<div class="row footer-header-collapse">
+								<div class="row footer-header" >
+									<div class="col-md-3">
+										Contact Us
+									</div>
+								</div>
+							</div>
+							<div class="row footer-section-body">
+
+								<form>
+
+									<input type='text' placeholder='Name'>
+									<input type='text' placeholder='Email'>
+									<textarea  placeholder='Message' ></textarea>
+									<button class='pull-right'>
+										Send
+									</button>
+								</form>
+
+							</div>
+						</div>
 
 					</div>
 
 				</div>
 
 
-			</div>
+				<div class="row" id='footer-bottom'>
+					<div class="container">
+						<div class="col-md-6" id='footer-bottom-left'>
+
+							<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+
+						</div>
+
+						<div class="col-md-6 hidden-xs hidden-sm">
+							<nav>
+								<ul class="breadcrumb">
+									<li>
+										<a href="index-fw.html">Home</a>
+									</li>
+									<li>
+										<a href="portfolio-fw.html">Portfolio</a>
+									</li>
+									<li>
+										<a href="blog-fw.html">Blog</a>
+									</li>
+									<li>
+										<a href="#">Pages</a>
+									</li>
+
+									<li>
+										<a href="#">Elements</a>
+									</li>
+
+								</ul>
+
+							</nav>
+
+						</div>
+
+					</div>
 
 
-		</footer>
-		<!-- Main Footer End =======================================================================================-->
-
-	</div> <!-- /.fw-wrapper -->
+				</div>
 
 
+			</footer>
+			<!-- Main Footer End =======================================================================================-->
+
+			
+		</div> <!-- /.fw-wrapper -->
 
 
-	<!-- Scripts =======================================================================================================-->
-
-	
-	<!-- Basics -->
-	<script src="js/slider/jquery-1.7.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- used by some plugins -->
-	<script type="text/javascript" src="js/slider/raphael-min.js"></script>
-	<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
-
-	<!-- BxSlider -->
-	<script src="js/jquery.bxslider.min.js"></script>
-
-	
-	<!-- Handles Team Members hover effect -->
-	<script src="js/portfolio-adjust.js"></script>
-
-	<!-- Top Navigation transparency on scroll -->
-	<script src="js/transnav.js"></script>
-
-	<!-- jQuery plugin to load flickr images in footer flickr stream -->
-	<script src="js/jflickrfeed.min.js"></script>
 
 
-	<script type="text/javascript">  
-		$(function() {
-			$('#flickrImages').jflickrfeed({
-				limit: 9,
-				qstrings: {
-					id: '71865026@N00'
-				},
-				itemTemplate: 
-				'<div class="flickr-thumb">' +
-				'<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
-				'<img src="{{image_s}}" alt="{{title}}" />' +
-				'</a>' +
-				'</div>'
-			}); 
-		});
-
-	</script>
-
-	<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
-	<script src="js/lightbox.js"></script>
 
 
-	<script>
+		<!-- Scripts =======================================================================================================-->
 
 
-		$(document).ready(function() {
+		<!-- Basics -->
+		<script src="js/slider/jquery-1.7.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- used by some plugins -->
+		<script type="text/javascript" src="js/slider/raphael-min.js"></script>
+		<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
+
+		<!-- BxSlider -->
+		<script src="js/jquery.bxslider.min.js"></script>
+
+		<!-- jQuery knob plugin to show rounded skill bars -->
+		<script src="js/jquery.knob.js"></script>
+
+		<!-- jQuery Shadow plugin for fancy shadows -->
+		<script src="js/jquery.shadow.js"></script>
+
+		<!-- Handles Team Members hover effect -->
+		<script src="js/portfolio-adjust.js"></script>
+
+		<!-- Top Navigation transparency on scroll -->
+		<script src="js/transnav.js"></script>
+
+		<!-- jQuery plugin to load flickr images in footer flickr stream -->
+		<script src="js/jflickrfeed.min.js"></script>
+
+
+		<script type="text/javascript">  
+			$(function() {
+				$('#flickrImages').jflickrfeed({
+					limit: 9,
+					qstrings: {
+						id: '71865026@N00'
+					},
+					itemTemplate: 
+					'<div class="flickr-thumb">' +
+					'<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
+					'<img src="{{image_s}}" alt="{{title}}" />' +
+					'</a>' +
+					'</div>'
+				}); 
+			});
+
+		</script>
+
+		<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
+		<script src="js/lightbox.js"></script>
+
+
+		<script>
+
+
+			$(document).ready(function() {
+
+
+
 
 				// Menu Hover effect
 				$('.dropdown-menu').hover(function() {
@@ -732,21 +742,29 @@
 
 
 				// Top nav transparency on Scroll 
-				transNav('#poshnav-full-width');
+				transNav('#poshnav-half-width');
+
+				$(".dial").knob();
 
 			});
 
 
-		$(window).resize(function() {
+			$(window).resize(function() {
 
 				// dynamically adjust the height of the Team Members hover effect
 				adjustTeamHover(20);
 
 			});
 
-	</script>
+		</script>
+
+
+		<script type="text/javascript">
 
 
 
-</body>
-</html>
+		</script>
+
+
+	</body>
+	</html>

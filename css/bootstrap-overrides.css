@@ -21,6 +21,7 @@ ul.nav{
 .navbar-brand{
 
 	padding: 0;
+	margin-right: 25px;
 }
 
 .navbar-brand img{
@@ -275,7 +276,9 @@ hr{
 	color: #508ddd;
 }
 
-
+.breadcrumb > li + li:before{
+	content: "|";
+}
 
 /* ProgressBars */
 
