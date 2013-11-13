@@ -521,6 +521,24 @@
   
 }
 
+
+ /*Single Portfolio Page css begin*/
+ 
+ .section-body .post-wrapper{
+  box-shadow: none;
+  margin-top: 0px;
+ }
+.port-features ul{
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+ .port-features li{
+
+padding-bottom: 5px;
+ }
+
+ /*Single Portfolio Page css END*/
+
 .logoslide{
 
   box-shadow: 0px 6px 20px -10px gray;
