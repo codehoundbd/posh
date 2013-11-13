@@ -84,27 +84,19 @@
 
     section{
 
-      position: relative;
+     
       padding-top: 50px;
       box-shadow: 0px 4px 15px -8px black;
     }
 
-    section .container{
-      position: relative;
-
-      z-index: 2;
-    }
+   
 
     section .section-body{
       background-color: #F5F5F5;  
     }
     
 
-    section>div{
-      position: relative;
-
-      z-index: 2;
-    }
+    
 
     /* clearfix all sections */
     section:before, section:after {   
@@ -321,7 +313,7 @@
 
     section#features .feature {
 
-      //position: relative;
+     
       float: left;
       margin: 0px;
       width: 25%;
