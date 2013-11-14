@@ -5,15 +5,41 @@
 
 function colorSwitcherInit(){
 
-	$("#colorchanger a").click(function() { 
-		$("link.main-style").attr("href",$(this).attr('rel'));
+	$("#colorchanger a").click(function() {
+
+		if($(this).hasClass("colorblue")){
+			$("link.main-style").attr("href","css/style.css");
+			$("link.bs-overrides").attr("href","css/bootstrap-overrides.css");
+		}
+
+		if($(this).hasClass("colorred")){
+			$("link.main-style").attr("href","css/style-red.css");
+			$("link.bs-overrides").attr("href","css/bootstrap-overrides-red.css");
+		}
+
+		if($(this).hasClass("colorpurple")){
+			$("link.main-style").attr("href","css/style-purple.css");
+			$("link.bs-overrides").attr("href","css/bootstrap-overrides-purple.css");
+		}
+
+		if($(this).hasClass("colorgreen")){
+			$("link.main-style").attr("href","css/style-green.css");
+			$("link.bs-overrides").attr("href","css/bootstrap-overrides-green.css");
+		}
+
+		if($(this).hasClass("colororange")){
+			$("link.main-style").attr("href","css/style-orange.css");
+			$("link.bs-overrides").attr("href","css/bootstrap-overrides-orange.css");
+		}
+
+		
 		return false;
 	});
 
 	$('#panel2').slidePanel({
 		triggerName: '#trigger2',
-		triggerTopPos: '550px',
-		panelTopPos: '550px'
+		triggerTopPos: '200px',
+		panelTopPos: '200px'
 	});
 
 }
