@@ -300,7 +300,7 @@ hr{
 
 .progress-bar{
 
-	background-color: #2992e5;
+	background-color: #2097d4;
 }
 
 
@@ -339,7 +339,7 @@ hr{
 .btn-default{
 	background-color: white;
 	color: #1a65a5;
-	border: none; 
+	//border: none; 
 
 }
 
@@ -350,6 +350,8 @@ hr{
 }
 
 .btn-primary{
+
+	border: none;
 	background-color: #1a65a5;
 	color: white;
 }
@@ -380,7 +382,7 @@ hr{
 	color: white;
 	border: none;
 	margin: 0;
-	background-color: #2a92e5;
+	background-color: #2086c7;
 	border-radius: 0;
 	font-size: 12pt;
 
