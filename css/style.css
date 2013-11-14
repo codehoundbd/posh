@@ -1041,12 +1041,12 @@ section.features-alt{
 
 .horizontalaccordion h2{
   margin: 0;
-  //color: #222;
+  /*//color: #222;*/
   font-family: "Exo"
 } 
 
 .horizontalaccordion p{
-  //color: #222;
+  /*//color: #222;*/
   font-size: 14px;
   margin: 0;
   font-family: "Noto Sans"  
@@ -1058,7 +1058,7 @@ section.features-alt{
   margin: 0 auto;
   padding: 0;
   list-style:none;
-  //width: 700px;
+  /*//width: 700px;*/
   height: 170px;
 
   
