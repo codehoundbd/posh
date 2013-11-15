@@ -1165,7 +1165,7 @@
       position: relative;
       min-height: 120px;
       background-color: #F5F5F5;
-      border-bottom: 1px solid #2a92e5;
+      border-bottom: 1px solid #2097d4;
       margin-left: 20px;
       box-shadow:1px 2px 5px -2px gray;
     }
@@ -1182,7 +1182,7 @@
     }
     .comment-wrap-child{
       margin: 10px 0px 10px 80px;
-      overflow: hidden;
+      /*overflow: hidden;*/
     }
     .comment-form{
       margin-bottom: 30px;
@@ -1394,8 +1394,15 @@
   section#contact-map h1{
     color:#16517F;
   }
-  .bar-text i{
-    padding-right: 5px;
+
+  section#contact-map .section-body{
+    padding: 0;
+  }
+
+  .bar-text i.fa{
+
+    font-size: 1.3em;
+    padding-right: 10px;
   }
   .contact-sidebar {
     margin: 10px 0;
@@ -1407,133 +1414,19 @@
   }
 
   .contact-sidebar .bar-text {
-    line-height: 1.3em;
-    font-size: 18px;
+
+    font-family: "Noto Sans", sans-serif;
+    
+    font-size: 15px;
     margin-top: 5%;
   }
 
-  /*  About Page specifics */
-  .badge-grid {
-    padding: 20px 10%;
-    list-style: none;
-    text-align: center;
+  .contact-sidebar .bar-text li{
+      margin-bottom: 7px;
   }
-  .badge-grid li {
-    display: block;
-    float: left;
-    width: 33.33333333333%;
-    margin: 0;
-    padding: 1%;
-    text-align: left;
-    position: relative;
-  }
-  .badge-grid figure {
-    margin: 0;
-    position: relative;
-  }
-  .badge-grid figure img {
-    max-width: 100%;
-    display: block;
-    position: relative;
-  }
-  .badge-grid figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1%;
-    background: #2893E5;
-    color: #777;
-  }
-  .badge-grid h3 {
-    margin: 0;
-    padding: 0;
-    color: #2c3f52;
 
-  }
-  .badge-grid figure img {
-    z-index: 10;
-  }
-  .badge-grid span {
-    font-size: 13pt;
-  }
-  .badge-grid figcaption {
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
-    -moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
-    transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 0 0px #2893E5;
-  }
-  .no-touch .badge-grid li:hover figure figcaption,
-  .badge-grid figure.cs-hover figcaption {
-    opacity: 1;
-    height: 210%;
-    box-shadow: 0 0 0 13px #2893E5;
-    z-index: -1;
-  }
-  .badge-grid h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .badge-grid h3,
-  .badge-grid span,
-  .badge-grid a {
-    opacity: 1;
-    -webkit-transition: opacity 0s;
-    -moz-transition: opacity 0s;
-    transition: opacity 0s;
-  }
-  .badge-grid p {
-    text-align: justify;
-    font-size: 12pt;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #2893E5;
-    border-top: 2px solid #2893E5;
-  }
-  .no-touch .badge-grid li:hover h3,
-  .no-touch .badge-grid li:hover span,
-  .no-touch .badge-grid li:hover a,
-  .no-touch .badge-grid li:hover p,
-  .badge-grid li.cs-hover h3,
-  .badge-grid li.cs-hover span,
-  .badge-grid li.cs-hover a {
-    -webkit-transition: color 0.1s 0.1s;
-    -moz-transition: color 0.1s 0.1s;
-    transition: color 0.1s 0.1s;
-    color: white;
-    opacity: 1;
-  }
-  .no-touch .badge-grid li:hover p {
-    -webkit-transition: color 0.1s 0.1s;
-    -moz-transition: color 0.1s 0.1s;
-    transition: color 0.1s 0.1s;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-  }
-  .badge-grid .socialboxes-wrapper {
-    margin-top: 20px;
-    z-index: 100;
-  }
-  .badge-grid .socialbox-holder {
-    text-align: center;
-    float: left;
-    width: 25%;
-  }
-  .badge-grid .socialbox-holder a {
-    display: inline-block;
-    box-shadow: 0px 0px 10px gray;
-    margin: 10px auto;
-  }
-  .badge-grid .socialbox-holder a img {
-    margin: 0px;
-  }
+  /*  About Page specifics */
+  
   /*  Testimonial */
   section.testimonial {
     padding-top: 0;
@@ -1656,6 +1549,8 @@ section.portfolio .items{
 
 
 section.portfolio ul {
+
+  width: 100% !important;
   padding: 10px;
 }
 section.portfolio li {
