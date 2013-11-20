@@ -86,7 +86,7 @@
 
             <ul class="nav navbar-nav">
 
-            <li class="dropdown animated fadeInDown">
+              <li class="dropdown animated fadeInDown">
                 <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                 <ul class="dropdown-menu">
 
@@ -196,27 +196,31 @@
 
 
 
-      <section id='banner'>
+
+      <!-- Top Image and Text -->
+      <section id='about-main'>
+
 
         <img src="img/portfolio-banner.png" alt='Portfolio Banner'>
-      </section>
-
-      <section>
 
         <header>
-          <h1>Take a look at Our Portfolio</h1>
-          <span class="line"></span>
-          <p>Get to know us as a business, and a friend.
+          <h1>Our Works Speak For Us</h1>
+        </header>
+        <div class="about-banner">
+          <p>
+            If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow.
+          </p>
 
-           If you leave off either the blur or spread radius, their values will default to zero. Looking around the web, you’re likely to see that most demos that you come across, including those on Design Shack, have no spread radius defined. Also note that the -webkit prefixed version of box-shadow is often still added to ensure browser compatibility when using box-shadow. testikng</p>
+          
+        </div>
+        
 
-         </header>
-       </section>
+      </section>
 
 
 
 
-       <section class="portfolio">
+      <section class="portfolio">
 
 
         <form id="filter">
@@ -228,7 +232,7 @@
 
         </form>
 
-        <div class="items row">
+        <div class="items section-body row">
 
 
 
@@ -437,7 +441,7 @@
    <div class="imgcaption">
      <h1>Awesome Food</h1>
      <p>usdb sdvubsdv sdfs sdfsf sdf</p>
-
+     filter-drink
      <!-- Link to item details page -->
      <a href="portfolio-single.html">
        <img src="img/portfolio-link.png">
@@ -718,12 +722,13 @@
 <script type="text/javascript" src="js/slider/jquery.easing.js"></script>
 
 
-<!-- Handles portfolio hover effect -->
+
 <script src="js/jquery.quicksand.js"></script>
 
-  <script src="js/portfolio-adjust.js"></script>    
+<!-- Handles portfolio hover effect -->
+<script src="js/portfolio-adjust.js"></script>    
 
-  <script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
 
 
 <!-- Top Navigation transparency on scroll -->
@@ -760,11 +765,11 @@
 
   $(document).ready(function(){
 
-        
 
 
-        
-        adjustPortfolioHover(20);
+
+
+    adjustPortfolioHover(20);
 
 
         // $('#container').quicksand( $('#all li'),{
@@ -775,52 +780,131 @@
         //   } );
 
 
-      $('#filter-food').click(function(){
+  $('#filter-food').click(function(){
 
-        $('#container').quicksand( $('#food li'),{
+    $('#container').quicksand( $('#food li'),{
 
-          adjustHeight : true,
-          adjustWidth : true
+      adjustHeight : true,
+      adjustWidth : true
 
-        } );
-
-
-      });
-
-      $('#filter-drink').click(function(){
-
-        $('#container').quicksand( $('#drink li'),{
-
-          adjustHeight : true,
-          adjustWidth : true
-
-        } );
+    } );
 
 
-      });
+  });
 
-      $('#filter-all').click(function(){
+  $('#filter-drink').click(function(){
 
-        $('#container').quicksand( $('#all li'),{
+    $('#container').quicksand( $('#drink li'),{
 
-          adjustHeight : true,
-          adjustWidth : true
+      adjustHeight : true,
+      adjustWidth : true
 
-        } );
-
-
-      });
+    } );
 
 
-    });
+  });
+
+  $('#filter-all').click(function(){
+
+    $('#container').quicksand( $('#all li'),{
+
+      adjustHeight : true,
+      adjustWidth : true
+
+    } );
 
 
-      $(window).resize(function() {
+  });
 
-
- adjustPortfolioHover(20);
 
 });
+
+
+  $(window).resize(function() {
+
+
+   adjustPortfolioHover(20);
+
+ });
+
+</script>
+
+
+<script type="text/javascript">
+
+  (function($) {
+    $.fn.sorted = function(customOptions) {
+      var options = {
+        reversed: false,
+        by: function(a) { return a.text(); }
+      };
+      $.extend(options, customOptions);
+      $data = $(this);
+      arr = $data.get();
+      arr.sort(function(a, b) {
+        var valA = options.by($(a));
+        var valB = options.by($(b));
+        if (options.reversed) {
+          return (valA < valB) ? 1 : (valA > valB) ? -1 : 0;        
+        } else {    
+          return (valA < valB) ? -1 : (valA > valB) ? 1 : 0;  
+        }
+      });
+      return $(arr);
+    };
+  })(jQuery);
+
+// DOMContentLoaded
+$(function() {
+
+  // bind radiobuttons in the form
+  var $filterType = $('#filter input[name="type"]');
+  var $filterSort = $('#filter input[name="sort"]');
+
+  // get the first collection
+  var $applications = $('#applications');
+
+  // clone applications to get a second collection
+  var $data = $applications.clone();
+
+  // attempt to call Quicksand on every form change
+  $filterType.add($filterSort).change(function(e) {
+    if ($($filterType+':checked').val() == 'all') {
+      var $filteredData = $data.find('li');
+    } else {
+      var $filteredData = $data.find('li[data-type=' + $($filterType+":checked").val() + ']');
+    }
+
+    // if sorted by size
+    if ($('#filter input[name="sort"]:checked').val() == "size") {
+      var $sortedData = $filteredData.sorted({
+        by: function(v) {
+          return parseFloat($(v).find('span[data-type=size]').text());
+        }
+      });
+    } else {
+      // if sorted by name
+      var $sortedData = $filteredData.sorted({
+        by: function(v) {
+          return $(v).find('strong').text().toLowerCase();
+        }
+      });
+    }   
+
+    // finally, call quicksand
+    $applications.quicksand($sortedData, {
+      duration: 800,
+      adjustHeight : true,
+      adjustWidth : true,
+      atomic: true,
+      easing: 'easeInOutQuad'
+    });
+    adjustPortfolioHover(20);
+
+  });
+
+});
+
 
 </script>
 
