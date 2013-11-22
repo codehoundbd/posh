@@ -14,16 +14,16 @@
 
 
 @media (max-width: 979px) {
-  #features .feature {
+  section#features .feature {
     width: 50%;
   }
-  #features img {
+  section#features img {
     margin-top: 70px;
   }
-  #features h2 {
+  section#features h2 {
     margin-top: 40px;
   }
-  #features p {
+  section#features p {
     margin-top: 15px;
     font-size: 13pt;
     color: white;
@@ -36,10 +36,10 @@
 
 @media (max-width: 420px) {
   
-   #features .feature {
+   section#features .feature {
     width: 100%;
   }
-  #features .feature:hover {
+  section#features .feature:hover {
     -webkit-transform: none;
     -moz-transform: none;
     transform: none;
@@ -47,13 +47,13 @@
     -moz-box-shadow: none;
     box-shadow: none;
   }
-  #features img {
+  section#features img {
     margin-top: 50px;
   }
-  #features h2 {
+  section#features h2 {
     margin-top: 30px;
   }
-  #features p {
+  section#features p {
     margin-top: 15px;
     font-size: 13pt;
     color: white;
