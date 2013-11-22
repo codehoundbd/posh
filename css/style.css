@@ -1375,9 +1375,14 @@ section#contact-main .contact-form-wrapper {
 
 section#contact-main input[type="text"] {
      padding: 25px;
-     width: 600px;
-     border: 2px solid #bfbfbf;
-     margin-bottom: 30px
+     padding: 25px;
+      width: 501px;
+      border: 2px solid #bfbfbf;
+      margin-bottom: 30px;
+      border: none;
+      -moz-box-shadow: 1px 1px 8px -2px gray;
+-webkit-box-shadow: 1px 1px 8px -2px gray;
+box-shadow: 1px 1px 8px -2px gray;
 }
 
 section#contact-main .contact-form {
@@ -1392,8 +1397,8 @@ section#contact-main .contact-form {
 .contact-form input {
      border: 0;
      -moz-box-shadow: 1px 1px 8px -2px gray;
-     -webkit-box-shadow: 1px 1px 8px -2px gray;
-     box-shadow: 1px 1px 8px -2px gray
+-webkit-box-shadow: 1px 1px 8px -2px gray;
+box-shadow: 1px 1px 8px -2px gray;
 }
 
 .contact-form textarea {
