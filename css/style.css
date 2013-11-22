@@ -18,17 +18,14 @@
 
 
       */
-
 /* --- Google webfonts --- */
-      
-      @import url("http://fonts.googleapis.com/css?family=PT+Sans");
-      @import url("http://fonts.googleapis.com/css?family=Exo");
-      @import url("http://fonts.googleapis.com/css?family=Coda");
-      @import url("http://fonts.googleapis.com/css?family=Noto+Sans");
-      @import url("http://fonts.googleapis.com/css?family=Merriweather+Sans:300");
-      @import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700");
-      @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
-      @import url("http://fonts.googleapis.com/css?family=Oswald:400,300");
+@import url("http://fonts.googleapis.com/css?family=PT Sans");
+@import url(http://fonts.googleapis.com/css?family=Exo);
+@import url(http://fonts.googleapis.com/css?family=Coda);
+@import url("http://fonts.googleapis.com/css?family=Noto Sans");
+@import url("http://fonts.googleapis.com/css?family=Merriweather Sans:300");
+@import url("http://fonts.googleapis.com/css?family=Yanone Kaffeesatz:400,200,300,700");
+@import url("http://fonts.googleapis.com/css?family=Open Sans:400,300,600");
 body {
     font-size: 11px;
     color: #454545;
@@ -40,7 +37,6 @@ body {
     padding-top: 74px
     }
 
-
 .hw-wrapper {
     padding-top: 75px;
     background-color: white;
@@ -50,11 +46,6 @@ body {
     -webkit-box-shadow: 0 4px 13px 1px black;
     box-shadow: 0 4px 13px 1px black
     }
-
-
-
-
-
 
 .whole-wrapper {
     background: rgb(206, 206, 206);
@@ -238,452 +229,9 @@ section#features .feature:nth-child(3) {
     background-color: #2086c7
     }
 
-
 section#features .feature:nth-child(4) {
     background-color: #2097d4
     }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-
-
-      }
-
-      .page-header{
-        padding: 0;
-      }
-
-      .page-header h1,
-      .page-header h2,
-      .page-header h3,
-      .page-header h4,
-      .page-header h5,
-      .page-header h6
-      {
-        text-align: center;
-        padding: 0 30px;
-      }
-
-      ul,
-      ol {
-        margin: 0px;
-        list-style: none;
-      }
-
-      a {
-        color: #2097d4;
-        -webkit-transition: color 0.15s;
-        -moz-transition: color 0.15s;
-        -o-transition: color 0.15s;
-        -ms-transition: color 0.15s;
-        transition: color 0.15s;
-      }
-      a:hover {
-
-        color:  #1a65a5;
-        text-decoration: none;
-        
-      }
-      a:focus,
-      .btn:focus,
-      select:focus {
-        outline: none;
-        text-decoration: none;
-
-      }
-      ul,
-      ol {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-      }
-
-      input[type=text]{
-        box-shadow: none;
-        outline: 0;
-        border: 1px solid #bbb;
-      }
-
-      input[type=text]:focus,
-      textarea:focus {
-        box-shadow: none;
-        outline: 0;
-        border: 1px solid #2097d4;
-      }
-
-
-      section.purchase-bar {
-        padding: 20px;
-        background-color: #2086c7;
-        color: #369BEB;
-        text-align: center;
-      }
-      section.purchase-bar span.ad {
-
-        font-family: "Exo", sans-serif;
-        padding: 6px;
-        color: white;
-        line-height: 30px;
-        font-size: 17pt;
-
-      }
-      section.purchase-bar-inner {
-        margin: 20px auto;
-        display: inline-block;
-      }
-
-      /* --- Top Navigation ---*/
-      #nav-container {
-        position: relative;
-        z-index: 900;
-        width: 100%;
-      }
-
-      #poshnav-full-width{
-        border-top: 5px solid #2097d4;
-        background-color: white;
-        box-shadow: 0px 2px 3px gray;
-      }
-
-      #poshnav-half-width{
-        top:0;
-        z-index: 1000;              
-        max-width: 1020px;
-        width: 100%;
-        position: fixed;              /*handles the fixed position on its own, not by Bootstrap*/
-        background-color: white;
-        box-shadow: 0px 2px 3px gray;
-      }
-
-      section#features{
-
-         background: rgb(22,81,127); /* Old browsers */
-        background: -moz-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#16517f), color-stop(24%,#16517f), color-stop(24%,#1a65a5), color-stop(49%,#1a65a5), color-stop(49%,#2086c7), color-stop(74%,#2086c7), color-stop(74%,#2097d4), color-stop(100%,#2097d4)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(left, #16517f 0%,#16517f 24%,#1a65a5 24%,#1a65a5 49%,#2086c7 49%,#2086c7 74%,#2097d4 74%,#2097d4 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(left, #16517f 0%,#16517f 24%,#1a65a5 24%,#1a65a5 49%,#2086c7 49%,#2086c7 74%,#2097d4 74%,#2097d4 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(left, #16517f 0%,#16517f 24%,#1a65a5 24%,#1a65a5 49%,#2086c7 49%,#2086c7 74%,#2097d4 74%,#2097d4 100%); /* IE10+ */
-        background: linear-gradient(to right, #16517f 0%,#16517f 24%,#1a65a5 24%,#1a65a5 49%,#2086c7 49%,#2086c7 74%,#2097d4 74%,#2097d4 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16517f', endColorstr='#2097d4',GradientType=1 ); /* IE6-9 */
-
-
-        margin: 50px 0;
-        padding: 0; 
-
-
-      }
-
-      section#features.homepage{
-        margin: 0;
-        -webkit-box-shadow: 0px 0px 23px -1px gray;
-        -moz-box-shadow: 0px 0px 23px -1px gray;
-        -o-box-shadow: 0px 0px 23px -1px gray;
-        -ms-box-shadow: 0px 0px 23px -1px gray;
-        box-shadow: 0px 0px 23px -1px gray;
-      }
-
-
-
-
-      section#features .feature {
-        float: left;
-        margin: 0px;
-        width: 25%;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        transition: all 0.3s;
-      }
-
-      section#features .feature:nth-child(1) {background-color: #16517f;}
-      section#features .feature:nth-child(2) {background-color: #1a65a5;}
-      section#features .feature:nth-child(3) {background-color: #2086c7;}
-      section#features .feature:nth-child(4) {background-color: #2097d4;}
-
-      section#features .feature:hover {
-
-        z-index: 10;
-        display: block;
-        -webkit-transform: scale(1.1, 1.05);
-        -moz-transform: scale(1.1, 1.05);
-        -o-transform: scale(1.1, 1.05);
-        -ms-transform: scale(1.1, 1.05);
-        transform: scale(1.1, 1.05);
-        -webkit-box-shadow: 0px 0px 20px #333;
-        -moz-box-shadow: 0px 0px 20px #333;
-        -ms-box-shadow: 0px 0px 20px #333;
-        -o-box-shadow: 0px 0px 20px #333;
-        box-shadow: 0px 0px 20px #333;
-      }
-
-
-      #features img {
-        width: 60%;
-        margin-right: 20%;
-        margin-left: 20%;
-        margin-top: 50px;
-      }
-      #features .row {
-        margin: 0px;
-      }
-      #features h2 {
-
-        padding: 5px;
-        height: 100px;
-        font-size: 24pt;
-        font-family: "Exo", sans-serif;
-        color: white;
-        margin-top: 30px;
-        text-align: center;
-        line-height: 50px;
-      }
-      #features p {
-        font-family: "Exo", sans-serif;
-        margin-top: 10px;
-        font-size: 15pt;
-        color: white;
-        letter-spacing: 1px;
-        line-height: 20px;
-        text-align: center;
-
-        margin-bottom: 80px;
-        padding: 0px 27px;
-      }
-
-
-      /* --- Feature Box  --- */
-      section.feature-box{
-        text-align: center;
-        padding: 40px 20px 0 20px;
-        box-shadow: none;
-
-
-
-      }
-      .feature-box .feature-box-wrapper{
-        box-shadow: 0 1px 1px 1px #E7E7E7 ;
-        background-color: #F5F5F5;  
-      }
-      .feature-box i{
-        font-size: 46pt;
-        color: #2086c7;
-        padding-top: 22px;
-      }
-      .feature-box p{
-        padding-top: 18px;
-        line-height: 1.3em;
-        font-size: 14pt;
-        color: #909398;
-
-      }
-      .feature-box-wrapper>div:nth-child(1){ border-right: 3px solid #E7E7E7;   }
-      .feature-box-wrapper>div:nth-child(2){ border-right: 3px solid #E7E7E7;   }
-
-
-      /* --- Single Portfolio Page --- */
-      .section-body .post-wrapper{
-        box-shadow: none;
-        margin-top: 0px;
-      }
-
-      .port-features ul{
-        padding: 10px 20px;
-      }
-      .port-features li{
-
-        padding-bottom: 5px;
-      }
-
-      /*Single Portfolio Page css END*/
-
-      .logoslide{
-
-        box-shadow: 0px 6px 20px -10px gray;
-
-        background-color: #fafafa;
-      }
-
-      .logoslide .bx-wrapper{
-        margin: 0 auto;
-      }
-
-      .logo {
-        padding: 30px 15px;
-
-      }
-      .logo img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-      }
-
-      .logo:hover {
-
-        background-color: #eeeced;
-      }
-
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-
-      footer {
-        color: #fff;
-        float: none;
-        width: 100%;
-        background: #0F0F13;
-      }
-
-
-      footer a, footer p{
-        font-family: "Noto Sans", sans-serif;
-        color: #BEBCBC;
-
-      }
-
-
-      .footer-header-wrapper {
-        background-image: url(../img/footer-header-pattern.png);
-        background-repeat: repeat;
-        //padding: 0 5%;
-        border-top: 4px solid #2097d4;
-        margin: 0;
-        animation: footerFlow 2s;
-        -webkit-animation: footerFlow 2s;
-        /* Safari and Chrome */
-
-        animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-      }
-      .footer-header {
-        line-height: 50px;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 18pt;
-        text-align: left;
-        text-transform: uppercase;
-        text-shadow: 0px 0px 1px white;
-      }
-      #footer-body {
-
-        width: 100%;
-      }
-      footer #footer-body ul {
-        font-size: 11pt;
-        list-style: none;
-        padding: 0;
-      }
-      footer #footer-body li {
-        padding: 10px 0;
-        clear: both;
-
-      }
-
-      .footer-section-body {
-        padding: 15px 10px 15px 0;
-      }
-      #footer-tweeter-feed img {
-        float: left;
-      }
-      #footer-tweeter-feed p {
-        float: left;
-      }
-      footer input[type="text"],
-      footer textarea {
-        border: none;
-        width: 100%;
-        background-color: #555;
-        padding: 8px 15px;
-        margin: 5px 0;
-        color: white;
-      }
-
-
-      footer button{
-        background-color: #444;
-        border: none;
-        padding: 10px 20px;
-        margin-top: 5px;
-        border-radius: 0px;
-        color: #aaa;
-      }
-
-      footer button:hover{
-        background-color: #666;
-      }
-
-
-
-      #footer-bottom {
-        background-color: #000;
-        width: 100%;
-      }
-      #footer-brand {
-        font-size: 1.5em;
-        padding-left: 10px;
-      }
-      #footer-bottom nav .breadcrumb {
-        background-color: transparent;
-        text-align: right;
-        font-size: 10pt;
-      }
-      #footer-bottom #footer-bottom-left {
-        padding: 8px 0;
-      }
-      .footer-header-collapse {
-        background-image: url(../img/footer-header-pattern.png);
-        background-repeat: repeat;
-        padding: 0 5%;
-        border-top: 4px solid #2097d4;
-        margin: 0;
-        animation: footerFlow 2s;
-        -webkit-animation: footerFlow 2s;
-        /* Safari and Chrome */
-
-        animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        display: none;
-      }
-
-      footer .flickr-thumb{
-        width: 33%;
-        padding: 1px;
-        float: left;
-      }
-
-      footer .flickr-thumb img{
-        opacity: 0.7;
-        width: 100%;
-        transition: all 0.3s;
-      }
-
-      footer .flickr-thumb img:hover{
-        opacity: 1.0;
-      }
-
-
-      /*    About Page    */
-      section header {
-        margin: 10px 10px;
-
-      }
-
-
-
 
 section#features .feature:hover {
     z-index: 10;
@@ -1623,45 +1171,6 @@ section#blogs, section#blog-single {
     padding-left: 10px
     }
 
-
-
-    .comment-section{
-      margin-bottom: 10px;
-    }
-    .comment-content{
-      font-size: 10pt;
-      overflow: hidden;
-      padding-left: 20px;
-      padding-top: 2%;
-      position: relative;
-      min-height: 120px;
-      background-color: #F5F5F5;
-      border-bottom: 1px solid #2097d4;
-      margin-left: 20px;
-      box-shadow:1px 2px 5px -2px gray;
-    }
-    .comment-content a{
-      color: #2a92e5;
-    }
-    .comment-content .comment-meta{
-      position: relative;
-    }
-    .comment-content .comment-text{
-      clear: both;
-      padding-top: 0px;
-      overflow: hidden;
-    }
-    .comment-wrap-child{
-      margin: 10px 0px 10px 80px;
-      /*overflow: hidden;*/
-    }
-    .comment-form{
-      margin-bottom: 30px;
-      margin-top: 30px;
-    }
-    .comment-form input{
-}
-
 .blog-sidebar .search {
     margin-top: 38px
     }
@@ -1829,7 +1338,6 @@ section#contact-main .bar-header {
     margin-top: 5%;
     line-height: 1.3em;
     text-transform: uppercase;
-
     font-size: 24px
     }
 
@@ -1841,24 +1349,7 @@ section#contact-map h1 {
     padding-right: 5px
     }
 
-/*.contact-sidebar {
-    font-size: 24px;
-  }*/
-  section#contact-map h1{
-    color:#16517F;
-  }
-
-  section#contact-map .section-body{
-    padding: 0;
-  }
-
-  .bar-text i.fa{
-
-    font-size: 1.3em;
-    padding-right: 10px;
-  }
-  .contact-sidebar {
-
+.contact-sidebar {
     margin: 10px 0;
     padding-bottom: 25px
     }
@@ -1867,12 +1358,10 @@ section#contact-map h1 {
     padding: 0
     }
 
-
 .contact-sidebar .bar-text {
-    font-family: "Noto Sans", sans-serif;
-    
-    font-size: 15px;
-    margin-top: 5%;
+    line-height: 1.3em;
+    font-size: 18px;
+    margin-top: 5%
     }
 
 /*  About Page specifics */
@@ -2024,17 +1513,8 @@ section#contact-map h1 {
     margin: 0
     }
 
-
-
-  .contact-sidebar .bar-text li{
-      margin-bottom: 7px;
-  }
-
-  /*  About Page specifics */
-  
-  /*  Testimonial */
-  section.testimonial {
-
+/*  Testimonial */
+section.testimonial {
     padding-top: 0;
     margin-top: 122px;
     background-color: #e2e2e2
@@ -2150,15 +1630,8 @@ section.portfolio .items {
     }
 
 section.portfolio ul {
-
-    width: 100% !important;
-  padding: 10px;
+    padding: 10px
     }
-
-
-
- 
-
 
 section.portfolio li {
     float: left;
