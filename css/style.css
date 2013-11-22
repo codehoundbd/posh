@@ -1406,6 +1406,9 @@
       section#contact-map h1 {
       	color: #16517F
       }
+      section#contact-map .section-body{
+            padding: 0px;
+      }
 
       .bar-text i {
       	padding-right: 5px

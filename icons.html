@@ -24,11 +24,11 @@
 
 
 	<!-- CSS to override Some Bootstrap styles -->
-	<link rel="stylesheet" href="css/bootstrap-overrides.css">
+  <link rel="stylesheet" class="bs-overrides" href="css/bootstrap-overrides.css">
 
 
-	<!-- Main StyleSheet for Posh  -->
-	<link rel="stylesheet" href="css/style.css">
+  <!-- Main StyleSheet for Posh  -->
+  <link rel="stylesheet" class="main-style" href="css/style.css">
 
 
 	<!-- Styles specific to only the half-widh/boxed layout -->
@@ -64,6 +64,20 @@
 
 <body>
 
+<!-- Style Switcher Begin -->
+    <a href="#" id="trigger2" class="trigger left"><i class="fa fa-wrench"></i></a>
+    <div id="panel2" class="panel left">
+      <div id="colorchanger">
+        <h2>Colors</h2>
+        <a class="colorbox colorblue" href="#"></a>
+        <a class="colorbox colorred" href="#"></a>
+        <a class="colorbox colorpurple" href="#"></a>
+        <a class="colorbox colorgreen" href="#"></a>
+        <a class="colorbox colororange" href="#"></a>
+      </div>
+    </div>
+    <!-- Style Switcher End -->
+
 
 	<div class="whole-wrapper">
 		
@@ -72,126 +86,130 @@
 
 
 			<!-- Top Navigation Begin ==================================================================================-->
-			<div id="poshnav-half-width">
-				<div class="navbar navbar-inverse" >
+  			<div id="poshnav-half-width">
 
-					<div class="navbar-header">
+  			<span class="color-band-thick"></span>
+  				<div class="navbar navbar-inverse" >
 
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+  					<div class="navbar-header">
 
-						<a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
+  						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-					</div>	
-					<div class="collapse navbar-collapse">
+  						<a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
 
-						<ul class="nav navbar-nav">
-
-							<li class="dropdown">
-								<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-								<ul class="dropdown-menu">
-
-									<li>
-										<a href="index.html">iView Slider</a>
-									</li>
-									<li>
-										<a href="index-nivo.html">Nivo Slider</a>
-									</li>
-
-									<li>
-										<a href="index-camera.html">Camera Slider</a>
-									</li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="portfolio-4c.html">4 Column</a>
-									</li>
-									<li>
-										<a href="portfolio.html">3 Column</a>
-									</li>
-									<li>
-										<a href="portfolio-2c.html">2 Column</a>
-									</li>
-
-									<li>
-										<a href="portfolio-single.html">Single Portfolio</a>
-									</li>
-
-								</ul>
-							</li>
-
-							<li class="dropdown">
-								<a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="blog-ls.html">Left Sidebar</a>
-									</li>
-									<li>
-										<a href="blog.html">Right Sidebar</a>
-									</li>
-									<li>
-										<a href="blog-single.html">Single Blog</a>
-									</li>
+  					</div>	
+  					<div class="collapse navbar-collapse">
 
 
 
-								</ul>
-							</li>
+  						<ul class="nav navbar-nav">
+
+  							<li class="dropdown active">
+  								<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+  								<ul class="dropdown-menu animated fadeInDown animated-300ms">
+
+  									<li>
+  										<a href="index.html">iView Slider</a>
+  									</li>
+  									<li>
+  										<a href="index-nivo.html">Nivo Slider</a>
+  									</li>
+
+  									<li>
+  										<a href="index-camera.html">Camera Slider</a>
+  									</li>
+  								</ul>
+  							</li>
+  							<li class="dropdown">
+  								<a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="portfolio-4c.html">4 Column</a>
+  									</li>
+  									<li>
+  										<a href="portfolio.html">3 Column</a>
+  									</li>
+  									<li>
+  										<a href="portfolio-2c.html">2 Column</a>
+  									</li>
+
+  									<li>
+  										<a href="portfolio-single.html">Single Portfolio</a>
+  									</li>
+
+  								</ul>
+  							</li>
+
+  							<li class="dropdown">
+  								<a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="blog-ls.html">Left Sidebar</a>
+  									</li>
+  									<li>
+  										<a href="blog.html">Right Sidebar</a>
+  									</li>
+  									<li>
+  										<a href="blog-single.html">Single Blog</a>
+  									</li>
 
 
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="contact.html">Contact</a>
-									</li>
-									<li>
-										<a href="about.html">About</a>
-									</li>
 
-									<li>
-										<a href="services.html">Services</a>
-									</li>
-
-									<li>
-										<a href="page404.html">404</a>
-									</li>
+  								</ul>
+  							</li>
 
 
+  							<li class="dropdown">
+  								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="contact.html">Contact</a>
+  									</li>
+  									<li>
+  										<a href="about.html">About</a>
+  									</li>
 
-								</ul>
-							</li>
+  									<li>
+  										<a href="services.html">Services</a>
+  									</li>
+
+  									<li>
+  										<a href="page404.html">404</a>
+  									</li>
 
 
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="components.html">Components</a>
-									</li>
-									<li>
-										<a href="icons.html">Icons</a>
-									</li>
-									<li>
-										<a href="anims.html">Animations</a>
-									</li>
 
-								</ul>
-							</li>
-						</ul>
+  								</ul>
+  							</li>
 
-						<form class="navbar-search pull-right" role="search">
-							<input type="text" class="search-query">
-						</form>
 
-					</div>
+  							<li class="dropdown">
+  								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
+  								<ul class="dropdown-menu  animated fadeInDown animated-300ms">
+  									<li>
+  										<a href="components.html">Components</a>
+  									</li>
+  									<li>
+  										<a href="icons.html">Icons</a>
+  									</li>
+  									<li>
+  										<a href="anims.html">Animations</a>
+  									</li>
 
-				</div>
-			</div>
+  								</ul>
+  							</li>
+  						</ul>
 
-			<!-- Top Navigation End ====================================================================================-->
+  						<form class="navbar-search pull-right" role="search">
+  							<input type="text" class="search-query">
+  						</form>
+
+  					</div>
+
+  				</div>
+  			</div>
+
+  			<!-- Top Navigation End ====================================================================================-->
 
 
 
@@ -685,198 +703,200 @@
 
 
 			<!-- Main Footer Begin =====================================================================================-->
-			<footer>
+    <footer>
 
 
-				<!-- Continuous Headers visible only in large screens -->
-				<div class="row footer-header-wrapper visible-lg visible-md">
-					<div class="row footer-header">
-						<div class="col-md-3">
-							Categories
-						</div>
+      <!-- Continuous Headers visible only in large screens -->
+      <div class="row footer-header-wrapper visible-lg visible-md">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Categories
+          </div>
 
-						<div class="col-md-3">
-							Flickr Stream
-						</div>
+          <div class="col-md-3">
+            Flickr Stream
+          </div>
 
-						<div class="col-md-3">
-							Recent Tweets
-						</div>
+          <div class="col-md-3">
+            Recent Tweets
+          </div>
 
-						<div class="col-md-3">
-							Contact us
-						</div>
+          <div class="col-md-3">
+            Contact us
+          </div>
 
-					</div>
+        </div>
 
-				</div>
+      </div>
 
-				<div class="row" id='footer-body'>
+      <div class="row" id='footer-body'>
 
-					<div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12">
 
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header">
-								<div class="col-md-3">
-									Categories
-								</div>
-							</div>
-						</div>
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Categories
+              </div>
+            </div>
+          </div>
 
-						<!-- Categories -->
-						<div class="row footer-section-body" id='footer-categories'>
-							<ul>
-								<li>
-									<a href="#">Learn HTML & CSS</a>
-								</li>
-								<li>
-									<a href="#">Teach Yourself Coding </a>
-								</li>
-								<li>
-									<a href="#">Knowled of PHP</a>
-								</li>
-								<li>
-									<a href="#">Custom Coding</a>
-								</li>
-								<li>
-									<a href="#">Full Size Documentation </a>
-								</li>
-							</ul>
+          <!-- Categories -->
+          <div class="row footer-section-body" id='footer-categories'>
+            <ul>
+              <li>
+                <a href="#">Learn HTML & CSS</a>
+              </li>
+              <li>
+                <a href="#">Teach Yourself Coding </a>
+              </li>
+              <li>
+                <a href="#">Knowled of PHP</a>
+              </li>
+              <li>
+                <a href="#">Custom Coding</a>
+              </li>
+              <li>
+                <a href="#">Full Size Documentation </a>
+              </li>
+            </ul>
 
-						</div>
-					</div>
+          </div>
+        </div>
 
-					<div class="col-md-3">
+        <div class="col-md-3">
 
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header">
-								<div class="col-md-3">
-									Flickr Stream
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body">
-
-
-							<!-- Flickr Images are loaded by the jFlickrFeed plugin -->
-							<div id="flickrImages"></div>  
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Flickr Stream
+              </div>
+            </div>
+          </div>
+          <div class="row footer-section-body">
 
 
-						</div>
-					</div>
+            <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+            <div id="flickrImages"></div>  
 
-					<div class="col-md-3" id='footer-tweeter-feed'>
 
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header">
-								<div class="col-md-3">
-									Recent tweets
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body">
+          </div>
+        </div>
 
-							<ul>
-								<li>
+        <div class="col-md-3" id='footer-tweeter-feed'>
 
-									<div class="media">
-										<a class="pull-left" href="#"><i class="fa fa-twitter icon-2x"></i></a>
-										<div class="media-body">
-											<h4 class="media-heading">@LorenIpsum</h4>
-											<p>
-												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-											</p>
-										</div>
-									</div>
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Recent tweets
+              </div>
+            </div>
+          </div>
+          <div class="row footer-section-body">
 
-								</li>
+            <ul>
+              <li>
 
-								<li>
+                <div class="media">
+                  <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <div class="media-body">
+                    <h4 class="media-heading">@LorenIpsum</h4>
+                    <p>
+                      <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </p>
+                  </div>
+                </div>
 
-									<div class="media">
-										<a class="pull-left" href="#"> <i class="fa fa-twitter icon-2x"></i></a>
-										<div class="media-body">
-											<h4 class="media-heading">@DolorAmet</h4>
-											<p>
-												<a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-											</p>
-										</div>
-									</div>
+              </li>
 
-								</li>
-							</ul>
+              <li>
 
-						</div>
-					</div>
+                <div class="media">
+                  <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <div class="media-body">
+                    <h4 class="media-heading">@DolorAmet</h4>
+                    <p>
+                      <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </p>
+                  </div>
+                </div>
 
-					<div class="col-md-3">
+              </li>
+            </ul>
 
-						<!-- Footer Section header, only visible in small screens. -->
-						<div class="row footer-header-collapse">
-							<div class="row footer-header">
-								<div class="col-md-3">
-									Contact Us
-								</div>
-							</div>
-						</div>
-						<div class="row footer-section-body">
+          </div>
+        </div>
 
-							<form>
+        <div class="col-md-3">
 
-								<input type='text' placeholder='Name'>
-								<input type='text' placeholder='Email'>
-								<textarea type='text' placeholder='Message'></textarea>
-								<button class='pull-right'>
-									Send
-								</button>
-							</form>
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Contact Us
+              </div>
+            </div>
+          </div>
+          <div class="row footer-section-body">
 
-						</div>
-					</div>
+            <form>
 
-				</div>
+              <input type='text' placeholder='Name'>
+              <input type='text' placeholder='Email'>
+              <textarea  placeholder='Message'></textarea>
+              <button class='pull-right'>
+                Send
+              </button>
+            </form>
 
-				<div class="row" id='footer-bottom'>
+          </div>
+        </div>
 
-					<div class="col-md-6" id='footer-bottom-left'>
+      </div>
 
-						<span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+      <div class="row" id='footer-bottom'>
 
-					</div>
+        <div class="col-md-6" id='footer-bottom-left'>
 
-					<div class="col-md-6 hidden-xs hidden-sm">
-						<nav>
-							<ul class="breadcrumb">
-								<li>
-									<a href="#">Home</a>
-								</li>
-								<li>
-									<a href="#">About </a>
-								</li>
-								<li>
-									<a href="#">Contact </a>
-								</li>
-								<li>
-									<a href="#">Services </a>
-								</li>
+          <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
 
-								<li>
-									<a href="#">Blog </a>
-								</li>
+        </div>
 
-							</ul>
+        <div class="col-md-6 hidden-xs hidden-sm">
+          <nav>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About </a>
+              </li>
+              <li>
+                <a href="#">Contact </a>
+              </li>
+              <li>
+                <a href="#">Services </a>
+              </li>
 
-						</nav>
+              <li>
+                <a href="#">Blog </a>
+              </li>
 
-					</div>
+            </ul>
 
-				</div>
+          </nav>
 
-			</footer>
-			<!-- Main Footer End =======================================================================================-->
+        </div>
+
+      </div>
+
+    </footer>
+
+    <span class="color-band-thick"></span>
+    <!-- Main Footer End =======================================================================================-->
 
 		</div> <!-- /.hw-wrapper -->
 
@@ -896,6 +916,9 @@
 	<!-- used by some plugins -->
 	<script type="text/javascript" src="js/slider/raphael-min.js"></script>
 	<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
+	<!-- Style Switcher -->
+<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+<script type="text/javascript" src="js/style-switcher.js"></script>
 
 
 	<!-- Top Navigation transparency on scroll -->
@@ -949,6 +972,8 @@
 
 				// Top nav transparency on Scroll 
 				transNav('#poshnav-half-width');
+
+				colorSwitcherInit();
 
 			});
 
