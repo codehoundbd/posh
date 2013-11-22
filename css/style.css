@@ -38,11 +38,11 @@
       }
 
       .fw-wrapper {
-      	padding-top: 74px
+      	padding-top: 74px;
       }
 
       .hw-wrapper {
-      	padding-top: 75px;
+      	padding-top: 81px;
       	background-color: white;
       	margin: 0 auto;
       	max-width: 1020px;
@@ -361,10 +361,6 @@
       	-webkit-box-shadow: none;
       	box-shadow: none;
       	margin-top: 0
-      }
-
-      .port-features ul {
-      	padding: 10px 20px
       }
 
       .port-features li {
@@ -1335,6 +1331,12 @@
       	color: #2097d4;
       }
 
+
+      section#blog-single .section-body{
+
+            padding-top: 0;
+      }
+
       /* --- Contact Us Page --- */
       section header {
       	margin: 0 20px
@@ -1690,6 +1692,7 @@
       }
 
       section.portfolio ul {
+            width: 100% !important;
       	padding: 10px
       }
 
@@ -2621,6 +2624,11 @@
       			background-position: 18px 0px;
       		}
       	}
+
+
+
+
+
       	/* --- Color Changer (aka "The Style Switcher") --- */
       	.colorbox {
       		width: 21px;

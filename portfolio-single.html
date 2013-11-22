@@ -24,11 +24,11 @@
 
 
   <!-- CSS to override Some Bootstrap styles -->
-  <link rel="stylesheet" href="css/bootstrap-overrides.css">
+  <link rel="stylesheet" class="bs-overrides" href="css/bootstrap-overrides.css">
 
 
   <!-- Main StyleSheet for Posh  -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" class="main-style" href="css/style.css">
 
 
   <!-- Styles specific to only the half-widh/boxed layout -->
@@ -65,6 +65,20 @@
 
 <body>
 
+  <!-- Style Switcher Begin -->
+  <a href="#" id="trigger2" class="trigger left"><i class="fa fa-wrench"></i></a>
+  <div id="panel2" class="panel left">
+    <div id="colorchanger">
+      <h2>Colors</h2>
+      <a class="colorbox colorblue" href="#"></a>
+      <a class="colorbox colorred" href="#"></a>
+      <a class="colorbox colorpurple" href="#"></a>
+      <a class="colorbox colorgreen" href="#"></a>
+      <a class="colorbox colororange" href="#"></a>
+    </div>
+  </div>
+  <!-- Style Switcher End -->
+
   <div class="whole-wrapper">
 
     <!-- half-width wrapper to limit the width of everything =======================================================-->
@@ -73,6 +87,8 @@
 
       <!-- Top Navigation Begin ==================================================================================-->
       <div id="poshnav-half-width">
+
+        <span class="color-band-thick"></span>
         <div class="navbar navbar-inverse" >
 
           <div class="navbar-header">
@@ -84,11 +100,13 @@
           </div>  
           <div class="collapse navbar-collapse">
 
+
+
             <ul class="nav navbar-nav">
 
-              <li class="dropdown">
+              <li class="dropdown active">
                 <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu animated fadeInDown animated-300ms">
 
                   <li>
                     <a href="index.html">iView Slider</a>
@@ -104,7 +122,7 @@
               </li>
               <li class="dropdown">
                 <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
                   <li>
                     <a href="portfolio-4c.html">4 Column</a>
                   </li>
@@ -124,7 +142,7 @@
 
               <li class="dropdown">
                 <a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
                   <li>
                     <a href="blog-ls.html">Left Sidebar</a>
                   </li>
@@ -143,7 +161,7 @@
 
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
                   <li>
                     <a href="contact.html">Contact</a>
                   </li>
@@ -167,7 +185,7 @@
 
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
                   <li>
                     <a href="components.html">Components</a>
                   </li>
@@ -197,464 +215,455 @@
 
 
       <section id="blog-single">
-        
-          
 
-
-            
-
-           
-            <header>
-				<h1></h1>
-				<span class="color-band-thin" ></span>
+        <header>
+          <h1></h1>
+          <span class="color-band-thin" ></span>
 
 
 
-			</header>
+        </header>
 
 
-			<div class="section-body row">
+        <div class="section-body row">
 
-            <div class="post-wrapper">
-            
-              <div class="blog-header">
+          <div class="post-wrapper">
 
-                <!-- Post Title -->
-                <h1>Musical Site</h1>
-                <a data-lightbox="post" title="Loren Ipsum" href="img/blog1.png"><img src="img/port-single.png" alt="Big Blog Image"></a>
-                   <span class="color-band"></span>
-              	<ul class="breadcrumb">
+            <div class="blog-header">
+
+              <!-- Post Title -->
+              <h1>Musical Site</h1>
+              <a data-lightbox="post" title="Loren Ipsum" href="img/port-single.png"><img src="img/port-single-preview.png" alt="Big Blog Image"></a>
+              <span class="color-band-thick"></span>
+              <ul class="breadcrumb">
                 <li><h3>Music For Life Project</h3> </li>
                 
               </ul>
 
-              </div>
+            </div>
 
-              <div class="blog-body">
-
-
-                
-				<div class="col-md-8">
-				<h3>Project Description</h3>
-				<span class="color-band-thin" ></span>
-                    <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu 
-                      mi magna. Etiam suscipit commodo gravida. Cras suscipit, quam vitae adipiscing faucibus,
-                      risus nibh laoreet odio, a porttitor metus eros ut enim. Morbi augue velit, tempus mattis 
-                      dignissim nec, porta sed risus. Donec eget magna eu lorem tristique pellentesque eget eu 
-                      dui. Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum 
-                      sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum.</p>
-                      </div>
-                      <div class="col-md-4">
-                      <h3>Project Features</h3>
-                      <span class="color-band-thin" ></span>
-                      <div class="port-features">	 	
-                      <ul class="list-style-1">
-                      	<li>Branding </li>
-                      	<li>HTML5/CSS3</li>
-                      	<li>Computational Logic</li>
-                      	<li>Programming</li>
-                      </ul>
-                      <button class="btn btn-primary " type="button">Launch</button>
-                      </div>
-                      	
-                      </div>
-
-                      
-
-                       		</div>
-                      	</div>
-                      </div>
-
-
-                      
-                
-              </section>
-           
-            
-            
-
-            <section class="portfolio">
-
-			<header>
-				<h1>Similar Projects</h1>
-				<span class="color-band-thin" ></span>
+            <div class="blog-body">
 
 
 
-			</header>
+              <div class="col-md-8">
+                <h3>Project Description</h3>
+                <span class="color-band-thin" ></span>
+                <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu 
+                  mi magna. Etiam suscipit commodo gravida. Cras suscipit, quam vitae adipiscing faucibus,
+                  risus nibh laoreet odio, a porttitor metus eros ut enim. Morbi augue velit, tempus mattis 
+                  dignissim nec, porta sed risus. Donec eget magna eu lorem tristique pellentesque eget eu 
+                  dui. Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum 
+                  sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum.</p>
+                </div>
+                <div class="col-md-4">
+                  <h3>Project Features</h3>
+                  <span class="color-band-thin" ></span>
+                  <div class="port-features">	 	
+                    <ul class="list-style-1">
+                     <li>Branding </li>
+                     <li>HTML5/CSS3</li>
+                     <li>Computational Logic</li>
+                     <li>Programming</li>
+                   </ul>
+                   <button class="btn btn-primary " type="button">Launch</button>
+                 </div>
 
-			<div class="section-body row">
-
-				<ul>
-					<li>
-						<div class="portfolio-item">
-
-							<div class="imgwrapper">
-								<!-- Thumbnail -->
-								<img src="img/port1.png" alt="port1">
-
-								<div class="imgback"></div>
-
-								<!-- Full image to show in lightbox -->
-								<a href="img/port1.png" data-lightbox="image-1" title="My caption" class="rollover"></a>
-							</div>
-
-							<div class="imgcaption">
-								<h1>Awesome Food</h1>
-								<p>
-									His eius mollis accusata cu.
-								</p>
-								<a href="portfolio-single.html"> <img src="img/portfolio-link.png" alt="port2"> </a>
-							</div>
-
+               </div>
 
 
-						</div>
-					</li>
-					<li>
-						<div class="portfolio-item">
 
-							<div class="imgwrapper">
-
-								<!-- Thumbnail -->
-								<img src="img/port2.png" alt="port2">
-
-								<div class="imgback"></div>
-
-								<!-- Full image to show in lightbox -->
-								<a href="img/port2.png" data-lightbox="image-1" title="My caption" class="rollover"></a>
-							</div>
-
-							<div class="imgcaption">
-								<h1>Awesome Food</h1>
-								<p>
-									His eius mollis accusata cu.
-								</p>
-								<a href="portfolio-single.html"> <img src="img/portfolio-link.png" alt="link"> </a>
-							</div>
-
-						</div>
-					</li>
-
-
-					<li>
-						<div class="portfolio-item">
-
-							<div class="imgwrapper">
-								<!-- Thumbnail -->
-								<img src="img/port3.png" alt="port2">
-
-								<div class="imgback"></div>
-
-								<!-- Full image to show in lightbox -->
-								<a href="img/port3.png" data-lightbox="image-1" title="My caption" class="rollover"></a>
-							</div>
-
-							<div class="imgcaption">
-								<h1>Awesome Food</h1>
-								<p>
-									His eius mollis accusata cu.
-								</p>
-								<a href="portfolio-single.html"> <img src="img/portfolio-link.png" alt="port6"> </a>
-							</div>
-
-						</div>
-					</li>
-				</ul>
-
-			</div>
-			
-
-		</section>
-		
-
-            	
-          
+             </div>
+           </div>
+         </div>
 
 
 
 
-           
-       
+       </section>
 
 
 
 
-          
-        
-    
+       <section class="portfolio">
+
+         <header>
+          <h1>Similar Projects</h1>
+          <span class="color-band-thin" ></span>
+
+
+
+        </header>
+
+        <div class="section-body row">
+
+          <ul>
+           <li>
+            <div class="portfolio-item">
+
+             <div class="imgwrapper">
+              <!-- Thumbnail -->
+              <img src="img/port1.png" alt="port1">
+
+              <div class="imgback"></div>
+
+              <!-- Full image to show in lightbox -->
+              <a href="img/port1.png" data-lightbox="image-1" title="My caption" class="rollover"></a>
+            </div>
+
+            <div class="imgcaption">
+              <h1>Awesome Food</h1>
+              <p>
+               His eius mollis accusata cu.
+             </p>
+             <a href="portfolio-single.html"> <img src="img/portfolio-link.png" alt="port2"> </a>
+           </div>
+
+
+
+         </div>
+       </li>
+       <li>
+        <div class="portfolio-item">
+
+         <div class="imgwrapper">
+
+          <!-- Thumbnail -->
+          <img src="img/port2.png" alt="port2">
+
+          <div class="imgback"></div>
+
+          <!-- Full image to show in lightbox -->
+          <a href="img/port2.png" data-lightbox="image-1" title="My caption" class="rollover"></a>
+        </div>
+
+        <div class="imgcaption">
+          <h1>Awesome Food</h1>
+          <p>
+           His eius mollis accusata cu.
+         </p>
+         <a href="portfolio-single.html"> <img src="img/portfolio-link.png" alt="link"> </a>
+       </div>
+
+     </div>
+   </li>
+
+
+   <li>
+    <div class="portfolio-item">
+
+     <div class="imgwrapper">
+      <!-- Thumbnail -->
+      <img src="img/port3.png" alt="port2">
+
+      <div class="imgback"></div>
+
+      <!-- Full image to show in lightbox -->
+      <a href="img/port3.png" data-lightbox="image-1" title="My caption" class="rollover"></a>
+    </div>
+
+    <div class="imgcaption">
+      <h1>Awesome Food</h1>
+      <p>
+       His eius mollis accusata cu.
+     </p>
+     <a href="portfolio-single.html"> <img src="img/portfolio-link.png" alt="port6"> </a>
+   </div>
+
+ </div>
+</li>
+</ul>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <!-- Main Footer Begin =====================================================================================-->
-      <footer>
+<footer>
 
 
-        <!-- Continuous Headers visible only in large screens -->
-        <div class="row footer-header-wrapper visible-lg visible-md">
-          <div class="row footer-header">
-            <div class="col-md-3">
-              Categories
-            </div>
+  <!-- Continuous Headers visible only in large screens -->
+  <div class="row footer-header-wrapper visible-lg visible-md">
+    <div class="row footer-header">
+      <div class="col-md-3">
+        Categories
+      </div>
 
-            <div class="col-md-3">
-              Flickr Stream
-            </div>
+      <div class="col-md-3">
+        Flickr Stream
+      </div>
 
-            <div class="col-md-3">
-              Recent Tweets
-            </div>
+      <div class="col-md-3">
+        Recent Tweets
+      </div>
 
-            <div class="col-md-3">
-              Contact us
-            </div>
+      <div class="col-md-3">
+        Contact us
+      </div>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-        <div class="row" id='footer-body'>
+  <div class="row" id='footer-body'>
 
-          <div class="col-md-3 col-sm-12">
+    <div class="col-md-3 col-sm-12">
 
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header">
-                <div class="col-md-3">
-                  Categories
-                </div>
-              </div>
-            </div>
-
-            <!-- Categories -->
-            <div class="row footer-section-body" id='footer-categories'>
-              <ul>
-                <li>
-                  <a href="#">Learn HTML & CSS</a>
-                </li>
-                <li>
-                  <a href="#">Teach Yourself Coding </a>
-                </li>
-                <li>
-                  <a href="#">Knowled of PHP</a>
-                </li>
-                <li>
-                  <a href="#">Custom Coding</a>
-                </li>
-                <li>
-                  <a href="#">Full Size Documentation </a>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
           <div class="col-md-3">
-
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header">
-                <div class="col-md-3">
-                  Flickr Stream
-                </div>
-              </div>
-            </div>
-            <div class="row footer-section-body">
-
-
-              <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
-              <div id="flickrImages"></div>  
-
-
-            </div>
+            Categories
           </div>
+        </div>
+      </div>
 
-          <div class="col-md-3" id='footer-tweeter-feed'>
+      <!-- Categories -->
+      <div class="row footer-section-body" id='footer-categories'>
+        <ul>
+          <li>
+            <a href="#">Learn HTML & CSS</a>
+          </li>
+          <li>
+            <a href="#">Teach Yourself Coding </a>
+          </li>
+          <li>
+            <a href="#">Knowled of PHP</a>
+          </li>
+          <li>
+            <a href="#">Custom Coding</a>
+          </li>
+          <li>
+            <a href="#">Full Size Documentation </a>
+          </li>
+        </ul>
 
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header">
-                <div class="col-md-3">
-                  Recent tweets
-                </div>
-              </div>
-            </div>
-            <div class="row footer-section-body">
+      </div>
+    </div>
 
-              <ul>
-                <li>
+    <div class="col-md-3">
 
-                  <div class="media">
-                    <a class="pull-left" href="#"><i class="icon-twitter icon-2x"></i></a>
-                    <div class="media-body">
-                      <h4 class="media-heading">@LorenIpsum</h4>
-                      <p>
-                        <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                      </p>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li>
-
-                  <div class="media">
-                    <a class="pull-left" href="#"> <i class="icon-twitter icon-2x"></i></a>
-                    <div class="media-body">
-                      <h4 class="media-heading">@DolorAmet</h4>
-                      <p>
-                        <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                      </p>
-                    </div>
-                  </div>
-
-                </li>
-              </ul>
-
-            </div>
-          </div>
-
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
           <div class="col-md-3">
+            Flickr Stream
+          </div>
+        </div>
+      </div>
+      <div class="row footer-section-body">
 
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header">
-                <div class="col-md-3">
-                  Contact Us
-                </div>
+
+        <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+        <div id="flickrImages"></div>  
+
+
+      </div>
+    </div>
+
+    <div class="col-md-3" id='footer-tweeter-feed'>
+
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Recent tweets
+          </div>
+        </div>
+      </div>
+      <div class="row footer-section-body">
+
+        <ul>
+          <li>
+
+            <div class="media">
+              <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+              <div class="media-body">
+                <h4 class="media-heading">@LorenIpsum</h4>
+                <p>
+                  <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                </p>
               </div>
             </div>
-            <div class="row footer-section-body">
 
-              <form>
+          </li>
 
-                <input type='text' placeholder='Name'>
-                <input type='text' placeholder='Email'>
-                <textarea type='text' placeholder='Message'></textarea>
-                <button class='pull-right'>
-                  Send
-                </button>
-              </form>
+          <li>
 
+            <div class="media">
+              <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+              <div class="media-body">
+                <h4 class="media-heading">@DolorAmet</h4>
+                <p>
+                  <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                </p>
+              </div>
             </div>
-          </div>
 
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Contact Us
+          </div>
         </div>
+      </div>
+      <div class="row footer-section-body">
 
-        <div class="row" id='footer-bottom'>
+        <form>
 
-          <div class="col-md-6" id='footer-bottom-left'>
+          <input type='text' placeholder='Name'>
+          <input type='text' placeholder='Email'>
+          <textarea  placeholder='Message'></textarea>
+          <button class='pull-right'>
+            Send
+          </button>
+        </form>
 
-            <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+      </div>
+    </div>
 
-          </div>
+  </div>
 
-          <div class="col-md-6 hidden-xs hidden-sm">
-            <nav>
-              <ul class="breadcrumb">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About </a>
-                </li>
-                <li>
-                  <a href="#">Contact </a>
-                </li>
-                <li>
-                  <a href="#">Services </a>
-                </li>
+  <div class="row" id='footer-bottom'>
 
-                <li>
-                  <a href="#">Blog </a>
-                </li>
+    <div class="col-md-6" id='footer-bottom-left'>
 
-              </ul>
+      <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
 
-            </nav>
+    </div>
 
-          </div>
+    <div class="col-md-6 hidden-xs hidden-sm">
+      <nav>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About </a>
+          </li>
+          <li>
+            <a href="#">Contact </a>
+          </li>
+          <li>
+            <a href="#">Services </a>
+          </li>
 
-        </div>
+          <li>
+            <a href="#">Blog </a>
+          </li>
 
-      </footer>
-      <!-- Main Footer End =======================================================================================-->
+        </ul>
 
-    </div> <!-- /.hw-wrapper -->
+      </nav>
 
-  </div> <!-- /.whole-wrapper -->
+    </div>
+
+  </div>
+
+</footer>
+
+<span class="color-band-thick"></span>
+<!-- Main Footer End =======================================================================================-->
+
+</div> <!-- /.hw-wrapper -->
+
+</div> <!-- /.whole-wrapper -->
 
 
 
 
-  <!-- Scripts =======================================================================================================-->
+<!-- Scripts =======================================================================================================-->
 
-  
-  <!-- Basics -->
-  <script src="js/slider/jquery-1.7.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 
-  <!-- used by some plugins -->
-  <script type="text/javascript" src="js/slider/raphael-min.js"></script>
-  <script type="text/javascript" src="js/slider/jquery.easing.js"></script>
-  <!-- Handles portfolio hover effect -->
+<!-- Basics -->
+<script src="js/slider/jquery-1.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- used by some plugins -->
+<script type="text/javascript" src="js/slider/raphael-min.js"></script>
+<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
+<!-- Handles portfolio hover effect -->
 <script src="js/jquery.quicksand.js"></script>
 
-  <script src="js/portfolio-adjust.js"></script>    
+<script src="js/portfolio-adjust.js"></script>    
 
-  <script src="js/jquery.easing-1.3.min.js"></script>
-
- 
-
-  <!-- Top Navigation transparency on scroll -->
-  <script src="js/transnav.js"></script>
-  <script src="js/portfolio-adjust.js"></script>
-
-  <!-- jQuery plugin to load flickr images in footer flickr stream -->
-  <script src="js/jflickrfeed.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
 
 
-  <script type="text/javascript">  
-    $(function() {
-      $('#flickrImages').jflickrfeed({
-        limit: 9,
-        qstrings: {
-          id: '71865026@N00'
-        },
-        itemTemplate: 
-        '<div class="flickr-thumb">' +
-        '<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
-        '<img src="{{image_s}}" alt="{{title}}" />' +
-        '</a>' +
-        '</div>'
-      }); 
-    });
 
-  </script>
+<!-- Top Navigation transparency on scroll -->
+<script src="js/transnav.js"></script>
+<script src="js/portfolio-adjust.js"></script>
 
-  <!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
-  <script src="js/lightbox.js"></script>
+<!-- Style Switcher -->
+<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+<script type="text/javascript" src="js/style-switcher.js"></script>
 
 
-  <script>
+<!-- jQuery plugin to load flickr images in footer flickr stream -->
+<script src="js/jflickrfeed.min.js"></script>
 
 
-    $(document).ready(function() {
-    	adjustPortfolioHover(20);
+<script type="text/javascript">  
+  $(function() {
+    $('#flickrImages').jflickrfeed({
+      limit: 9,
+      qstrings: {
+        id: '71865026@N00'
+      },
+      itemTemplate: 
+      '<div class="flickr-thumb">' +
+      '<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
+      '<img src="{{image_s}}" alt="{{title}}" />' +
+      '</a>' +
+      '</div>'
+    }); 
+  });
 
-        
+</script>
+
+<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
+<script src="js/lightbox.js"></script>
 
 
-        // Menu Hover effect
-        $('.dropdown-menu').hover(function() {
-
-          $(this).closest('.dropdown').addClass('active');
-        }, function() {
-          $(this).closest('.dropdown').removeClass('active');
-
-        });
+<script>
 
 
+  $(document).ready(function() {
+
+    // dynamically adjust the height of the Portfolio hover effect
+    adjustPortfolioHover(20);
+    
+    colorSwitcherInit();
 
 
         // Top nav transparency on Scroll 
@@ -662,18 +671,18 @@
 
       });
 
-    $(window).resize(function() {
+  $(window).resize(function() {
 
         // dynamically adjust the height of the Portfolio hover effect
         adjustPortfolioHover(20);
 
       });
-    
-
-  </script>
-
- 
 
 
-  </body>
+</script>
+
+
+
+
+</body>
 </html>
