@@ -363,9 +363,7 @@
       	margin-top: 0
       }
 
-      .port-features ul {
-      	padding: 10px 20px
-      }
+      
 
       .port-features li {
       	padding-bottom: 5px
@@ -1274,7 +1272,7 @@
 
       .blog-sidebar .blog-categories a, .blog-sidebar .top-post a {
       	font-family: "Noto Sans", sans-serif;
-      	font-size: 11pt;
+      	font-size: 12pt;
       	color: #5c5b5b;
       	font-weight: normal
       }
@@ -1331,7 +1329,7 @@
 
       .blog-sidebar .top-post p {
       	margin-top: 3%;
-      	font-size: 1.02em;
+      	font-size: 1.09em;
       	color: #2097d4;
       }
 
@@ -2543,9 +2541,9 @@
       }
 
       .blue-accordion:hover {
-      	background-color: #2097d4 !important;
+      	background-color:#2097d4  !important;
       	color: #fffcfc !important;
-      	text-shadow: 0 1px 1px #2097d4 !important
+      	text-shadow: 0 1px 1px #2097d4  !important
       }
 
       .thumbnails ul {

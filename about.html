@@ -24,11 +24,12 @@
 
 
 	<!-- CSS to override Some Bootstrap styles -->
-	<link rel="stylesheet" href="css/bootstrap-overrides.css">
+	<link rel="stylesheet" class="bs-overrides" href="css/bootstrap-overrides.css">
 
 
 	<!-- Main StyleSheet for Posh  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" class="main-style" href="css/style.css">
+
 
 
 	<!-- Styles specific to only the half-widh/boxed layout -->
@@ -684,6 +685,10 @@
 	<!-- jQuery plugin to load flickr images in footer flickr stream -->
 	<script src="js/jflickrfeed.min.js"></script>
 
+	 <!-- Style Switcher -->
+<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+<script type="text/javascript" src="js/style-switcher.js"></script>
+
 
 	<script type="text/javascript">  
 		$(function() {
@@ -744,6 +749,7 @@
 				transNav('#poshnav-half-width');
 
 				$(".dial").knob();
+				colorSwitcherInit();
 
 			});
 
