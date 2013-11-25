@@ -25,11 +25,11 @@
 
 
 		<!-- CSS to override Some Bootstrap styles -->
-		<link rel="stylesheet" href="css/bootstrap-overrides.css">
+		<link rel="stylesheet" class="bs-overrides" href="css/bootstrap-overrides.css">
 
 
 		<!-- Main StyleSheet for Posh  -->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" class="main-style" href="css/style.css">
 
 
 		<!-- Some Overrides for responsiveness -->
@@ -78,6 +78,21 @@
 
       </head>
       <body>
+
+
+      	<!-- Style Switcher Begin -->
+      	<a href="#" id="trigger2" class="trigger left"><i class="fa fa-wrench"></i></a>
+      	<div id="panel2" class="panel left">
+      		<div id="colorchanger">
+      			<h2>Colors</h2>
+      			<a class="colorbox colorblue" href="#"></a>
+      			<a class="colorbox colorred" href="#"></a>
+      			<a class="colorbox colorpurple" href="#"></a>
+      			<a class="colorbox colorgreen" href="#"></a>
+      			<a class="colorbox colororange" href="#"></a>
+      		</div>
+      	</div>
+      	<!-- Style Switcher End -->
       	<div class="fw-wrapper">
 
 
@@ -308,7 +323,7 @@
       								<img src="img/feature1.png" class="img-circle" alt="feature">
 
       							</div>
-      							<h2>Retina Ready</h2>
+      							<h2>Custom Plugin</h2>
 
 
       						</div>
@@ -987,6 +1002,10 @@
       	<!-- jQuery plugin to load flickr images in footer flickr stream -->
       	<script src="js/jflickrfeed.min.js"></script>
 
+      	<!-- Style Switcher -->
+      	<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+      	<script type="text/javascript" src="js/style-switcher.js"></script>
+
 
       	<script type="text/javascript">  
       		$(function() {
@@ -1085,6 +1104,8 @@
 
 				// Top nav transparency on Scroll 
 				transNav('#poshnav-full-width');
+
+				colorSwitcherInit();
 
 			});
 

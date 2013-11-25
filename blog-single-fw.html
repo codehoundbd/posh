@@ -31,6 +31,8 @@
   <link rel="stylesheet" class="main-style" href="css/style.css">
 
 
+  
+
 
   <!-- Some Overrides for responsiveness -->
   <link rel="stylesheet" href="css/style-responsive.css">
@@ -47,6 +49,11 @@
 
   <!-- Modernizr is used by some jQuery plugins -->
   <script src="js/modernizr.custom.js"></script>
+  <!-- support of IE8 -->
+      <!--[if lt IE 9]>
+        <script src="js/html5shiv.js" type="text/javascript"></script>
+        <script src="js/respond.min.js" type="text/javascript"></script>
+        <![endif]-->
 
 
 
@@ -61,132 +68,152 @@
 </head>
 
 <body>
-
-    <div class="fw-wrapper">
-
-
-     <!-- Navigation Bar  Begin ====================================================================================-->
-    <div id="poshnav-full-width" class= "navbar-fixed-top">
-      <div id="nav-container">
-        <div class="navbar navbar-inverse n-container container" >
-
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-
-            <a class="navbar-brand" href="index-fw.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
-
-          </div>  
-          <div class="collapse navbar-collapse">
-
-            <ul class="nav navbar-nav">
-
-              <li class="dropdown">
-                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                <ul class="dropdown-menu">
-
-                  <li>
-                    <a href="index.html">iView Slider</a>
-                  </li>
-                  <li>
-                    <a href="index-nivo.html">Nivo Slider</a>
-                  </li>
-
-                  <li>
-                    <a href="index-camera.html">Camera Slider</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="portfolio-4c.html">4 Column</a>
-                  </li>
-                  <li>
-                    <a href="portfolio.html">3 Column</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-2c.html">2 Column</a>
-                  </li>
-
-                  <li>
-                    <a href="portfolio-single.html">Single Portfolio</a>
-                  </li>
-
-                </ul>
-              </li>
-
-              <li class="dropdown">
-                <a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="blog-ls.html">Left Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="blog.html">Right Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="blog-single.html">Single Blog</a>
-                  </li>
-
-
-
-                </ul>
-              </li>
-
-
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="contact.html">Contact</a>
-                  </li>
-                  <li>
-                    <a href="about.html">About</a>
-                  </li>
-
-                  <li>
-                    <a href="services.html">Services</a>
-                  </li>
-
-                  <li>
-                    <a href="page404.html">404</a>
-                  </li>
-
-
-
-                </ul>
-              </li>
-
-
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="components.html">Components</a>
-                  </li>
-                  <li>
-                    <a href="icons.html">Icons</a>
-                  </li>
-                  <li>
-                    <a href="anims.html">Animations</a>
-                  </li>
-
-                </ul>
-              </li>
-            </ul>
-
-            <form class="navbar-search pull-right" role="search">
-              <input type="text" class="search-query">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
+  <!-- Style Switcher Begin -->
+  <a href="#" id="trigger2" class="trigger left"><i class="fa fa-wrench"></i></a>
+  <div id="panel2" class="panel left">
+    <div id="colorchanger">
+      <h2>Colors</h2>
+      <a class="colorbox colorblue" href="#"></a>
+      <a class="colorbox colorred" href="#"></a>
+      <a class="colorbox colorpurple" href="#"></a>
+      <a class="colorbox colorgreen" href="#"></a>
+      <a class="colorbox colororange" href="#"></a>
     </div>
-    <!-- Navigation Bar End ====================================================================================-->
+  </div>
+  <!-- Style Switcher End -->
+
+  <div class="fw-wrapper">
+
+    
+
+
+      <!-- Navigation Bar  Begin ====================================================================================-->
+          <div id="poshnav-full-width" class= "navbar-fixed-top">
+            <div id="nav-container">
+              <div class="navbar navbar-inverse n-container container" >
+
+                <div class="navbar-header">
+
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+                  <a class="navbar-brand" href="index-fw.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
+
+                </div>  
+                <div class="collapse navbar-collapse">
+
+
+
+
+                  <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                      <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                      <ul class="dropdown-menu">
+
+                        <li>
+                          <a href="index-fw.html">iView Slider</a>
+                        </li>
+                        <li>
+                          <a href="index-nivo-fw.html">Nivo Slider</a>
+                        </li>
+
+                        <li>
+                          <a href="index-camera-fw.html">Camera Slider</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="portfolio-4c-fw.html">4 Column</a>
+                        </li>
+                        <li>
+                          <a href="portfolio-fw.html">3 Column</a>
+                        </li>
+                        <li>
+                          <a href="portfolio-2c-fw.html">2 Column</a>
+                        </li>
+
+                        <li>
+                          <a href="portfolio-single-fw.html">Single Portfolio</a>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                    <li class="dropdown">
+                      <a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="blog-ls-fw.html">Left Sidebar</a>
+                        </li>
+                        <li>
+                          <a href="blog-fw.html">Right Sidebar</a>
+                        </li>
+                        <li>
+                          <a href="blog-single-fw.html">Single Blog</a>
+                        </li>
+
+
+
+                      </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="contact-fw.html">Contact</a>
+                        </li>
+                        <li>
+                          <a href="about-fw.html">About</a>
+                        </li>
+
+                        <li>
+                          <a href="services-fw.html">Services</a>
+                        </li>
+
+                        <li>
+                          <a href="page404-fw.html">404</a>
+                        </li>
+
+
+
+                      </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="components-fw.html">Components</a>
+                        </li>
+                        <li>
+                          <a href="icons-fw.html">Icons</a>
+                        </li>
+                        <li>
+                          <a href="anims-fw.html">Animations</a>
+                        </li>
+
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <form class="navbar-search pull-right" role="search">
+                    <input type="text" class="search-query">
+                  </form>
+
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Navigation Bar End ====================================================================================-->
 
 
 
@@ -194,67 +221,68 @@
 
       <section id="blog-single">
         <div id="blog-main">
-
         <div class="container">
-
 
           <div class="row">
 
 
             <!-- The Post (content without sidebar) ================================================================-->
             <div class="col-md-8">
-              <div class="blog-header">
+              <div class="post-wrapper">
+                <div class="blog-header">
 
-                <!-- Post Title -->
-                <h1>Lorem Ipsum Dolor Simun agor notarm Lipus</h1>
+                  <!-- Post Title -->
+                  <h1>Lorem Ipsum Dolor Simun agor notarm Lipus</h1>
+                  <a data-lightbox="post" title="Loren Ipsum" href="img/blog1.png"><img src="img/blog1.png" alt="Big Blog Image"></a>
+                  <span class="color-band"></span>
+                  <ul class="breadcrumb">
+                    <li>19 Jan 2013 </li>
+                    <li>Under<a href="#"><b class="emph"> Inspiration, Capture and Web Design</b> </a> </li>
+                    <li>Posted by <a href="#"> <b class="emph">Admin</b> </a> </li>
+                    <li><a href="#"><b class="emph">5 Comments </b></a> </li>
+                  </ul>
 
-                <ul class="breadcrumb">
-                  <li><a href="#">19 Jan 2013</a> </li>
-                  <li><a href="#">Under<b class="emph"> Inspiration, Capture and Web Design</b> </a> </li>
-                  <li><a href="#">Posted by <b class="emph">Admin</b> </a> </li>
-                  <li><a href="#"><b class="emph">5 Comments </b></a> </li>
+                </div>
 
-                </ul>
+                <div class="blog-body">
 
-              </div>
 
-              <div class="blog-body">
 
-                <a data-lightbox="post" title="Loren Ipsum" href="img/blog1.png"><img src="img/blog1.png" alt="Big Blog Image"></a>
 
-                <p>Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.</p>
-                <p>
-                  Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
-                  Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
-                  Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
-                  Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut 
-                  congue. Pellentesque nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu 
-                  tristique neque consequat. Morbi placerat bibendum eget dolor pellentesque sed 
-                  consectetur pulvinar pellentesque bibendum. Vestibulum varius hendrerit turpis quiseam 
-                  cursus. Donec bibendum vestibulum gravida. Pellentesque condimentum orci vel leo 
-                  laoreet accumsan interdum eros vel sapien tincidunt dignissim. Integer mauris lacus 
-                  consequat.</p>
+                  <p>Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.</p>
                   <p>
-                    Mauris aliquet ultricies ante, non faucibus ante gravida sed. Sed ultrices pellentesque 
-                    purus, vulputate volutpat ipsum hendrerit sed neque sed sapien rutrum laoreet justo 
-                    ultrices. In pellentesque lorem condimentum dui morbi pulvinar dui non quam pretiu
-                    lacinia tortor.</p>
+                    Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
+                    Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
+                    Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
+                    Lorem ipsum dolor sit amet, id eum agam ipsum animal. Mea no nostrum praesent, ea veniam fabulas mei. Vim ne feugiat impedit splendide, ea per saepe saperet voluptatum. Quaestio praesent repudiandae vix ei, in vocibus voluptatibus eam. Numquam sententiae vix no, an qui primis detraxit, eos commodo meliore instructior ei.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut 
+                    congue. Pellentesque nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu 
+                    tristique neque consequat. Morbi placerat bibendum eget dolor pellentesque sed 
+                    consectetur pulvinar pellentesque bibendum. Vestibulum varius hendrerit turpis quiseam 
+                    cursus. Donec bibendum vestibulum gravida. Pellentesque condimentum orci vel leo 
+                    laoreet accumsan interdum eros vel sapien tincidunt dignissim. Integer mauris lacus 
+                    consequat.</p>
+                    <p>
+                      Mauris aliquet ultricies ante, non faucibus ante gravida sed. Sed ultrices pellentesque 
+                      purus, vulputate volutpat ipsum hendrerit sed neque sed sapien rutrum laoreet justo 
+                      ultrices. In pellentesque lorem condimentum dui morbi pulvinar dui non quam pretiu
+                      lacinia tortor.</p>
 
-                    <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu 
-                      mi magna. Etiam suscipit commodo gravida. Cras suscipit, quam vitae adipiscing faucibus,
-                      risus nibh laoreet odio, a porttitor metus eros ut enim. Morbi augue velit, tempus mattis 
-                      dignissim nec, porta sed risus. Donec eget magna eu lorem tristique pellentesque eget eu 
-                      dui. Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum 
-                      sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum.</p>
+                      <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu 
+                        mi magna. Etiam suscipit commodo gravida. Cras suscipit, quam vitae adipiscing faucibus,
+                        risus nibh laoreet odio, a porttitor metus eros ut enim. Morbi augue velit, tempus mattis 
+                        dignissim nec, porta sed risus. Donec eget magna eu lorem tristique pellentesque eget eu 
+                        dui. Fusce lacinia tempor malesuada. Ut lacus sapien, placerat a ornare nec, elementum 
+                        sit amet felis. Maecenas pretium lorem hendrerit eros sagittis fermentum.</p>
 
-                      <p>Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend 
-                        euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, 
-                        suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. 
-                        Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis 
-                        parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. 
-                        Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.</p>
+                        <p>Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend 
+                          euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, 
+                          suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. 
+                          Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis 
+                          parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. 
+                          Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.</p>
 
+                        </div>
                       </div>
 
 
@@ -279,7 +307,9 @@
                               <a href="#">Reply</a>
                             </div>
                           </div>
+
                         </div>
+
                       </div> 
 
 
@@ -327,39 +357,53 @@
 
                 </div>
                 
-
+                <span class="color-band-thin clearfix"></span>
 
                 <!-- Comment Form -->
                 <div class="comment-form clearfix">
-                  <hr>
+
+
                   <form role="form">
-                   <div class="form-group">
 
-                    <input type="Name" class="form-control" id="exampleInputname" placeholder="Name">
+                    <div class="row">
+                      <div class="col-md-12">
+                       <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
+                     </div>
+                   </div>
+
+
+                   <div class="row">
+                     <div class="col-md-6 col-sm-6 col-xs-12">
+                     <input type="text" class="form-control"  placeholder="Name" >
+                    </div>
+
+
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="Email" class="form-control"  placeholder="Email">
+                    </div>
                   </div>
-                  <div class="form-group">
-
-                    <input type="Email" class="form-control" id="exampleInputEmail" placeholder="Email">
+                  
+                  <div class="row">
+                    <button type="submit" class="btn btn-primary btn-lg pull-right">Add Comment</button>
                   </div>
-                  <textarea class="form-control" rows="3" placeholder="Comment"></textarea>
-
-
-                  <button type="submit" class="btn btn-primary btn-lg">Add Comment</button>
                 </form>
               </div>
+              
             </div>
 
 
 
-           
-        <!-- Sidebar =================================================================================================-->
+
+            <!-- Sidebar =================================================================================================-->
         <div class="col-md-4">
           <div class="blog-sidebar">
 
             <div class="search">
               <form class="form-search clearfix">
-                <input type="text" class="input-medium search-query">
-                <button type="button" class="btn btn-default btn-md">
+                <input type="text" class="input-medium search-query"  placeholder="Search Blogs">
+                <button type="button" class="btn btn-primary btn-md">
                   <span class="glyphicon glyphicon-search glyphicon-white"></span>
                 </button>
               </form>
@@ -369,22 +413,23 @@
             <div class="blog-header">
               Categories
             </div>
+            <span class="color-band-thin"></span>
 
             <ul  class="blog-categories">
-              <li><a href="#">> Music</a> </li>
-              <li><a href="#">> Entertainment</a></li>
-              <li><a href="#">> Photography</a></li>
-              <li><a href="#">> Testimonial</a></li>
-              <li><a href="#">> Movies</a></li>
-              <li><a href="#">> Sciences</a></li>
-              <li><a href="#">> FAQ</a></li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Music</a> </li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Entertainment</a></li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Photography</a></li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Food</a></li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Movies</a></li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Sciences</a></li>
+              <li><a href="#"><i class="fa fa-chevron-circle-right"></i> FAQ</a></li>
             </ul>
 
 
             <div class="blog-header ">
               TAG
             </div>
-
+             <span class="color-band-thin"></span>
             <div class="blog-tags">
               <ul class="tags">
                 <li>Nature </li>
@@ -403,7 +448,7 @@
             <div class="blog-header ">
               TOP POSTS
             </div>
-
+             <span class="color-band-thin"></span>
             
             <div class="top-post clearfix">
 
@@ -415,7 +460,7 @@
                 </a>
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#">Take a Look at Our New Themeforest Files Today</a></h4>
-                  <p><b class="emph">Nov. 21,2012  /12 Comments </b></p>
+                  <p>Nov 21, 2012</p>
                 </div>
               </div>
 
@@ -427,7 +472,7 @@
                 </a>
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#">Take a Look at Our New Themeforest Files Today</a></h4>
-                  <p><b class="emph">Nov. 21,2012  /12 Comments </b></p>
+                  <p>Nov 21, 2012</p>
                 </div>
               </div>
 
@@ -439,7 +484,7 @@
                 </a>
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#">Take a Look at Our New Themeforest Files Today</a></h4>
-                  <p><b class="emph">Nov. 21,2012  /12 Comments </b></p>
+                  <p>Nov 21, 2012</p>
                 </div>
               </div>
 
@@ -450,7 +495,7 @@
             <div class="blog-header ">
               RECENT POSTS
             </div>
-
+             <span class="color-band-thin"></span>
             <div class="top-post">
 
 
@@ -461,7 +506,7 @@
                 </a>
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#">Take a Look at Our New Themeforest Files Today</a></h4>
-                  <p><b class="emph">Nov. 21,2012  /12 Comments </b></p>
+                  <p>Nov 21, 2012</p>
                 </div>
               </div>
 
@@ -473,7 +518,7 @@
                 </a>
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#">Take a Look at Our New Themeforest Files Today</a></h4>
-                  <p><b class="emph">Nov. 21,2012  /12 Comments </b></p>
+                  <p>Nov 21, 2012</p>
                 </div>
               </div>
 
@@ -485,7 +530,7 @@
                 </a>
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#">Take a Look at Our New Themeforest Files Today</a></h4>
-                  <p><b class="emph">Nov. 21,2012  /12 Comments </b></p>
+                  <p>Nov 21, 2012</p>
                 </div>
               </div>
 
@@ -496,289 +541,288 @@
             <div class="blog-header">
               Archives
             </div>
+             <span class="color-band-thin"></span>
             <ul  class="blog-categories">
-              <li><a href="#">> January,2013</a> </li>
-              <li><a href="#">> February,2013</a></li>
-              <li><a href="#">> March,2013</a></li>
-              <li><a href="#">> April,2013</a></li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> January, 2013</a> </li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> February, 2013</a></li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> March, 2013</a></li>
+              <li><a href="#"><i class="fa fa-clock-o"></i> April, 2013</a></li>
 
             </ul>
 
 
           </div>
-        </div> <!-- / Sidebar -->
-
-
-
-
-          </div>
-
-          </div> <!-- / container -->
         </div>
-      </section>
+               
 
 
 
-<!-- Main Footer Begin =====================================================================================-->
+
+       
+
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Main Footer Begin =====================================================================================-->
     <footer>
 
 
       <!-- Continuous Headers visible only in large screens -->
       <div class="row footer-header-wrapper visible-lg visible-md">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Categories
+          </div>
 
-        <div class="container">
-          <div class="row footer-header" >
-            <div class="col-md-3">
-              Categories
-            </div>
+          <div class="col-md-3">
+            Flickr Stream
+          </div>
 
-            <div class="col-md-3">
-              Flickr Stream
-            </div>
+          <div class="col-md-3">
+            Recent Tweets
+          </div>
 
-            <div class="col-md-3">
-              Recent Tweets
-            </div>
-
-            <div class="col-md-3">
-              Contact us
-            </div>
-
+          <div class="col-md-3">
+            Contact us
           </div>
 
         </div>
 
       </div>
 
+      <div class="row" id='footer-body'>
 
-      <div class="container">
+        <div class="col-md-3 col-sm-12">
 
-        <div class="row" id='footer-body'>
-
-          <div class="col-md-3">
-
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header" >
-                <div class="col-md-3">
-                  Categories
-                </div>
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Categories
               </div>
-            </div>
-            <div class="row footer-section-body" id='footer-categories'>
-
-              <ul>
-                <li>
-                  <a href="#">Learn HTML & CSS</a>
-                </li>
-                <li>
-                  <a href="#">Teach Yourself Coding </a>
-                </li>
-                <li>
-                  <a href="#">Knowled of PHP</a>
-                </li>
-                <li>
-                  <a href="#">Custom Coding</a>
-                </li>
-                <li>
-                  <a href="#">Full Size Documentation </a>
-                </li>
-              </ul>
-
             </div>
           </div>
 
-          <div class="col-md-3">
-
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header">
-                <div class="col-md-3">
-                  Flickr Stream
-                </div>
-              </div>
-            </div>
-            <div class="row footer-section-body">
-
-              <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
-              <div id="flickrImages"></div>  
-
-            </div>
+          <!-- Categories -->
+          <div class="row footer-section-body" id='footer-categories'>
+            <ul>
+              <li>
+                <a href="#">Learn HTML & CSS</a>
+              </li>
+              <li>
+                <a href="#">Teach Yourself Coding </a>
+              </li>
+              <li>
+                <a href="#">Knowled of PHP</a>
+              </li>
+              <li>
+                <a href="#">Custom Coding</a>
+              </li>
+              <li>
+                <a href="#">Full Size Documentation </a>
+              </li>
+            </ul>
 
           </div>
+        </div>
 
-          <div class="col-md-3" id='footer-tweeter-feed'>
+        <div class="col-md-3">
 
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header" >
-                <div class="col-md-3">
-                  Recent tweets
-                </div>
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Flickr Stream
               </div>
             </div>
-            <div class="row footer-section-body">
+          </div>
+          <div class="row footer-section-body">
 
-              <ul>
-                <li>
 
-                  <div class="media">
-                    <a class="pull-left" href="#"><i class="icon-twitter icon-2x"></i></a>
-                    <div class="media-body">
-                      <h4 class="media-heading">@LorenIpsum</h4>
-                      <p>
-                        <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                      </p>
-                    </div>
+            <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+            <div id="flickrImages"></div>  
+
+
+          </div>
+        </div>
+
+        <div class="col-md-3" id='footer-tweeter-feed'>
+
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Recent tweets
+              </div>
+            </div>
+          </div>
+          <div class="row footer-section-body">
+
+            <ul>
+              <li>
+
+                <div class="media">
+                  <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <div class="media-body">
+                    <h4 class="media-heading">@LorenIpsum</h4>
+                    <p>
+                      <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </p>
                   </div>
-
-                </li>
-
-                <li>
-
-                  <div class="media">
-                    <a class="pull-left" href="#"> <i class="icon-twitter icon-2x"></i></a>
-                    <div class="media-body">
-                      <h4 class="media-heading">@DolorAmet</h4>
-                      <p>
-                        <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                      </p>
-                    </div>
-                  </div>
-
-                </li>
-              </ul>
-
-            </div>
-          </div>
-
-          <div class="col-md-3">
-
-            <!-- Footer Section header, only visible in small screens. -->
-            <div class="row footer-header-collapse">
-              <div class="row footer-header" >
-                <div class="col-md-3">
-                  Contact Us
                 </div>
+
+              </li>
+
+              <li>
+
+                <div class="media">
+                  <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <div class="media-body">
+                    <h4 class="media-heading">@DolorAmet</h4>
+                    <p>
+                      <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </p>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <!-- Footer Section header, only visible in small screens. -->
+          <div class="row footer-header-collapse">
+            <div class="row footer-header">
+              <div class="col-md-3">
+                Contact Us
               </div>
             </div>
-            <div class="row footer-section-body">
-
-              <form>
-
-                <input type='text' placeholder='Name'>
-                <input type='text' placeholder='Email'>
-                <textarea  placeholder='Message' ></textarea>
-                <button class='pull-right'>
-                  Send
-                </button>
-              </form>
-
-            </div>
           </div>
+          <div class="row footer-section-body">
 
+            <form>
+
+              <input type='text' placeholder='Name'>
+              <input type='text' placeholder='Email'>
+              <textarea  placeholder='Message'></textarea>
+              <button class='pull-right'>
+                Send
+              </button>
+            </form>
+
+          </div>
         </div>
 
       </div>
-
 
       <div class="row" id='footer-bottom'>
-        <div class="container">
-          <div class="col-md-6" id='footer-bottom-left'>
 
-            <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+        <div class="col-md-6" id='footer-bottom-left'>
 
-          </div>
-
-          <div class="col-md-6 hidden-xs hidden-sm">
-            <nav>
-              <ul class="breadcrumb">
-                <li>
-                  <a href="index-fw.html">Home</a>
-                </li>
-                <li>
-                  <a href="portfolio-fw.html">Portfolio</a>
-                </li>
-                <li>
-                  <a href="blog-fw.html">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Pages</a>
-                </li>
-
-                <li>
-                  <a href="#">Elements</a>
-                </li>
-
-              </ul>
-
-            </nav>
-
-          </div>
+          <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
 
         </div>
 
+        <div class="col-md-6 hidden-xs hidden-sm">
+          <nav>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About </a>
+              </li>
+              <li>
+                <a href="#">Contact </a>
+              </li>
+              <li>
+                <a href="#">Services </a>
+              </li>
+
+              <li>
+                <a href="#">Blog </a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
 
       </div>
 
-
     </footer>
+
+    <span class="color-band-thick"></span>
     <!-- Main Footer End =======================================================================================-->
 
-  </div> <!-- /.fw-wrapper -->
-
-
-
-
-
-  <!-- Scripts =======================================================================================================-->
-
   
-  <!-- Basics -->
-  <script src="js/slider/jquery-1.7.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 
-  <!-- used by some plugins -->
-  <script type="text/javascript" src="js/slider/raphael-min.js"></script>
-  <script type="text/javascript" src="js/slider/jquery.easing.js"></script>
-
- 
-
-  <!-- Top Navigation transparency on scroll -->
-  <script src="js/transnav.js"></script>
-
-  <!-- jQuery plugin to load flickr images in footer flickr stream -->
-  <script src="js/jflickrfeed.min.js"></script>
+</div> <!-- /.fw-wrapper -->
 
 
-  <script type="text/javascript">  
-    $(function() {
-      $('#flickrImages').jflickrfeed({
-        limit: 9,
-        qstrings: {
-          id: '71865026@N00'
-        },
-        itemTemplate: 
-        '<div class="flickr-thumb">' +
-        '<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
-        '<img src="{{image_s}}" alt="{{title}}" />' +
-        '</a>' +
-        '</div>'
-      }); 
-    });
-
-  </script>
-
-  <!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
-  <script src="js/lightbox.js"></script>
 
 
-  <script>
+<!-- Scripts =======================================================================================================-->
 
 
-    $(document).ready(function() {
+<!-- Basics -->
+<script src="js/slider/jquery-1.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-        
+<!-- used by some plugins -->
+<script type="text/javascript" src="js/slider/raphael-min.js"></script>
+<script type="text/javascript" src="js/slider/jquery.easing.js"></script>
+
+
+
+<!-- Top Navigation transparency on scroll -->
+<script src="js/transnav.js"></script>
+
+<!-- jQuery plugin to load flickr images in footer flickr stream -->
+<script src="js/jflickrfeed.min.js"></script>
+
+<!-- Style Switcher -->
+<script type="text/javascript" src="js/jquery.slidePanel.min.js"></script>
+<script type="text/javascript" src="js/style-switcher.js"></script>
+
+
+<script type="text/javascript">  
+  $(function() {
+    $('#flickrImages').jflickrfeed({
+      limit: 9,
+      qstrings: {
+        id: '71865026@N00'
+      },
+      itemTemplate: 
+      '<div class="flickr-thumb">' +
+      '<a href="{{image_b}}" data-lightbox="flickr" title="{{title}}">' +
+      '<img src="{{image_s}}" alt="{{title}}" />' +
+      '</a>' +
+      '</div>'
+    }); 
+  });
+
+</script>
+
+<!-- Lightbox, loaded after jFlickrFeed, so it works on footer flickr stream thumbnails -->
+<script src="js/lightbox.js"></script>
+
+
+<script>
+
+
+  $(document).ready(function() {
+
+
 
 
         // Menu Hover effect
@@ -794,17 +838,19 @@
 
 
         // Top nav transparency on Scroll 
-        transNav('#poshnav-full-width');
+        transNav('#poshnav-half-width');
+
+        colorSwitcherInit();
 
       });
 
 
-    
-
-  </script>
-
- 
 
 
-  </body>
+</script>
+
+
+
+
+</body>
 </html>
