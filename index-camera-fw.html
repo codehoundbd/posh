@@ -1,7 +1,7 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="en">
 	<head>
-
+      
 		<!-- Basics ===================================================================== -->
 		<meta charset="utf-8">
 		<title>Posh | Home</title>
@@ -44,9 +44,12 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 
-		<!-- CSS for iView Slider -->
-		<link rel="stylesheet" href="css/slider/iview/iview.css" />
-		<link rel="stylesheet" href="css/slider/iview/style.css" />
+		<!-- CSS for Camera Slider -->
+		<link rel="stylesheet" href="css/slider/camera/camera.css" />
+
+		<!-- CSS for lightbox -->
+		<link href="css/lightbox.css" rel="stylesheet"/>
+
 
 		<!-- CSS for lightbox -->
 		<link href="css/lightbox.css" rel="stylesheet"/>
@@ -226,90 +229,51 @@
 
 
 
+			<!--Camera Slider Begin ====================================================================================-->
+			<section class="main-slider" >				
 
-      		<!--Main Slider Begin ======================================================================================-->
-      		<section class="main-slider">				
+				<!-- <div class="container"> -->
 
-      			<div id="iview">
+					<div class="camera_wrap camera_azure_skin" id="camera-slider">
+						<div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
+							<div class="camera_caption fadeFromBottom">
+								Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
+							</div>
+						</div>
+						<div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+							<div class="camera_caption fadeFromBottom">
+								It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+							</div>
+						</div>
+						<div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
+							<div class="camera_caption fadeFromBottom">
+								<em>It's completely free</em> (even if a donation is appreciated)
+							</div>
+						</div>
+						<div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
+							<div class="camera_caption fadeFromBottom">
+								Camera slideshow provides many options <em>to customize your project</em> as more as possible
+							</div>
+						</div>
+						<div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
+							<div class="camera_caption fadeFromBottom">
+								It supports captions, HTML elements and videos and <em>it's validated in HTML5</em> (<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank">have a look</a>)
+							</div>
+						</div>
+						<div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
+							<div class="camera_caption fadeFromBottom">
+								Different color skins and layouts available, <em>fullscreen ready too</em>
+							</div>
+						</div>
+					</div><!-- #camera-slider -->
+				<!-- </div> -->
+			</section>
+			<!--Camera Slider End ======================================================================================-->
 
-      				<!-- Slide 1 -->
-      				<div>
-      					<div class="iview-caption " id="delay-timer-img" data-x="420" data-y="1"  data-width="450" data-height="450" data-transition="fade" data-speed="700">
-      						<img src="images/slider/girl.png" alt="girl">
-      					</div>	
+			
 
-
-
-
-      					<div class="iview-caption " id="delay-timer-0" data-x="20" data-y="20" data-width="520"  data-height="90" data-transition="expandLeft" >
-
-      						<h3 class="caption-color1">Fully Responsive</h3>
-      					</div>
-
-      					<div class="iview-caption "  data-x="40" data-y="100" data-width="520"  data-height="90" data-transition="expandLeft" >
-      						<h3 class="caption-color2">Clean Design</h3>
-      					</div>
-
-      					<div class="iview-caption  "  data-x="60" data-y="180" data-width="520" data-height="90" data-transition="expandLeft" >
-      						<h3 class="caption-color3">Customizable</h3>
-      					</div>
-
-      					<div class="iview-caption "  data-x="80" data-y="260" data-width="520"  data-height="90" data-transition="expandLeft" >
-      						<h3 class="caption-color4">Interactive</h3>
-      					</div>
-
-      				</div>
-
-
-      				<!-- Slide 2 -->
-      				<div >
-      					<div class="iview-caption "  data-x="5" data-y="35"  data-width="450" data-height="450" data-transition="fade">
-      						<img src="images/slider/girl2.png" alt="girl">
-      					</div>	
-
-
-
-      					<div class="iview-caption "  data-x="470" data-width="450" data-height="450" data-y="35" data-transition="wipeRight" data-easing="easeOutElastic" data-speed="1000">
-      						<img src="images/slider/3.png" alt="girl" >
-      					</div>
-
-      					<div class="iview-caption "  data-x="430" data-y="110" data-height="250" data-width="350" data-transition="wipeRight" data-easing="easeOutElastic">
-      						<img src="images/slider/2.png" alt="girl">
-      					</div>
-
-      					<div class="iview-caption "  data-x="410" data-height="250" data-width="550"  data-y="175" data-transition="wipeRight" data-easing="easeOutElastic">
-      						<img src="images/slider/1.png" alt="girl" >
-      					</div>	
-
-
-      					<div class="iview-caption "  data-x="420" data-y="300" data-width="620"  data-height="90" data-transition="exoandLeft">
-      						<h3 class="caption-red">Fully Responsive</h3>
-      					</div>
-      				</div>
-
-
-      				<!-- Slide 3 -->
-      				<div >
-      					<div class="iview-caption"  data-x="5" data-y="35"  data-width="600" data-height="450">
-      						<img src="images/slider/slide3.png" alt="girl" data-transition="fade">
-      					</div>	
-
-      					<div class="iview-caption"  data-x="500" data-y="120" data-width="400"  data-height="90" data-transition="expandRight">
-      						<h3 class="caption-red">Well Documented</h3>
-      					</div>
-
-
-      				</div>
-      			</div>
-
-      		</section>
-
-      		<!--Main Slider End ========================================================================================-->
-
-
-
-
-      		<!-- Features Begin =======================================================================================-->
+			
+			<!-- Features Begin =======================================================================================-->
       		<section class="homepage" id='features'>
 
       			<div class="section-body row">
@@ -977,7 +941,7 @@
 
 
 
-      	<!-- Scripts =======================================================================================================-->
+		<!-- Scripts =======================================================================================================-->
 
       	<!-- Basics -->
       	<script src="js/slider/jquery-1.7.1.min.js"></script>
@@ -990,10 +954,11 @@
       	<!-- BxSlider -->
       	<script src="js/jquery.bxslider.min.js"></script>
 
-      	<!-- Main Slider -->
-      	<script src="js/slider/iview.js"></script>
+		<!-- Camera Slider -->
+		<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+		<script type='text/javascript' src='js/camera.min.js'></script> 
 
-      	<!-- Handles portfolio hover effect -->
+		<!-- Handles portfolio hover effect -->
       	<script src="js/portfolio-adjust.js"></script>
 
       	<!-- Top Navigation transparency on scroll -->
@@ -1032,19 +997,15 @@
       	<script>
 
 
-      		$(document).ready(function() {
+			$(document).ready(function() {
 
 
-				// Main Slider
-				$('#iview').iView({
-					timer: "Pie",
-					pauseOnHover : true,
-					directionNavHoverOpacity : 0,
-					timerOpacity: 0.0,
-					autoAdvance : true
+				// Camera Slider
+				$('#camera-slider').camera({
+					thumbnails: true
 				});
 
-
+				
 				// logo carousel
 				$('.logos').bxSlider({
 					tickerHover: true,
