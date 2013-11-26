@@ -447,7 +447,16 @@ hr{
 	to {background-position: 0px -15px;}
 }
 
+.img-thumbnail{
+	padding: 0;
+	border-width: 2px;
+}
 
+
+.img-thumbnail:hover{
+	border-color: #aaa;
+	
+}
 
 
 
