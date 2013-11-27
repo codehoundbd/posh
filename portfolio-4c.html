@@ -31,12 +31,8 @@
   <link rel="stylesheet" class="main-style" href="css/style.css">
 
 
-  <!-- support of IE8 -->
-      <!--[if lt IE 9]>
-        <script src="js/html5shiv.js" type="text/javascript"></script>
-        <script src="js/respond.min.js" type="text/javascript"></script>
-        <![endif]-->
-
+  <!-- Styles specific to only the half-widh/boxed layout -->
+  <link rel="stylesheet" href="css/style-hw.css">
 
 
   <!-- Some Overrides for responsiveness -->
@@ -82,138 +78,137 @@
   </div>
   <!-- Style Switcher End -->
 
-  <div class="fw-wrapper">
+  <div class="whole-wrapper">
 
-    
-
-
-      <!-- Navigation Bar  Begin ====================================================================================-->
-          <div id="poshnav-full-width" class= "navbar-fixed-top">
-            <div id="nav-container">
-              <div class="navbar navbar-inverse n-container container" >
-
-                <div class="navbar-header">
-
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-
-                  <a class="navbar-brand" href="index-fw.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
-
-                </div>  
-                <div class="collapse navbar-collapse">
+    <!-- half-width wrapper to limit the width of everything =======================================================-->
+    <div class="hw-wrapper">
 
 
+      <!-- Top Navigation Begin ==================================================================================-->
+      <div id="poshnav-half-width">
 
+        <span class="color-band-thick"></span>
+        <div class="navbar navbar-inverse" >
 
-                  <ul class="nav navbar-nav">
+          <div class="navbar-header">
 
-                    <li class="dropdown">
-                      <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                      <ul class="dropdown-menu">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-                        <li>
-                          <a href="index-fw.html">iView Slider</a>
-                        </li>
-                        <li>
-                          <a href="index-nivo-fw.html">Nivo Slider</a>
-                        </li>
+            <a class="navbar-brand" href="index.html"><img src="img/logo-nav.png" alt="Nav Logo"></a>
 
-                        <li>
-                          <a href="index-camera-fw.html">Camera Slider</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="portfolio-4c-fw.html">4 Column</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-fw.html">3 Column</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-2c-fw.html">2 Column</a>
-                        </li>
-
-                        <li>
-                          <a href="portfolio-single-fw.html">Single Portfolio</a>
-                        </li>
-
-                      </ul>
-                    </li>
-
-                    <li class="dropdown">
-                      <a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="blog-ls-fw.html">Left Sidebar</a>
-                        </li>
-                        <li>
-                          <a href="blog-fw.html">Right Sidebar</a>
-                        </li>
-                        <li>
-                          <a href="blog-single-fw.html">Single Blog</a>
-                        </li>
+          </div>  
+          <div class="collapse navbar-collapse">
 
 
 
-                      </ul>
-                    </li>
+            <ul class="nav navbar-nav">
+
+              <li class="dropdown active">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                <ul class="dropdown-menu animated fadeInDown animated-300ms">
+
+                  <li>
+                    <a href="index.html">iView Slider</a>
+                  </li>
+                  <li>
+                    <a href="index-nivo.html">Nivo Slider</a>
+                  </li>
+
+                  <li>
+                    <a href="index-camera.html">Camera Slider</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
+                  <li>
+                    <a href="portfolio-4c.html">4 Column</a>
+                  </li>
+                  <li>
+                    <a href="portfolio.html">3 Column</a>
+                  </li>
+                  <li>
+                    <a href="portfolio-2c.html">2 Column</a>
+                  </li>
+
+                  <li>
+                    <a href="portfolio-single.html">Single Portfolio</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
+                  <li>
+                    <a href="blog-ls.html">Left Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Right Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="blog-single.html">Single Blog</a>
+                  </li>
 
 
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="contact-fw.html">Contact</a>
-                        </li>
-                        <li>
-                          <a href="about-fw.html">About</a>
-                        </li>
 
-                        <li>
-                          <a href="services-fw.html">Services</a>
-                        </li>
-
-                        <li>
-                          <a href="page404-fw.html">404</a>
-                        </li>
+                </ul>
+              </li>
 
 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
 
-                      </ul>
-                    </li>
+                  <li>
+                    <a href="services.html">Services</a>
+                  </li>
 
-
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="components-fw.html">Components</a>
-                        </li>
-                        <li>
-                          <a href="icons-fw.html">Icons</a>
-                        </li>
-                        <li>
-                          <a href="anims-fw.html">Animations</a>
-                        </li>
-
-                      </ul>
-                    </li>
-                  </ul>
-
-                  <form class="navbar-search pull-right" role="search">
-                    <input type="text" class="search-query">
-                  </form>
+                  <li>
+                    <a href="page404.html">404</a>
+                  </li>
 
 
 
-                </div>
+                </ul>
+              </li>
 
-              </div>
-            </div>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements</a>
+                <ul class="dropdown-menu  animated fadeInDown animated-300ms">
+                  <li>
+                    <a href="components.html">Components</a>
+                  </li>
+                  <li>
+                    <a href="icons.html">Icons</a>
+                  </li>
+                  <li>
+                    <a href="anims.html">Animations</a>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+
+            <form class="navbar-search pull-right" role="search">
+              <input type="text" class="search-query">
+            </form>
+
           </div>
-          <!-- Navigation Bar End ====================================================================================-->
+
+        </div>
+      </div>
+
+      <!-- Top Navigation End ====================================================================================-->
 
 
 
@@ -221,7 +216,6 @@
 
       <!-- Top Image and Text -->
       <section id='about-main'>
-      <div class="container">
 
 
         <img src="img/portfolio-banner.png" alt='Portfolio Banner'>
@@ -236,7 +230,6 @@
 
           
         </div>
-        </div>
         
 
       </section>
@@ -244,8 +237,7 @@
 
 
 
-      <section class="portfolio">
-      <div class="container">
+      <section class="portfolio ">
 
 
         <form id="filter">
@@ -256,17 +248,13 @@
           <label><input type="radio" name="type" value="util">Utilities</label>
 
         </form>
-        </div>
 
         <div class="items section-body row">
 
-         <div class="container">
 
 
 
-
-
-          <ul id="applications" class="image-grid">
+          <ul id="applications" class="image-grid four-col">
 
 
             <!-- "data-type" attribute is used by the quicksand plugin for filtering -->
@@ -513,14 +501,12 @@
 
 
 </div>
-</div>
 
 </section>
 
 
 
 <section class="portfolio-footer-wrapper">
-<div class="container">
   <div class="portfolio-footer">
 
     <!-- Pagination -->
@@ -531,7 +517,6 @@
 
     </ul>
   </div>
-  </div>
 </section>
 
 
@@ -539,212 +524,202 @@
 
 
 <!-- Main Footer Begin =====================================================================================-->
-          <footer>
+<footer>
 
 
-            <!-- Continuous Headers visible only in large screens -->
-            <div class="row footer-header-wrapper visible-lg visible-md">
+  <!-- Continuous Headers visible only in large screens -->
+  <div class="row footer-header-wrapper visible-lg visible-md">
+    <div class="row footer-header">
+      <div class="col-md-3">
+        Categories
+      </div>
 
-              <div class="container">
-                <div class="row footer-header" >
-                  <div class="col-md-3">
-                    Categories
-                  </div>
+      <div class="col-md-3">
+        Flickr Stream
+      </div>
 
-                  <div class="col-md-3">
-                    Flickr Stream
-                  </div>
+      <div class="col-md-3">
+        Recent Tweets
+      </div>
 
-                  <div class="col-md-3">
-                    Recent Tweets
-                  </div>
+      <div class="col-md-3">
+        Contact us
+      </div>
 
-                  <div class="col-md-3">
-                    Contact us
-                  </div>
+    </div>
 
-                </div>
+  </div>
 
+  <div class="row" id='footer-body'>
+
+    <div class="col-md-3 col-sm-12">
+
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Categories
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="row footer-section-body" id='footer-categories'>
+        <ul>
+          <li>
+            <a href="#">Learn HTML & CSS</a>
+          </li>
+          <li>
+            <a href="#">Teach Yourself Coding </a>
+          </li>
+          <li>
+            <a href="#">Knowled of PHP</a>
+          </li>
+          <li>
+            <a href="#">Custom Coding</a>
+          </li>
+          <li>
+            <a href="#">Full Size Documentation </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Flickr Stream
+          </div>
+        </div>
+      </div>
+      <div class="row footer-section-body">
+
+
+        <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
+        <div id="flickrImages"></div>  
+
+
+      </div>
+    </div>
+
+    <div class="col-md-3" id='footer-tweeter-feed'>
+
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Recent tweets
+          </div>
+        </div>
+      </div>
+      <div class="row footer-section-body">
+
+        <ul>
+          <li>
+
+            <div class="media">
+              <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+              <div class="media-body">
+                <h4 class="media-heading">@LorenIpsum</h4>
+                <p>
+                  <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                </p>
               </div>
-
             </div>
 
+          </li>
 
-            <div class="container">
+          <li>
 
-              <div class="row" id='footer-body'>
-
-                <div class="col-md-3">
-
-                  <!-- Footer Section header, only visible in small screens. -->
-                  <div class="row footer-header-collapse">
-                    <div class="row footer-header" >
-                      <div class="col-md-3">
-                        Categories
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row footer-section-body" id='footer-categories'>
-
-                    <ul>
-                      <li>
-                        <a href="#">Learn HTML & CSS</a>
-                      </li>
-                      <li>
-                        <a href="#">Teach Yourself Coding </a>
-                      </li>
-                      <li>
-                        <a href="#">Knowled of PHP</a>
-                      </li>
-                      <li>
-                        <a href="#">Custom Coding</a>
-                      </li>
-                      <li>
-                        <a href="#">Full Size Documentation </a>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-
-                  <!-- Footer Section header, only visible in small screens. -->
-                  <div class="row footer-header-collapse">
-                    <div class="row footer-header">
-                      <div class="col-md-3">
-                        Flickr Stream
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row footer-section-body">
-
-                    <!-- Flickr Images are loaded by the jFlickrFeed plugin -->
-                    <div id="flickrImages"></div>  
-
-                  </div>
-
-                </div>
-
-                <div class="col-md-3" id='footer-tweeter-feed'>
-
-                  <!-- Footer Section header, only visible in small screens. -->
-                  <div class="row footer-header-collapse">
-                    <div class="row footer-header" >
-                      <div class="col-md-3">
-                        Recent tweets
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row footer-section-body">
-
-                    <ul>
-                      <li>
-
-                        <div class="media">
-                          <a class="pull-left" href="#"><i class="icon-twitter icon-2x"></i></a>
-                          <div class="media-body">
-                            <h4 class="media-heading">@LorenIpsum</h4>
-                            <p>
-                              <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                            </p>
-                          </div>
-                        </div>
-
-                      </li>
-
-                      <li>
-
-                        <div class="media">
-                          <a class="pull-left" href="#"> <i class="icon-twitter icon-2x"></i></a>
-                          <div class="media-body">
-                            <h4 class="media-heading">@DolorAmet</h4>
-                            <p>
-                              <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                            </p>
-                          </div>
-                        </div>
-
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-
-                  <!-- Footer Section header, only visible in small screens. -->
-                  <div class="row footer-header-collapse">
-                    <div class="row footer-header" >
-                      <div class="col-md-3">
-                        Contact Us
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row footer-section-body">
-
-                    <form>
-
-                      <input type='text' placeholder='Name'>
-                      <input type='text' placeholder='Email'>
-                      <textarea  placeholder='Message' ></textarea>
-                      <button class='pull-right'>
-                        Send
-                      </button>
-                    </form>
-
-                  </div>
-                </div>
-
+            <div class="media">
+              <a class="pull-left" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+              <div class="media-body">
+                <h4 class="media-heading">@DolorAmet</h4>
+                <p>
+                  <a href="https://twitter.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                </p>
               </div>
-
             </div>
 
+          </li>
+        </ul>
 
-            <div class="row" id='footer-bottom'>
-              <div class="container">
-                <div class="col-md-6" id='footer-bottom-left'>
+      </div>
+    </div>
 
-                  <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
+    <div class="col-md-3">
 
-                </div>
+      <!-- Footer Section header, only visible in small screens. -->
+      <div class="row footer-header-collapse">
+        <div class="row footer-header">
+          <div class="col-md-3">
+            Contact Us
+          </div>
+        </div>
+      </div>
+      <div class="row footer-section-body">
 
-                <div class="col-md-6 hidden-xs hidden-sm">
-                  <nav>
-                    <ul class="breadcrumb">
-                      <li>
-                        <a href="index-fw.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="portfolio-fw.html">Portfolio</a>
-                      </li>
-                      <li>
-                        <a href="blog-fw.html">Blog</a>
-                      </li>
-                      <li>
-                        <a href="#">Pages</a>
-                      </li>
+        <form>
 
-                      <li>
-                        <a href="#">Elements</a>
-                      </li>
+          <input type='text' placeholder='Name'>
+          <input type='text' placeholder='Email'>
+          <textarea  placeholder='Message'></textarea>
+          <button class='pull-right'>
+            Send
+          </button>
+        </form>
 
-                    </ul>
+      </div>
+    </div>
 
-                  </nav>
+  </div>
 
-                </div>
+  <div class="row" id='footer-bottom'>
 
-              </div>
+    <div class="col-md-6" id='footer-bottom-left'>
 
+      <span id='footer-brand'>Codehound </span> &copy; 2013 All rights reserved
 
-            </div>
+    </div>
 
+    <div class="col-md-6 hidden-xs hidden-sm">
+      <nav>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About </a>
+          </li>
+          <li>
+            <a href="#">Contact </a>
+          </li>
+          <li>
+            <a href="#">Services </a>
+          </li>
 
-          </footer>
-          <!-- Main Footer End =======================================================================================-->
+          <li>
+            <a href="#">Blog </a>
+          </li>
 
+        </ul>
 
+      </nav>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<span class="color-band-thick"></span>
+<!-- Main Footer End =======================================================================================-->
+
+</div> <!-- /.hw-wrapper -->
 
 </div> <!-- /.whole-wrapper -->
 
@@ -818,8 +793,6 @@
 
 
     adjustPortfolioHover(20);
-     // Top nav transparency on Scroll 
-        transNav('#poshnav-full-width');
 
 
 

@@ -1693,6 +1693,32 @@ section.portfolio .imgcaption p {
    transition: all 0.3s
 }
 
+ /*For 4 column layout*/
+section.portfolio ul.four-col li{
+  width: 23.3333333333%;
+}
+section.portfolio ul.four-col .imgcaption h1{
+font-size: 19pt;
+
+}
+section.portfolio ul.four-col .imgcaption p{
+  font-size: 9pt;
+}
+
+/*For 2 column layout*/
+section.portfolio ul.two-col li{
+  width: 49.3333333333%;
+}
+section.portfolio ul.two-col .imgcaption h1{
+font-size: 29pt;
+
+}
+section.portfolio ul.two-col .imgcaption p{
+  font-size: 19pt;
+}
+
+
+
 section.portfolio form#filter {
    float: right;
    margin-right: 30px
@@ -1842,6 +1868,11 @@ section.portfolio .imgcaption a:hover img {
    -webkit-transform: scale(1.1);
    transform: scale(1.1)
 }
+
+section.portfolio ul.two-col .imgcaption a {
+  width: 11%;
+}
+
 
 section.portfolio .portfolio-item:hover .imgback {
    -moz-box-shadow: 0 0 2px 13px #474948;
