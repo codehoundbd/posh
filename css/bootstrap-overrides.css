@@ -192,6 +192,8 @@ a.menu:after, .dropdown-toggle:before {
 
 
 .navbar-inverse .navbar-search .search-query {
+
+	line-height: normal;
 	height: 48px;
 	color: #333;
 	background-color: transparent;
@@ -205,11 +207,11 @@ a.menu:after, .dropdown-toggle:before {
 	-moz-transition: none;
 	-o-transition: none;
 	transition: none;
-	padding: 0 14px 0 40px;
+	padding: 0 14px 0 35px;
 	margin-bottom: 0;
 	font-size: 15px;
 	font-weight: normal;
-	line-height: inherit;
+	
 	border-radius: 24px;
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
@@ -218,13 +220,12 @@ a.menu:after, .dropdown-toggle:before {
 	width: 0px;
 	background-image: url(../img/search-white.png);
 	background-repeat: no-repeat;
-	background-position: 12px 9px;
+	background-position: 10px 9px;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Noto Sans", sans-serif
 
 
 }
@@ -328,6 +329,18 @@ hr{
 }
 
 
+.pagination > .active > a,
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+
+background-color: #2086c7;
+border-color: #2086c7;
+}
+
+
 .btn{
 	
 	
@@ -375,7 +388,9 @@ hr{
 }
 
 
-
+.nav-tabs{
+	border: none;
+}
 
 .nav-tabs > li > a {
 
@@ -416,12 +431,13 @@ hr{
 
 }
 .well{
-
+	border-radius: 0;
 	background-color: white; 
 	font-size: 11pt;
 }
 
 .alert{
+	border-radius: 0;
 	font-size: 10pt;
 }
 .show-grid [class^="col-"] {
@@ -630,40 +646,39 @@ hr{
 
   	.navbar-inverse .navbar-search .search-query {
 
-
   		-webkit-transition: none;
   		-moz-transition: none;
   		-o-transition: none;
   		transition: none;
-
-  		padding: 4px 14px 0 40px;
+  		padding: 0 14px 0 47px;
   		margin-bottom: 0;
-
   		font-size: 13px;
   		font-weight: normal;
-  		line-height: inherit;
-
-  		border-radius: 15px;
-  		-webkit-border-radius: 15px;
+  		line-height: normal;
+  		font-size: 15px;
+  		border-radius: 37px;
+  		-webkit-border-radius: 37px;
   		-moz-border-radius: 15px;
   		-o-border-radius: 15px;
-
-
-
   		background-image: url(../img/search-white.png);
   		background-repeat: no-repeat;
-
-  		background-position: 10px 5px;
-
-
+  		background-position: 13px 11px;
   		background-color: #eee;
-
-
   		width: 100%;
 
 
 
   	}
+
+  	.navbar-inverse .navbar-search .search-query:focus,
+.navbar-inverse .navbar-search .search-query.focused {
+
+	
+	padding-left: 47px;
+	
+
+	
+}
 
   	.navbar-inverse .navbar-search{
 

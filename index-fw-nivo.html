@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 	<html lang="en">
 	<head>
-      
+
 		<!-- Basics ===================================================================== -->
 		<meta charset="utf-8">
 		<title>Posh | Home</title>
@@ -44,12 +44,9 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 
-		<!-- CSS for Camera Slider -->
-		<link rel="stylesheet" href="css/slider/camera/camera.css" />
-
-		<!-- CSS for lightbox -->
-		<link href="css/lightbox.css" rel="stylesheet"/>
-
+		<!-- CSS for Nivo Slider -->
+		<link rel="stylesheet" href="css/slider/nivo/nivo-slider.css" />
+		<link rel="stylesheet" href="css/slider/nivo/light.css" />
 
 		<!-- CSS for lightbox -->
 		<link href="css/lightbox.css" rel="stylesheet"/>
@@ -101,6 +98,7 @@
 
       		<!-- Navigation Bar  Begin ====================================================================================-->
       		<div id="poshnav-full-width" class= "navbar-fixed-top">
+                  <span class="color-band-thick"></span>
       			<div id="nav-container">
       				<div class="navbar navbar-inverse n-container container" >
 
@@ -228,51 +226,30 @@
       		<!-- Navigation Bar End ====================================================================================-->
 
 
+				<!--Nivo Slider Begin-->
+				<section class="main-slider" >				
 
-			<!--Camera Slider Begin ====================================================================================-->
-			<section class="main-slider" >				
+				<div class="container">
 
-				<!-- <div class="container"> -->
+					<div class="slider-wrapper theme-light">
+						<div id="slider" class="nivoSlider">
+							<img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+							<a href="http://dev7studios.com"><img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
+							<img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+							<img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+						</div>
+						<div id="htmlcaption" class="nivo-html-caption">
+							<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+						</div>
+					</div>
 
-					<div class="camera_wrap camera_azure_skin" id="camera-slider">
-						<div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
-							<div class="camera_caption fadeFromBottom">
-								Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
-							</div>
-						</div>
-						<div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
-							<div class="camera_caption fadeFromBottom">
-								It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
-							</div>
-						</div>
-						<div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
-							<div class="camera_caption fadeFromBottom">
-								<em>It's completely free</em> (even if a donation is appreciated)
-							</div>
-						</div>
-						<div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
-							<div class="camera_caption fadeFromBottom">
-								Camera slideshow provides many options <em>to customize your project</em> as more as possible
-							</div>
-						</div>
-						<div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
-							<div class="camera_caption fadeFromBottom">
-								It supports captions, HTML elements and videos and <em>it's validated in HTML5</em> (<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank">have a look</a>)
-							</div>
-						</div>
-						<div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
-							<div class="camera_caption fadeFromBottom">
-								Different color skins and layouts available, <em>fullscreen ready too</em>
-							</div>
-						</div>
-					</div><!-- #camera-slider -->
-				<!-- </div> -->
-			</section>
-			<!--Camera Slider End ======================================================================================-->
+					</div>
 
-			
+				</section>
+				<!--Nivo Slider End-->
 
-			
+				
+
 			<!-- Features Begin =======================================================================================-->
       		<section class="homepage" id='features'>
 
@@ -432,7 +409,7 @@
 
       		<!-- Porfolio End ========================================================================================-->
 
-      		<section class="features-alt hidden-xs">
+      		<section class="features-alt">
 
       			<div class="section-container clearfix">
       				<div class="horizontalaccordion">
@@ -941,7 +918,7 @@
 
 
 
-		<!-- Scripts =======================================================================================================-->
+      	<!-- Scripts =======================================================================================================-->
 
       	<!-- Basics -->
       	<script src="js/slider/jquery-1.7.1.min.js"></script>
@@ -954,9 +931,8 @@
       	<!-- BxSlider -->
       	<script src="js/jquery.bxslider.min.js"></script>
 
-		<!-- Camera Slider -->
-		<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
-		<script type='text/javascript' src='js/camera.min.js'></script> 
+		<!-- Nivo Slider -->
+		<script src="js/jquery.nivo.slider.pack.js"></script>
 
 		<!-- Handles portfolio hover effect -->
       	<script src="js/portfolio-adjust.js"></script>
@@ -997,15 +973,12 @@
       	<script>
 
 
-			$(document).ready(function() {
-
-
-				// Camera Slider
-				$('#camera-slider').camera({
-					thumbnails: true
-				});
+      		$(document).ready(function() {
 
 				
+				// Nivo Slider
+				$('#slider').nivoSlider();
+
 				// logo carousel
 				$('.logos').bxSlider({
 					tickerHover: true,

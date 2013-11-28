@@ -32,7 +32,7 @@
 
       *{
         outline: 0;
-    }
+        }
 
 
     body {
@@ -57,21 +57,13 @@
     }
 
     .whole-wrapper {
-        background: rgb(206, 206, 206);
-        /* Old browsers */
+        background: rgb(206, 206, 206);       
         background: radial-gradient(center, ellipse cover, rgba(206, 206, 206, 1) 0%, rgba(40, 40, 40, 1) 100%);
-        /* FF3.6  */
         background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, rgba(206, 206, 206, 1)), color-stop(100%, rgba(40, 40, 40, 1)));
-        /* Chrome,Safari4  */
         background: radial-gradient(center, ellipse cover, rgba(206, 206, 206, 1) 0%, rgba(40, 40, 40, 1) 100%);
-        /* Chrome10 ,Safari5.1  */
         background: radial-gradient(center, ellipse cover, rgba(206, 206, 206, 1) 0%, rgba(40, 40, 40, 1) 100%);
-        /* Opera 12  */
-        background: radial-gradient(center, ellipse cover, rgba(206, 206, 206, 1) 0%, rgba(40, 40, 40, 1) 100%);
-        /* IE10  */
+        background: radial-gradient(center, ellipse cover, rgba(206, 206, 206, 1) 0%, rgba(40, 40, 40, 1) 100%);       
         background: radial-gradient(ellipse at center, rgba(206, 206, 206, 1) 0%, rgba(40, 40, 40, 1) 100%);
-        /* W3C */
-        /* IE6-9 fallback on horizontal gradient */
         background-attachment: fixed
     }
 
@@ -158,13 +150,7 @@
 
 
 
-    .container {
-        padding: 0;
-        display: block;
-        margin: 0px auto
-    }
-
-    section.purchase-bar {
+   /* section.purchase-bar {
         padding: 20px;
         background-color: #2086c7;
         color: #369BEB;
@@ -182,7 +168,7 @@
     section.purchase-bar-inner {
         margin: 20px auto;
         display: inline-block
-    }
+    }*/
 
     /* --- Top Navigation ---*/
     #nav-container {
@@ -192,7 +178,7 @@
     }
 
     #poshnav-full-width {
-        border-top: 5px solid #2097d4;
+        
         background-color: white;
         -moz-box-shadow: 0 2px 3px gray;
         -webkit-box-shadow: 0 2px 3px gray;
@@ -728,7 +714,8 @@ section.features-alt {
 
 .horizontalaccordion h2 {
    margin: 0;
-   font-family: "Exo"
+   font-family: "Open Sans", sans-serif;
+   margin-bottom: 4px;
 }
 
 .horizontalaccordion p {
@@ -875,7 +862,7 @@ section.features-alt {
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
    border-radius: 5px;
-   height: 250px;
+   height: 263px;
    padding: 8px 15px;
    background-color: white;
    -moz-box-shadow: 0 0 4px 0 #aaa;
@@ -1033,6 +1020,11 @@ section#about-main p {
    line-height: 20px
 }
 
+section.skill-bar .section-body{
+  padding-bottom: 0;
+}
+
+
 section.skill-bar {
    margin-bottom: 50px
 }
@@ -1044,7 +1036,8 @@ section.skill-bar {
 }
 
 .knob {
-   text-align: center
+   text-align: center;
+   margin-bottom: 40px
 }
 
 .knobs .knob h3 {
@@ -1085,6 +1078,8 @@ section#blogs, section#blog-single {
    box-shadow: 1px 1px 10px -4px gray;
    margin-top: 63px
 }
+
+.post-wrapper:nth-child(1){margin-top: 20px}
 
 .tags {
    margin-top: 10px;
@@ -1253,9 +1248,7 @@ section#blogs, section#blog-single {
    padding-left: 10px
 }
 
-.blog-sidebar .search {
-   margin-top: 38px
-}
+
 
 .blog-sidebar img {
    -moz-box-shadow: 1px 1px 3px 1px gray;
@@ -1331,16 +1324,20 @@ section#blogs, section#blog-single {
    border-radius: 5px;
    -moz-box-shadow: 1px 1px 7px -2px gray;
    -webkit-box-shadow: 1px 1px 7px -2px gray;
-   box-shadow: 1px 1px 7px -2px gray
-}
-
-.blog-sidebar .tags li:hover {
-   background-color: #2097d4;
-   color: white;
+   box-shadow: 1px 1px 7px -2px gray;
    -moz-transition: all 0.5s;
    -o-transition: all 0.5s;
    -webkit-transition: all 0.5s;
    transition: all 0.5s
+}
+
+.blog-sidebar .tags li:hover {
+   background-color: #2097d4;
+   -moz-box-shadow: 1px 1px 7px -2px #2097d4;
+   -webkit-box-shadow: 1px 1px 7px -2px #2097d4;
+   box-shadow: 1px 1px 7px -2px #2097d4;
+   color: white
+   
 }
 
 .blog-sidebar .top-post .media-heading {
@@ -1369,9 +1366,7 @@ section header {
    margin: 0 20px
 }
 
-section#contact-main header h1 {
-   color: #16517F
-}
+
 
 section#contact-main .contact-form-wrapper {
    background-color: #F5F5F5;
@@ -1434,8 +1429,8 @@ section#contact-main .bar-header {
    font-size: 24px
 }
 
-section#contact-map h1 {
-   color: #16517F
+section#contact-map .section-body {
+   padding: 0;
 }
 
 .bar-text i {
@@ -1695,27 +1690,15 @@ section.portfolio .imgcaption p {
 
  /*For 4 column layout*/
 section.portfolio ul.four-col li{
-  width: 23.3333333333%;
+  width: 25%;
 }
-section.portfolio ul.four-col .imgcaption h1{
-font-size: 19pt;
 
-}
-section.portfolio ul.four-col .imgcaption p{
-  font-size: 9pt;
-}
 
 /*For 2 column layout*/
 section.portfolio ul.two-col li{
-  width: 49.3333333333%;
+  width: 50%;
 }
-section.portfolio ul.two-col .imgcaption h1{
-font-size: 29pt;
 
-}
-section.portfolio ul.two-col .imgcaption p{
-  font-size: 19pt;
-}
 
 
 
@@ -2532,8 +2515,16 @@ section.animations .anim-buttons button {
 }
 
 /* --- Component  --- */
-.lists {
+section.lists {
    font-size: 14px
+}
+
+section.lists .section-body{
+   padding: 0;
+}
+
+ul.list-style-1, ul.list-style-2, ul.list-style-3, ul.list-style-4{
+  margin: 40px 0;
 }
 
 ul.list-style-1 li, ul.list-style-2 li, ul.list-style-3 li, ul.list-style-4 li {
@@ -2614,12 +2605,21 @@ section#skillcomp {
    text-shadow: 0 1px 1px #2097d4  !important
 }
 
+
+.thumbnails .section-body{
+  padding: 0;
+}
 .thumbnails ul {
    padding: 0
 }
 
 .thumbnails li {
+  margin: 30px 0;
    text-align: center
+}
+
+.tab-block{
+  margin: 20px 0;
 }
 
 /*Icons Page*/
