@@ -377,14 +377,18 @@ border-color: #2086c7;
 
 .form-control{
 	
+	box-shadow: none;
 	padding: 20px 12px;
 	border-radius: 0;
+	transition: all 0.1s;
 }
 
 
 .form-control:focus {
 
+	box-shadow: inset 0px 0px 6px -2px gray;
 	border-radius: 0;
+	border-color: #cccccc;
 }
 
 

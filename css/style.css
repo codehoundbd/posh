@@ -1402,28 +1402,11 @@ section#contact-main .contact-form {
    padding: 7px 15px
 }
 
-.contact-form input {
-   border: 0;
-   -moz-box-shadow: 1px 1px 8px -2px gray;
-   -webkit-box-shadow: 1px 1px 8px -2px gray;
-   box-shadow: 1px 1px 8px -2px gray;
-}
 
-.contact-form textarea {
-   border: 0;
-   -moz-box-shadow: 1px 1px 8px -2px gray;
-   -webkit-box-shadow: 1px 1px 8px -2px gray;
-   box-shadow: 1px 1px 8px -2px gray
-}
-
-.contact-form button {
-   margin: 0 35%;
-   text-transform: uppercase
-}
 
 section#contact-main .bar-header {
    color: #5c5b5b;
-   margin-top: 5%;
+   margin-top: 14px;
    line-height: 1.3em;
    text-transform: uppercase;
    font-size: 24px
@@ -1443,13 +1426,20 @@ section#contact-map .section-body {
 }
 
 .contact-sidebar ul {
-   padding: 0
+   padding: 0;
+   margin-bottom: 30px;
 }
 
 .contact-sidebar .bar-text {
-   line-height: 1.3em;
-   font-size: 18px;
-   margin-top: 5%
+   
+   font-size: 15px;
+   margin-top: 10px
+}
+
+.contact-sidebar .bar-text li{
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif
+
 }
 
 /*  About Page specifics */
@@ -2399,7 +2389,7 @@ section.packages .package ul li {
 
 section.packages .package h2 {
    text-align: center;
-   font-family: "Exo", sans-serif;
+   font-family: "Open Sans", sans-serif;
    padding-top: 13px;
    border-bottom-style: solid;
    border-bottom-width: 3px;
@@ -2628,9 +2618,6 @@ section.sampleicons {
    padding: 0
 }
 
-section.sampleicons h1{
-   color: #2097d4 ;
-}
 
 section.sampleicons h2 {
    padding: 50px 0
