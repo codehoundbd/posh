@@ -1,102 +1,110 @@
 .container {
-	display: block;
-	margin: 0px auto;
-}
+    display: block;
+    margin: 0 auto
+    }
 
 #iview {
-	display: block;
-	max-width: 960px;
-	min-width: 300px;
-	position: relative;
-	margin: 0 auto;
-	overflow: hidden;
-}
+    display: block;
+    max-width: 960px;
+    min-width: 300px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden
+    }
 
 #iview .iviewSlider {
-	display: block;
-	width: 900px;
-	height: 400px;
-	overflow: hidden;
-	border-radius: 4px;
-}
+    display: block;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+    }
 
 #iview div.iview-directionNav {
-	position: absolute;
-	top: 47%;
-	left: 0px;
-	z-index: 9;
-	width: 100%;
-}
+    position: absolute;
+    top: 47%;
+    left: 0;
+    z-index: 9;
+    width: 100%
+    }
 
 #iview div.iview-directionNav a {
-	display: block;
-	cursor: pointer;
-	position: absolute;
-	width: 27px;
-	height: 27px;
-	background-image: url(../../../img/bg_direction_nav.png);
-	text-indent: -9999px;
-}
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url(../../../img/bg_direction_nav.png);
+    text-indent: -9999px
+    }
 
 #iview div.iview-directionNav a.iview-nextNav {
-	right: -27px;
-	background-position: 27px 0px;
-}
+    right: -27px;
+    background-position: 27px 0
+    }
 
 #iview div.iview-directionNav a.iview-prevNav {
-	left: -27px;
-	background-position: 0px 0px;
-}
+    left: -27px;
+    background-position: 0 0
+    }
 
 #iview.iview-hover div.iview-directionNav a.iview-nextNav {
-	right: 20px;
-}
+    right: 20px
+    }
 
 #iview.iview-hover div.iview-directionNav a.iview-prevNav {
-	left: 20px;
-}
+    left: 20px
+    }
 
 .iview-caption {
-	background: url('../../img/caption-bg.png');
-	color: #FFF;
-	border-radius: 3px;
-	padding: 10px 15px;
-	font-family: Verdana;
-	font-size: 12px;
-	text-shadow: #000 1px 1px 0px;
-}
+    background: url(../../img/caption-bg.png);
+    color: #FFF;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-family: Verdana;
+    font-size: 12px;
+    text-shadow: #000 1px 1px 0
+    }
 
 .iview-caption.caption1 {
-	text-shadow: none;
-}
+    text-shadow: none
+    }
 
 .iview-caption.caption2 {
-	background: #FFF;
-	color: #000;
-	text-shadow: none;
-}
+    background: #FFF;
+    color: #000;
+    text-shadow: none
+    }
 
 .iview-caption.caption3 {
-	background: #c4302b;
-
-	-webkit-box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
-	box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
-	text-shadow: none;
-}
+    background: #c4302b;
+    -moz-box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0;
+    text-shadow: none
+    }
 
 #iview-preloader {
-	border: #666 1px solid;
-	width: 150px;
-}
+    border: #666 1px solid;
+    width: 150px
+    }
 
 #iview-preloader div {
-	background: #666;
-}
+    background: #666
+    }
 
 #iview-timer {
-	border-radius: 10px;
-}
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px
+    }
 
 #iview-timer div {
-	border-radius: 10px;
-}
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px
+    }
