@@ -1,4 +1,20 @@
+/*
 
+	  Accent greens
+      ======================
+      #007046   darkest
+      #00AC6B
+      #35D699
+      #60D6A9   lightest
+
+
+      Grays
+      ======================
+      #636363   darkest
+      #7d7d7d
+      #a1a1a1
+      #d7d7d7   lightest
+*/
 
 
 
@@ -33,7 +49,7 @@ ul.nav{
 
 .navbar-inverse .brand:hover{
 
-	color: #F26D93;
+	color: #60D6A9;
 
 }
 
@@ -108,7 +124,7 @@ a.menu:after, .dropdown-toggle:before {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-image: url(../img/navigation-bg-red.png);
+	background-image: url(../img/navigation-bg-green.png);
 	background-repeat: 	repeat-x;
 	background-position: 0px -15px;
 
@@ -140,7 +156,7 @@ a.menu:after, .dropdown-toggle:before {
 	color: white;
 	text-decoration: none;
 	
-	background-image: url(../img/navigation-bg-red.png);
+	background-image: url(../img/navigation-bg-green.png);
 	background-repeat: 	repeat-x;
 	background-position: 0px -15px;
 
@@ -181,7 +197,7 @@ a.menu:after, .dropdown-toggle:before {
 .dropdown-submenu:focus > a {
 	color: #ffffff;
 	text-decoration: none;
-	background-color: #F26D93;
+	background-color: #60D6A9;
 	background-image: none;
 	background-image: none;
 	background-image: none;
@@ -262,7 +278,7 @@ a.menu:after, .dropdown-toggle:before {
 }
 
 .navbar-inverse .navbar-collapse .dropdown-menu a:hover {
-	background-color: #F26D93;
+	background-color: #60D6A9;
 }
 
 
@@ -274,7 +290,7 @@ hr{
 
 .media-heading{
 
-	color: #F26D93;
+	color: #60D6A9;
 }
 
 .breadcrumb > li + li:before{
@@ -301,7 +317,7 @@ hr{
 
 .progress-bar{
 
-	background-color: #F26D93;
+	background-color: #60D6A9;
 }
 
 
@@ -324,7 +340,7 @@ hr{
 
 .pagination > li > a:hover
 {
-	background-color: #F26D93;
+	background-color: #60D6A9;
 	color: white;
 }
 
@@ -336,8 +352,8 @@ hr{
 .pagination > .active > a:focus, 
 .pagination > .active > span:focus {
 
-background-color: #F23D70;
-border-color: #F23D70;
+background-color: #35D699;
+border-color: #35D699;
 }
 
 
@@ -351,7 +367,7 @@ border-color: #F23D70;
 
 .btn-default{
 	background-color: white;
-	color: #E60042;
+	color: #00AC6B;
 	//border: none; 
 
 }
@@ -359,7 +375,7 @@ border-color: #F23D70;
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus{
-	background-color: #E60042;
+	background-color: #00AC6B;
 	color: white;
 
 }
@@ -367,14 +383,15 @@ border-color: #F23D70;
 .btn-primary{
 
 	border: none;
-	background-color: #E60042;
+	background-color: #00AC6B;
 	color: white;
 }
 
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:focus{
-	background-color: #95002B;
+.btn-primary:focus
+{
+	background-color: #007046;
 	color: white;
 }
 
@@ -405,7 +422,7 @@ border-color: #F23D70;
 	color: white;
 	border: none;
 	margin: 0;
-	background-color: #F23D70;
+	background-color: #35D699;
 	border-radius: 0;
 	font-size: 12pt;
 
@@ -635,7 +652,7 @@ border-color: #F23D70;
   	.dropdown-submenu:focus > a {
   		color: #ffffff;
   		text-decoration: none;
-  		background-color: #F26D93;
+  		background-color: #60D6A9;
   		background-image: none;
   		background-image: none;
   		background-image: none;
@@ -701,7 +718,7 @@ border-color: #F23D70;
   	.navbar-inverse .navbar-btn {
   		color: #ffffff;
   		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  		background: #F26D93;
+  		background: #60D6A9;
 
   		border: none;
   	}
@@ -712,7 +729,7 @@ border-color: #F23D70;
   	.navbar-inverse .navbar-btn.active,
   	.navbar-inverse .navbar-btn.disabled,
   	.navbar-inverse .navbar-btn[disabled] {
-  		background-color: #F26D93;
+  		background-color: #60D6A9;
 
   	}
 
@@ -726,7 +743,7 @@ border-color: #F23D70;
   	.navbar-inverse .navbar-collapse .nav > li > a:focus,
   	.navbar-inverse .navbar-collapse .dropdown-menu a:hover,
   	.navbar-inverse .navbar-collapse .dropdown-menu a:focus {
-  		background-color: #F26D93;
+  		background-color: #60D6A9;
   	}
 
 

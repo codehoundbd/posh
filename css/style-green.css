@@ -1,11 +1,11 @@
 /*
 
-      Accent blues
+      Accent greens
       ======================
-      #16517f   darkest
-      #1a65a5
-      #2086c7
-      #2097d4   lightest
+      #007046   darkest
+      #00AC6B
+      #35D699
+      #60D6A9   lightest
 
 
       Grays
@@ -109,7 +109,7 @@
     }
 
     a {
-        color: #2097d4;
+        color: #60D6A9;
         -moz-transition: color 0.15s;
         -o-transition: color 0.15s;
         -webkit-transition: color 0.15s;
@@ -117,7 +117,7 @@
     }
 
     a:hover {
-        color: #1a65a5;
+        color: #00AC6B;
         text-decoration: none
     }
 
@@ -145,14 +145,14 @@
         -webkit-box-shadow: none;
         box-shadow: none;
         outline: 0;
-        border: 1px solid #2097d4
+        border: 1px solid #60D6A9
     }
 
 
 
    /* section.purchase-bar {
         padding: 20px;
-        background-color: #2086c7;
+        background-color: #35D699;
         color: #369BEB;
         text-align: center
     }
@@ -228,17 +228,17 @@
   section#features .fourfeatures{
       background: rgb(22, 81, 127);
       /* Old browsers */
-      background: -moz-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+      background: -moz-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
       /* FF3.6  */
-      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #16517f), color-stop(24%, #16517f), color-stop(24%, #1a65a5), color-stop(49%, #1a65a5), color-stop(49%, #2086c7), color-stop(74%, #2086c7), color-stop(74%, #2097d4), color-stop(100%, #2097d4));
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007046), color-stop(24%, #007046), color-stop(24%, #00AC6B), color-stop(49%, #00AC6B), color-stop(49%, #35D699), color-stop(74%, #35D699), color-stop(74%, #60D6A9), color-stop(100%, #60D6A9));
       /* Chrome,Safari4  */
-      background: -webkit-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+      background: -webkit-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
       /* Chrome10 ,Safari5.1  */
-      background: -o-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+      background: -o-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
       /* Opera 11.10  */
-      background: -ms-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+      background: -ms-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
       /* IE10  */
-      background: linear-gradient(to right, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+      background: linear-gradient(to right, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
       /* W3C */
       /* IE6-9 */
   }
@@ -254,19 +254,19 @@
 }
 
 section#features .feature:nth-child(1) {
-   background-color: #16517f
+   background-color: #007046
 }
 
 section#features .feature:nth-child(2) {
-   background-color: #1a65a5
+   background-color: #00AC6B
 }
 
 section#features .feature:nth-child(3) {
-   background-color: #2086c7
+   background-color: #35D699
 }
 
 section#features .feature:nth-child(4) {
-   background-color: #2097d4
+   background-color: #60D6A9
 }
 
 section#features .feature:hover {
@@ -337,7 +337,7 @@ section.feature-box .feature-box-wrapper {
 
 section.feature-box i.fa {
    font-size: 46pt;
-   color: #2086c7;
+   color: #35D699;
    padding-top: 22px
 }
 
@@ -429,7 +429,7 @@ footer a, footer p {
 .footer-header-wrapper {
    background-image: url(../img/footer-header-pattern.png);
    background-repeat: repeat;
-   border-top: 4px solid #2097d4;
+   border-top: 4px solid #60D6A9;
    margin: 0;
    animation: footerFlow 2s;
    -webkit-animation: footerFlow 2s;
@@ -524,7 +524,7 @@ footer button:hover {
    background-image: url(../img/footer-header-pattern.png);
    background-repeat: repeat;
    padding: 0 5%;
-   border-top: 4px solid #2097d4;
+   border-top: 4px solid #60D6A9;
    margin: 0;
    animation: footerFlow 2s;
    -webkit-animation: footerFlow 2s;
@@ -588,17 +588,17 @@ span.color-band {
    height: 5px;
    background: rgb(22, 81, 127);
    /* Old browsers */
-   background: -moz-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -moz-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* FF3.6  */
-   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #16517f), color-stop(24%, #16517f), color-stop(24%, #1a65a5), color-stop(49%, #1a65a5), color-stop(49%, #2086c7), color-stop(74%, #2086c7), color-stop(74%, #2097d4), color-stop(100%, #2097d4));
+   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007046), color-stop(24%, #007046), color-stop(24%, #00AC6B), color-stop(49%, #00AC6B), color-stop(49%, #35D699), color-stop(74%, #35D699), color-stop(74%, #60D6A9), color-stop(100%, #60D6A9));
    /* Chrome,Safari4  */
-   background: -webkit-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -webkit-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* Chrome10 ,Safari5.1  */
-   background: -o-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -o-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* Opera 11.10  */
-   background: -ms-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -ms-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* IE10  */
-   background: linear-gradient(to right, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: linear-gradient(to right, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* W3C */
    /* IE6-9 */
 }
@@ -609,17 +609,17 @@ span.color-band-thin {
    height: 3px;
    background: rgb(22, 81, 127);
    /* Old browsers */
-   background: -moz-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -moz-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* FF3.6  */
-   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #16517f), color-stop(24%, #16517f), color-stop(24%, #1a65a5), color-stop(49%, #1a65a5), color-stop(49%, #2086c7), color-stop(74%, #2086c7), color-stop(74%, #2097d4), color-stop(100%, #2097d4));
+   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007046), color-stop(24%, #007046), color-stop(24%, #00AC6B), color-stop(49%, #00AC6B), color-stop(49%, #35D699), color-stop(74%, #35D699), color-stop(74%, #60D6A9), color-stop(100%, #60D6A9));
    /* Chrome,Safari4  */
-   background: -webkit-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -webkit-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* Chrome10 ,Safari5.1  */
-   background: -o-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -o-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* Opera 11.10  */
-   background: -ms-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -ms-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* IE10  */
-   background: linear-gradient(to right, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: linear-gradient(to right, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* W3C */
    /* IE6-9 */
 }
@@ -630,17 +630,17 @@ span.color-band-thick {
    height: 11px;
    background: rgb(22, 81, 127);
    /* Old browsers */
-   background: -moz-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -moz-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* FF3.6  */
-   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #16517f), color-stop(24%, #16517f), color-stop(24%, #1a65a5), color-stop(49%, #1a65a5), color-stop(49%, #2086c7), color-stop(74%, #2086c7), color-stop(74%, #2097d4), color-stop(100%, #2097d4));
+   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007046), color-stop(24%, #007046), color-stop(24%, #00AC6B), color-stop(49%, #00AC6B), color-stop(49%, #35D699), color-stop(74%, #35D699), color-stop(74%, #60D6A9), color-stop(100%, #60D6A9));
    /* Chrome,Safari4  */
-   background: -webkit-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -webkit-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* Chrome10 ,Safari5.1  */
-   background: -o-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -o-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* Opera 11.10  */
-   background: -ms-linear-gradient(left, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: -ms-linear-gradient(left, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* IE10  */
-   background: linear-gradient(to right, #16517f 0%, #16517f 24%, #1a65a5 24%, #1a65a5 49%, #2086c7 49%, #2086c7 74%, #2097d4 74%, #2097d4 100%);
+   background: linear-gradient(to right, #007046 0%, #007046 24%, #00AC6B 24%, #00AC6B 49%, #35D699 49%, #35D699 74%, #60D6A9 74%, #60D6A9 100%);
    /* W3C */
    /* IE6-9 */
 }
@@ -667,7 +667,7 @@ section.main-slider {
 }
 
 section.main-slider h3 {
-   background-color: #2097d4;
+   background-color: #60D6A9;
    font-size: 26pt;
    padding: 10px;
    color: white;
@@ -688,19 +688,19 @@ section.main-slider h3 {
 }
 
 .caption-color1 {
-   background-color: #16517f !important
+   background-color: #007046 !important
 }
 
 .caption-color2 {
-   background-color: #1a65a5 !important
+   background-color: #00AC6B !important
 }
 
 .caption-color3 {
-   background-color: #2086c7 !important
+   background-color: #35D699 !important
 }
 
 .caption-color4 {
-   background-color: #2097d4 !important
+   background-color: #60D6A9 !important
 }
 
 section.features-alt {
@@ -748,25 +748,25 @@ section.features-alt {
 }
 
 .horizontalaccordion > ul > li:nth-child(1) {
-   border-bottom: 12px solid #16517f;
+   border-bottom: 12px solid #007046;
    background-color: #636363;
    color: #d7d7d7
 }
 
 .horizontalaccordion > ul > li:nth-child(2) {
-   border-bottom: 12px solid #1a65a5;
+   border-bottom: 12px solid #00AC6B;
    background-color: #7d7d7d;
    color: #d7d7d7
 }
 
 .horizontalaccordion > ul > li:nth-child(3) {
-   border-bottom: 12px solid #2086c7;
+   border-bottom: 12px solid #35D699;
    background-color: #a1a1a1;
    color: #636363
 }
 
 .horizontalaccordion > ul > li:nth-child(4) {
-   border-bottom: 12px solid #2097d4;
+   border-bottom: 12px solid #60D6A9;
    background-color: #d7d7d7;
    color: #636363
 }
@@ -878,19 +878,19 @@ section.features-alt {
    margin-left: 7px;
    font-size: 1.3em;
    padding: 2px 8px;
-   background-color: #16517f;
+   background-color: #007046;
    color: white
 }
 
 .blogslider .blog-card-meta span.index {
    font-size: 1.3em;
    padding: 2px 8px;
-   background-color: #2097d4;
+   background-color: #60D6A9;
    color: white
 }
 
 section.newsletter {
-   background-color: #2086c7;
+   background-color: #35D699;
    padding: 0
 }
 
@@ -924,7 +924,7 @@ section.newsletter input[type="text"] {
    -webkit-border-radius: 0;
    border-radius: 0;
    border: none;
-   background-color: #1a65a5;
+   background-color: #00AC6B;
    font-size: 2.2em
 }
 
@@ -959,7 +959,7 @@ section.newsletter button {
    -webkit-border-radius: 0;
    border-radius: 0;
    border: none;
-   background-color: #16517f;
+   background-color: #007046;
    font-size: 2.2em;
    -moz-box-shadow: 4px 4px 4px 0 black;
    -webkit-box-shadow: 4px 4px 4px 0 black;
@@ -992,7 +992,7 @@ section#banner img {
 }
 
 section#banner header h1 {
-   color: #16517F
+   color: #007046
 }
 
 section#about-main {
@@ -1045,19 +1045,19 @@ section.skill-bar {
 }
 
 .knobs .knob:nth-child(1) h3 {
-   color: #16517f
+   color: #007046
 }
 
 .knobs .knob:nth-child(2) h3 {
-   color: #1a65a5
+   color: #00AC6B
 }
 
 .knobs .knob:nth-child(3) h3 {
-   color: #2086c7
+   color: #35D699
 }
 
 .knobs .knob:nth-child(4) h3 {
-   color: #2097d4
+   color: #60D6A9
 }
 
 /*blog Page*/
@@ -1268,14 +1268,14 @@ section#blogs, section#blog-single {
 
 .blog-sidebar .btn {
    color: white;
-   background-color: #2086c7;
+   background-color: #35D699;
    float: left;
    height: 38px;
    margin-left: 0;
    margin-top: 30px
 }
 .blog-sidebar .btn:hover{
-   background-color: #16517f;
+   background-color: #007046;
 }    
 
 .blog-sidebar .blog-header {
@@ -1305,7 +1305,7 @@ section#blogs, section#blog-single {
 }
 
 .blog-sidebar .blog-categories a:hover, .blog-sidebar .top-post a:hover {
-   color: #2097d4;
+   color: #60D6A9;
    -moz-transition: all 0.3s;
    -o-transition: all 0.3s;
    -webkit-transition: all 0.3s;
@@ -1332,10 +1332,10 @@ section#blogs, section#blog-single {
 }
 
 .blog-sidebar .tags li:hover {
-   background-color: #2097d4;
-   -moz-box-shadow: 1px 1px 7px -2px #2097d4;
-   -webkit-box-shadow: 1px 1px 7px -2px #2097d4;
-   box-shadow: 1px 1px 7px -2px #2097d4;
+   background-color: #60D6A9;
+   -moz-box-shadow: 1px 1px 7px -2px #60D6A9;
+   -webkit-box-shadow: 1px 1px 7px -2px #60D6A9;
+   box-shadow: 1px 1px 7px -2px #60D6A9;
    color: white
    
 }
@@ -1352,7 +1352,7 @@ section#blogs, section#blog-single {
 .blog-sidebar .top-post p {
    margin-top: 3%;
    font-size: 1.09em;
-   color: #2097d4;
+   color: #60D6A9;
 }
 
 
@@ -1714,7 +1714,7 @@ section.portfolio form#filter label {
 }
 
 section.portfolio form#filter label:hover {
-   background-color: #2097d4;
+   background-color: #60D6A9;
    color: white
 }
 
@@ -2055,7 +2055,7 @@ section.home-posts {
 }
 
 .accordion-fancy input:checked label {
-   color: #16517f;
+   color: #007046;
    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6)
 }
 
@@ -2143,8 +2143,8 @@ section.team p {
    font-size: 10pt;
    margin: 25px 0 35px 0;
    padding: 5px 0 5px 0;
-   border-top: 2px solid #2097d4;
-   border-bottom: 2px solid #2097d4;
+   border-top: 2px solid #60D6A9;
+   border-bottom: 2px solid #60D6A9;
    -moz-transition: all 0.3s;
    -o-transition: all 0.3s;
    -webkit-transition: all 0.3s;
@@ -2238,20 +2238,20 @@ section.team .team-member .imgwrapper .imgback {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: #2097d4;
+   background-color: #60D6A9;
    -moz-transition: all 0.3s;
    -o-transition: all 0.3s;
    -webkit-transition: all 0.3s;
    transition: all 0.3s;
-   -moz-box-shadow: 0 0 0 0 #2097d4;
-   -webkit-box-shadow: 0 0 0 0 #2097d4;
-   box-shadow: 0 0 0 0 #2097d4
+   -moz-box-shadow: 0 0 0 0 #60D6A9;
+   -webkit-box-shadow: 0 0 0 0 #60D6A9;
+   box-shadow: 0 0 0 0 #60D6A9
 }
 
 section.team .team-member:hover .imgback {
-   -moz-box-shadow: 0 0 2px 13px #2097d4;
-   -webkit-box-shadow: 0 0 2px 13px #2097d4;
-   box-shadow: 0 0 2px 13px #2097d4
+   -moz-box-shadow: 0 0 2px 13px #60D6A9;
+   -webkit-box-shadow: 0 0 2px 13px #60D6A9;
+   box-shadow: 0 0 2px 13px #60D6A9
 }
 
 section.team .team-member:hover h1 {
@@ -2313,7 +2313,7 @@ section.team .imgcaption {
    border-radius: 10px;
    display: block;
    padding: 30px;
-   background: #2097d4;
+   background: #60D6A9;
    font-size: 22pt;
    text-align: center;
    color: white;
@@ -2397,19 +2397,19 @@ section.packages .package h2 {
 }
 
 section.packages .package-wrapper:nth-child(1) .package h2 {
-   border-bottom-color: #16517f
+   border-bottom-color: #007046
 }
 
 section.packages .package-wrapper:nth-child(2) .package h2 {
-   border-bottom-color: #1a65a5
+   border-bottom-color: #00AC6B
 }
 
 section.packages .package-wrapper:nth-child(3) .package h2 {
-   border-bottom-color: #2086c7
+   border-bottom-color: #35D699
 }
 
 section.packages .package-wrapper:nth-child(4) .package h2 {
-   border-bottom-color: #2097d4
+   border-bottom-color: #60D6A9
 }
 
 section.packages .package p {
@@ -2451,19 +2451,19 @@ section.packages .package button {
 }
 
 section.packages .package-wrapper:nth-child(1) .package button {
-   background-color: #16517f
+   background-color: #007046
 }
 
 section.packages .package-wrapper:nth-child(2) .package button {
-   background-color: #1a65a5
+   background-color: #00AC6B
 }
 
 section.packages .package-wrapper:nth-child(3) .package button {
-   background-color: #2086c7
+   background-color: #35D699
 }
 
 section.packages .package-wrapper:nth-child(4) .package button {
-   background-color: #2097d4
+   background-color: #60D6A9
 }
 
 section.packages .package-wrapper:nth-child(1) .package button:hover {
@@ -2491,7 +2491,7 @@ section.packages .package a {
    font-size: 12pt;
    text-align: center;
    width: 100%;
-   color: #2086c7;
+   color: #35D699;
    display: block
 }
 
@@ -2526,28 +2526,28 @@ ul.list-style-1 li:before {
    font-family: "FontAwesome";
    content: "";
    margin: 0 5px 0 -15px;
-   color: #2086c7
+   color: #35D699
 }
 
 ul.list-style-2 li:before {
    font-family: "FontAwesome";
    content: "";
    margin: 0 5px 0 -15px;
-   color: #2086c7
+   color: #35D699
 }
 
 ul.list-style-3 li:before {
    font-family: "FontAwesome";
    content: "";
    margin: 0 5px 0 -15px;
-   color: #2086c7
+   color: #35D699
 }
 
 ul.list-style-4 li:before {
    font-family: "FontAwesome";
    content: "";
    margin: 0 5px 0 -15px;
-   color: #2086c7
+   color: #35D699
 }
 
 .compbuttons {
@@ -2584,15 +2584,15 @@ section#skillcomp {
 }
 
 .blue-accordion {
-   background-color: #2086c7 !important;
+   background-color: #35D699 !important;
    color: #fffcfc !important;
-   text-shadow: 0 1px 1px #2086c7 !important
+   text-shadow: 0 1px 1px #35D699 !important
 }
 
 .blue-accordion:hover {
-   background-color:#2097d4  !important;
+   background-color:#60D6A9  !important;
    color: #fffcfc !important;
-   text-shadow: 0 1px 1px #2097d4  !important
+   text-shadow: 0 1px 1px #60D6A9  !important
 }
 
 

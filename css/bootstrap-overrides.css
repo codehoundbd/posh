@@ -356,7 +356,9 @@ border-color: #2086c7;
 
 }
 
-.btn-default:hover{
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus{
 	background-color: #1a65a5;
 	color: white;
 
@@ -369,7 +371,9 @@ border-color: #2086c7;
 	color: white;
 }
 
-.btn-primary:hover{
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
 	background-color: #16517f;
 	color: white;
 }
