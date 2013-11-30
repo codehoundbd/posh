@@ -103,9 +103,7 @@
   .blog-header h1 {
     line-height: 1em;
   }
-  #blog-main .row-fluid .span8 {
-    width: 100%;
-  }
+ 
   .blog-sidebar {
     display: none;
   }
@@ -128,12 +126,12 @@
 
 }
 @media screen and (max-width: 956px) {
-  section.portfolio li {
+  section.portfolio li, section.portfolio ul.four-col li {
     width: 50%;
   }
 }
 @media screen and (max-width: 698px) {
-  section.portfolio li {
+  section.portfolio li, section.portfolio ul.four-col li, section.portfolio ul.two-col li {
     width: 100%;
   }
 
