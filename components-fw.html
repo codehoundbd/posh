@@ -385,23 +385,23 @@
 					<div class="container">
 
 						<div class="knob col-md-3 col-sm-6 col-xs-12">
-						<input type="text" class="dial" value="90" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#16517f" data-bgColor="#ffffff">
+						<input type="text" class="dial1" value="90" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#16517f" data-bgColor="#ffffff">
 						<h3>Design</h3>
 					</div>
 
 
 					<div class="knob col-md-3 col-sm-6 col-xs-12">
-						<input type="text" class="dial" value="70" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#1a65a5" data-bgColor="#ffffff">
+						<input type="text" class="dial2" value="70" data-min="0" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#1a65a5" data-bgColor="#ffffff">
 						<h3>HTML</h3>
 					</div>
 
 					<div class="knob col-md-3 col-sm-6 col-xs-12">
-						<input type="text" class="dial" data-min="0" value="50" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2086c7" data-bgColor="#ffffff">
+						<input type="text" class="dial3" data-min="0" value="50" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2086c7" data-bgColor="#ffffff">
 						<h3>CSS</h3>
 					</div>
 
 					<div class="knob col-md-3 col-sm-6 col-xs-12">
-						<input type="text" class="dial" data-min="0" value="30" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2097d4" data-bgColor="#ffffff">
+						<input type="text" class="dial4" data-min="0" value="30" data-max="100" data-readOnly=true data-displayInput=false data-fgColor="#2097d4" data-bgColor="#ffffff">
 						<h3>Javascript</h3>
 					</div>	
 								
@@ -1273,7 +1273,7 @@
 					slideMargin : 30
 				});
 
-					colorSwitcherInit();
+				
 
 
 				// dynamically adjust the height of the Portfolio hover effect
@@ -1297,7 +1297,13 @@
 				});
 
 
-				$(".dial").knob();
+				$(".dial1").knob();
+				$(".dial2").knob();
+				$(".dial3").knob();
+				$(".dial4").knob();
+
+
+				colorSwitcherInitWithDials();
 
 			});
 

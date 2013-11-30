@@ -236,11 +236,11 @@
   <div id="iview">
 
     <!-- Slide 1 -->
-    <div data-iview-image="images/slider/background2.jpg" data-iview-transition="zigzag-grow-top">
+    <div data-iview-image="images/slider/background2.jpg" data-iview-transition="block-drop-random">
 
       <!-- iMac image -->
-      <div class="iview-caption" data-x="520" data-y="55" data-height="400" data-width="400" data-transition="expandRight">
-        <img src="images/slider/imac.png" alt="iMac">
+      <div class="iview-caption" data-x="520" data-y="20" data-height="400" data-width="400" data-transition="wipeDown" data-speed="1000">
+        <img src="images/slider/iphone-hand.png" alt="iHand">
       </div>
 
 
@@ -266,11 +266,44 @@
 
 
 
+   <!-- Slide 2 -->
+    <div data-iview-image="images/slider/backg.jpg" data-iview-transition="zigzag-drop-top">
+
+      <!-- iMac image -->
+      <div class="iview-caption" data-x="50" data-y="50" data-height="400" data-width="400" data-transition="wipeDown" data-speed="1000">
+        <img src="images/slider/imac.png" alt="iHand">
+      </div>
+
+      <div class="iview-caption" data-x="62" data-y="131" data-height="400" data-width="400" data-transition="wipeDown" data-speed="1000">
+        <img src="images/slider/ipad.png" alt="iHand">
+      </div>
+
+      <div class="iview-caption animated bounceIn" data-x="261" data-y="166" data-height="400" data-width="400" data-transition="wipeDown" data-speed="1000">
+        <img src="images/slider/iphone.png" alt="iHand">
+      </div>
 
 
-   <div data-iview-image="images/slider/slide2bg.jpg" data-iview-transition="zigzag-grow-top" >
-    <div class="iview-caption caption2" data-x="50" data-y="320" data-transition="expandRight">SUPPORTS ANIMATED CAPTIONS, VIDEO & IFRAME, SINGLE PAGE MULTI-USE</div>
-  </div>
+
+      <div class="iview-caption caption-color1" data-x="400" data-y="50" data-transition="wipeRight">
+       <h3>Fully Responsive</h3>
+     </div>
+
+     <div class="iview-caption caption-color2" data-x="400" data-y="100" data-transition="wipeRight">
+       <h4>We Care for Everyone</h4>
+     </div>
+
+
+     <div class="iview-caption caption-color3" data-x="420" data-y="170" data-transition="wipeRight">
+       <p>We crafted every component considering optimum aesthetics and usability for all screen sizes. So Posh looks great in all devices .</p>
+     </div>
+
+     <div class="iview-caption" data-x="427" data-y="250" data-transition="wipeRight">
+       <button type="button" class="btn btn-primary btn-sm">More Info</button>
+     </div>
+
+
+   </div>
+
 
   
 
@@ -665,7 +698,7 @@
  <div class="row" id="testimonial">
 
   <div class="quote-sign">
-   <img src="img/quote-left.png" alt="quotel">
+   <i class="fa fa-quote-left"></i>
  </div>
  <div class="content">
 
@@ -693,7 +726,7 @@
 </div>
 
 <div class="quote-sign">
- <img src="img/quote-right.png" alt="quote r">
+ <i class="fa fa-quote-right"></i>
 </div>
 
 </div>
@@ -994,7 +1027,7 @@
 					pauseOnHover : true,
 					directionNavHoverOpacity : 0,
 					timerOpacity: 0.0,
-					autoAdvance : false
+					autoAdvance : true
 				});
 
 				

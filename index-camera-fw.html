@@ -669,7 +669,7 @@
       <div class="row" id="testimonial">
 
             <div class="quote-sign">
-                  <img src="img/quote-left.png" alt="quotel">
+                   <i class="fa fa-quote-left"></i>
             </div>
             <div class="content">
 
@@ -697,7 +697,7 @@
             </div>
 
             <div class="quote-sign">
-                  <img src="img/quote-right.png" alt="quote r">
+                   <i class="fa fa-quote-right"></i>
             </div>
 
       </div>
@@ -1018,24 +1018,33 @@
 				});
 
 				// blog carousel
-				var blogSlide = $('.blogslide').bxSlider({
-					pager:false,
-					slideWidth : 300,
-					onSlideBefore: function(a,b,c){
-						$('.blogslider li').css({'opacity':'0.4'});
+        var blogSlide = $('.blogslide').bxSlider({
+          pager:false,
+          slideWidth : 300,
+          onSlideBefore: function(a,b,c){
+            $('.blogslider li').css({'opacity':'0.4'});
 
-					},
+          },
 
-					onSlideAfter: function(a,b,c){
-						$('.blogslider li').css({'opacity':'1.0'});
+          onSlideAfter: function(a,b,c){
+            $('.blogslider li').css({'opacity':'1.0'});
 
-					},
+          },
 
-					auto: true,
-					minSlides : 2,
-					maxSlides : 2,
-					slideMargin : 40
-				});
+          auto: true,
+          minSlides : 2,
+          maxSlides : 2,
+          slideMargin : 40
+        });
+
+
+        $('#blogSliderNext').click(function(e){
+          blogSlide.goToNextSlide();
+        });
+
+        $('#blogSliderPrev').click(function(e){
+          blogSlide.goToPrevSlide();
+        });
 
 
 
