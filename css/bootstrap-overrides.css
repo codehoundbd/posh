@@ -108,7 +108,7 @@
         text-decoration: none;
         background-position: 0 -75px;
         line-height: 50px;
-        text-shadow: none
+        text-shadow: 0 0 1px gray;
     }
 
     .navbar .nav > li:hover > a {

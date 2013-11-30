@@ -1689,6 +1689,7 @@
     }
 
     #testimonial .content p {
+        text-shadow:0 0 1px gray;
         font-size: 17pt;
         line-height: 25px;
         text-align: center;
