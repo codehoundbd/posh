@@ -2641,28 +2641,28 @@
 
     ul.list-style-1 li:before {
         font-family: "FontAwesome";
-        content: "%uF00C";
+        content: '\F00C';
         margin: 0 5px 0 -15px;
         color: #2086c7
     }
 
     ul.list-style-2 li:before {
         font-family: "FontAwesome";
-        content: "%uF058";
+        content: '\F058';
         margin: 0 5px 0 -15px;
         color: #2086c7
     }
 
     ul.list-style-3 li:before {
         font-family: "FontAwesome";
-        content: "%uF054";
+        content: '\F054';
         margin: 0 5px 0 -15px;
         color: #2086c7
     }
 
     ul.list-style-4 li:before {
         font-family: "FontAwesome";
-        content: "%uF164";
+        content: '\F164';
         margin: 0 5px 0 -15px;
         color: #2086c7
     }
