@@ -714,7 +714,7 @@
         font-size: 12pt;
         padding: 8px;
         /*color: white;*/
-        /*width: 416px;*/
+        width: 100px !important;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
         filter: alpha(opacity=80);
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
