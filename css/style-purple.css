@@ -226,21 +226,14 @@
   }
 
   section#features .fourfeatures{
-      background: rgb(22, 81, 127);
-      /* Old browsers */
-      background: -moz-linear-gradient(left, #730065 0%, #730065 24%, #B1009B 24%, #B1009B 49%, #D836C4 49%, #D836C4 74%, #D861C9 74%, #D861C9 100%);
-      /* FF3.6  */
-      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #730065), color-stop(24%, #730065), color-stop(24%, #B1009B), color-stop(49%, #B1009B), color-stop(49%, #D836C4), color-stop(74%, #D836C4), color-stop(74%, #D861C9), color-stop(100%, #D861C9));
-      /* Chrome,Safari4  */
-      background: -webkit-linear-gradient(left, #730065 0%, #730065 24%, #B1009B 24%, #B1009B 49%, #D836C4 49%, #D836C4 74%, #D861C9 74%, #D861C9 100%);
-      /* Chrome10 ,Safari5.1  */
-      background: -o-linear-gradient(left, #730065 0%, #730065 24%, #B1009B 24%, #B1009B 49%, #D836C4 49%, #D836C4 74%, #D861C9 74%, #D861C9 100%);
-      /* Opera 11.10  */
-      background: -ms-linear-gradient(left, #730065 0%, #730065 24%, #B1009B 24%, #B1009B 49%, #D836C4 49%, #D836C4 74%, #D861C9 74%, #D861C9 100%);
-      /* IE10  */
-      background: linear-gradient(to right, #730065 0%, #730065 24%, #B1009B 24%, #B1009B 49%, #D836C4 49%, #D836C4 74%, #D861C9 74%, #D861C9 100%);
-      /* W3C */
-      /* IE6-9 */
+     background: #730065; /* Old browsers */
+      background: -moz-linear-gradient(left, #730065 49%, #D861C9 49%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(49%,#730065), color-stop(49%,#D861C9)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, #730065 49%,#D861C9 49%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, #730065 49%,#D861C9 49%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, #730065 49%,#D861C9 49%); /* IE10+ */
+      background: linear-gradient(to right, #730065 49%,#D861C9 49%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730065', endColorstr='#D861C9',GradientType=1 ); /* IE6-9 */
   }
 
   section#features .feature {
