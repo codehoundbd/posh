@@ -229,84 +229,58 @@
 
 
 <!--Main Slider Begin ======================================================================================-->
-<section class="main-slider">				
+<section class="main-slider">       
 
- <div id="iview">
+<div class="container-slider container">
 
-  <!-- Slide 1 -->
-  <div>
-   <div class="iview-caption " id="delay-timer-img" data-x="420" data-y="1"  data-width="450" data-height="450" data-transition="fade" data-speed="700">
-    <img src="images/slider/girl.png" alt="girl">
-  </div>	
+  <div id="iview">
+
+    <!-- Slide 1 -->
+    <div data-iview-image="images/slider/background2.jpg" data-iview-transition="zigzag-grow-top">
+
+   
+      <!-- iMac image -->
+      <div class="iview-caption" data-x="520" data-y="55" data-height="400" data-width="400" data-transition="expandRight">
+        <img src="images/slider/imac.png" alt="iMac">
+      </div>
+
+
+      <div class="iview-caption caption-color1" data-x="50" data-y="50" data-transition="wipeDown">
+       <h3>Clean Design</h3>
+     </div>
+
+     <div class="iview-caption caption-color2" data-x="50" data-y="100" data-transition="expandDown">
+       <h4>We Believe in Forward Thinking</h4>
+     </div>
+
+
+     <div class="iview-caption caption-color3" data-x="70" data-y="170" data-transition="expandDown">
+       <p >Our Goal is to to meet the customers demand  and Deliver projects on time and take care of our clients individually and respectfully.</p>
+     </div>
+
+     <div class="iview-caption" data-x="77" data-y="250" data-transition="expandDown">
+       <button type="button" class="btn btn-primary btn-sm">More Info</button>
+     </div>
+     </div>
+
+
+   
 
 
 
 
-  <div class="iview-caption " id="delay-timer-0" data-x="20" data-y="20" data-width="520"  data-height="90" data-transition="expandLeft" >
 
-    <h3 class="caption-color1">Fully Responsive</h3>
+   <div data-iview-image="images/slider/slide2bg.jpg" data-iview-transition="zigzag-grow-top" >
+    <div class="iview-caption caption2" data-x="50" data-y="320" data-transition="expandRight">SUPPORTS ANIMATED CAPTIONS, VIDEO & IFRAME, SINGLE PAGE MULTI-USE</div>
   </div>
 
-  <div class="iview-caption "  data-x="40" data-y="100" data-width="520"  data-height="90" data-transition="expandLeft" >
-    <h3 class="caption-color2">Clean Design</h3>
-  </div>
-
-  <div class="iview-caption  "  data-x="60" data-y="180" data-width="520" data-height="90" data-transition="expandLeft" >
-    <h3 class="caption-color3">Customizable</h3>
-  </div>
-
-  <div class="iview-caption "  data-x="80" data-y="260" data-width="520"  data-height="90" data-transition="expandLeft" >
-    <h3 class="caption-color4">Interactive</h3>
-  </div>
-
-</div>
-
-
-<!-- Slide 2 -->
-<div >
- <div class="iview-caption "  data-x="5" data-y="35"  data-width="450" data-height="450" data-transition="fade">
-  <img src="images/slider/girl2.png" alt="girl">
-</div>	
-
-
-
-<div class="iview-caption "  data-x="470" data-width="450" data-height="450" data-y="35" data-transition="wipeRight" data-easing="easeOutCubic" data-speed="400">
-  <img src="images/slider/3.png" alt="girl" >
-</div>
-
-<div class="iview-caption "  data-x="430" data-y="110" data-height="250" data-width="350" data-transition="wipeRight" data-easing="easeOutCubic" data-speed="400">
-  <img src="images/slider/2.png" alt="girl">
-</div>
-
-<div class="iview-caption "  data-x="410" data-height="250" data-width="550"  data-y="175" data-transition="wipeRight" data-easing="easeOutCubic" data-speed="400">
-  <img src="images/slider/1.png" alt="girl" >
-</div>  
-
-
-<div class="iview-caption "  data-x="420" data-y="300" data-width="620"  data-height="90" data-transition="exoandLeft">
-  <h3 class="caption-red">Fully Responsive</h3>
-</div>
-</div>
-
-
-<!-- Slide 3 -->
-<div >
- <div class="iview-caption"  data-x="5" data-y="35"  data-width="600" data-height="450">
-  <img src="images/slider/slide3.png" alt="girl" data-transition="fade">
-</div>	
-
-<div class="iview-caption"  data-x="500" data-y="120" data-width="400"  data-height="90" data-transition="expandRight">
-  <h3 class="caption-red">Well Documented</h3>
-</div>
-
+  
 
 </div>
 </div>
-
 </section>
 
 <!--Main Slider End ========================================================================================-->
-
 
 
 
@@ -1057,24 +1031,33 @@
 				});
 
 				// blog carousel
-				var blogSlide = $('.blogslide').bxSlider({
-					pager:false,
-					slideWidth : 300,
-					onSlideBefore: function(a,b,c){
-						$('.blogslider li').css({'opacity':'0.4'});
+        var blogSlide = $('.blogslide').bxSlider({
+          pager:false,
+          slideWidth : 300,
+          onSlideBefore: function(a,b,c){
+            $('.blogslider li').css({'opacity':'0.4'});
 
-					},
+          },
 
-					onSlideAfter: function(a,b,c){
-						$('.blogslider li').css({'opacity':'1.0'});
+          onSlideAfter: function(a,b,c){
+            $('.blogslider li').css({'opacity':'1.0'});
 
-					},
+          },
 
-					auto: true,
-					minSlides : 2,
-					maxSlides : 2,
-					slideMargin : 40
-				});
+          auto: true,
+          minSlides : 2,
+          maxSlides : 2,
+          slideMargin : 40
+        });
+
+
+        $('#blogSliderNext').click(function(e){
+          blogSlide.goToNextSlide();
+        });
+
+        $('#blogSliderPrev').click(function(e){
+          blogSlide.goToPrevSlide();
+        });
 
 
 
