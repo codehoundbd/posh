@@ -33,7 +33,8 @@
     }
 
     .navbar-brand img {
-        height: 60px
+        height: 60px;
+        padding: 10px
     }
 
     .navbar-inverse .brand:hover {
@@ -107,7 +108,7 @@
         text-decoration: none;
         background-position: 0 -75px;
         line-height: 50px;
-        text-shadow: none
+        text-shadow: 0 0 1px gray;
     }
 
     .navbar .nav > li:hover > a {
@@ -404,6 +405,7 @@
         from {background-position: 0px -75px;}
         to {background-position: 0px -15px;}
     }
+    
     .img-thumbnail {
         padding: 0;
         border-width: 2px
