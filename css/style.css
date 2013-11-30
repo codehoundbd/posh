@@ -266,6 +266,7 @@
     }
 
     #features h2 {
+        text-shadow: 0 0 1px white;
         padding: 5px;
         height: 100px;
         font-size: 23pt;
@@ -277,17 +278,6 @@
         line-height: 50px
     }
 
-    #features p {
-        font-family: "Exo", sans-serif;
-        margin-top: 10px;
-        font-size: 15pt;
-        color: white;
-        letter-spacing: 1px;
-        line-height: 20px;
-        text-align: center;
-        margin-bottom: 80px;
-        padding: 0 27px
-    }
 
     /* --- Feature Box  --- */
     section.feature-box {
@@ -667,15 +657,15 @@
         border-radius: 8px;
         text-indent: 15px;
         font-family: "Open Sans", sans-serif;
-        text-shadow: none;
-        -webkit-text-shadow: none;
-        -moz-text-shadow: none;
-        -ms-text-shadow: none;
-        -o-text-shadow: none
+        text-shadow: 0 0 1px #16517f;
+        -webkit-text-shadow: 0 0 1px #16517f;
+        -moz-text-shadow: 0 0 1px #16517f;
+        -ms-text-shadow: 0 0 1px #16517f;
+        -o-text-shadow: 0 0 1px #16517f;
     }
     section.main-slider h4 {
         /*background-color: #2097d4;*/
-        font-size: 20pt;
+        font-size: 17pt;
         padding: 10px;
         /*color: white;*/
         width: 420px;
@@ -689,11 +679,11 @@
         border-radius: 8px;
         text-indent: 15px;
         font-family: "Open Sans", sans-serif;
-        text-shadow: none;
-        -webkit-text-shadow: none;
-        -moz-text-shadow: none;
-        -ms-text-shadow: none;
-        -o-text-shadow: none
+        text-shadow: 0 0 1px #1a65a5;
+        -webkit-text-shadow: 0 0 1px #1a65a5;
+        -moz-text-shadow:  0 0 1px #1a65a5;
+        -ms-text-shadow:  0 0 1px #1a65a5;
+        -o-text-shadow:  0 0 1px #1a65a5;
     }
 
     section.main-slider p {
@@ -711,7 +701,7 @@
         -webkit-border-radius: 8px;
         border-radius: 8px;
         text-indent: 0px;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Merriweather Sans", sans-serif;
         line-height: 1em;
         text-shadow: none;
         -webkit-text-shadow: none;
@@ -1679,6 +1669,11 @@
         margin-top: 41px
     }
 
+    #testimonial .quote-sign i.fa{
+        font-size: 7em;
+        color: #1a65a5
+    }
+
     #testimonial .content {
         width: 70%;
         float: left;
@@ -2468,8 +2463,8 @@
     }
 
     section#services p {
-        margin-top: 20px;
-        padding-left: 5px;
+        
+        padding: 50px 20px;
         font-size: 12pt;
         line-height: 17pt
     }
@@ -2500,6 +2495,7 @@
     }
 
     section.packages .package ul li {
+        font-family: "Noto Sans", sans-serif;
         font-size: 14px;
         margin: 15px 5px
     }
@@ -2560,7 +2556,7 @@
         margin-top: 40px;
         color: white;
         width: 100%;
-        font-family: "Exo", sans-serif;
+        font-family: "Open Sans", sans-serif;
         -moz-transition: all 0.3s;
         -o-transition: all 0.3s;
         -webkit-transition: all 0.3s;
