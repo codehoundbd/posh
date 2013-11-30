@@ -1734,6 +1734,14 @@
         -webkit-transition: all 0.3s;
         transition: all 0.3s
     }
+    section.portfolio ul.four-col{
+        font-size: 18pt;
+
+    }
+    section.portfolio ul.four-col h1,section.portfolio ul.two-col h1{
+        margin-right: 20%;
+        font-size: 18pt;
+    }
 
     section.portfolio .imgcaption p {
         color: #474948;
